@@ -10,6 +10,8 @@ $(document).ready(function() {
         scrollTop: $(id).offset().top},
         'slow');
     }
+    
+    hljs.initHighlightingOnLoad();
    
 });
 
@@ -19,7 +21,7 @@ $(window).load(function() {
     // Animate loader off screen
     $(".hoiio.loading").fadeOut("slow");
 
-    hljs.initHighlightingOnLoad();
+    
     
     
 });
