@@ -4,7 +4,6 @@ d3.csv("/test/data/head.csv", function(error, data) {
    
     data.forEach(function(d) {
         var dselect = d3.select("head");
-        var dselectBody = d3.select("body");
         dselectID = dselect.attr("id");
         
         //Title
@@ -24,12 +23,6 @@ d3.csv("/test/data/head.csv", function(error, data) {
 
             //Link
             if(d.id == "css") dselect.append("link").attr("rel", d.rel).attr("type", d.type).attr("href", d.href);
-
-            //JS
-            if(d.id == "jquery" || d.id == "modernizr" || d.id=="semantic") dselect.append("script").attr("src", d.href);
-                
-            if(d.id == "js") dselectBody.append("script").attr("src", d.href);
-            
         }
         else{
             
@@ -38,12 +31,6 @@ d3.csv("/test/data/head.csv", function(error, data) {
             
             //Link
             if(d.id == "css") dselect.append("link").attr("rel", d.rel).attr("type", d.type).attr("href", "../" + d.href);
-
-            //JS
-            if(d.id == "jquery" || d.id == "modernizr" || d.id=="semantic")  dselect.append("script").attr("src", "../" + d.href);
-                
-            if(d.id == "js") dselectBody.append("script").attr("src", "../" + d.href);
-            
         }
     });
 })
