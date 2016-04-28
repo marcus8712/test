@@ -62,7 +62,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
             //Description
             if(d.description) {
                 var paragraph = block.append("p");
-                paragraph.text(d.description);
+                paragraph.html(d.description);
                 
                 //Size
                 if(d.descriptionSize) paragraph.attr("data-width", d.descriptionSize);
@@ -92,7 +92,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                 var modalContent = modal.append("div").attr("class","content");
                 modalContent.append("h6").text(d.title);
                 modalContent.append("pre");
-                modalContent.append("code").attr("class","html hljs xml").text(d.modal);
+                modalContent.append("code").attr("class","html hljs xml").html(d.modal);
             }
             
             
