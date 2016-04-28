@@ -70,7 +70,7 @@ img {
 }
 
 .navbar > .logo > img {
-    width: 35px;
+    width: 40px;
     margin:-10px;
     display:inline-block;
 }
@@ -122,5 +122,427 @@ img {
     text-decoration: none !important;
     border-bottom:none;
     cursor: default;
+}
+
+
+/***********************
+
+    PAGES TEMPLATE
+
+************************/
+
+#content{
+    margin: 0 auto;
+}
+
+#content > .component{
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header */
+#content > .component > .header{
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2C83C5;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+#content > .component > .header > a{
+    margin-right: 1em;
+}
+
+#content > .component > .header > a:hover{
+    color: #2C83C5;
+    border-bottom: 2px solid #2C83C5;
+}
+
+#content > .component > .header > a.active{
+    color: rgba(0,0,0,.3);
+    text-decoration: none !important;
+    border-bottom:none;
+    cursor: default;
+}
+   
+
+#content > .component > img.wave{
+    width: 100%;
+}
+
+#content > .component > .wave + h1{
+    margin-top: 1em !important;
+}
+
+#content > .component{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content > .component > .container {
+    padding: 3em 0em 2em;
+}
+
+#content > .component > img + .container{
+    padding-top: 1em !important;
+}
+
+
+/* A Container */
+
+#content > .component > h1,
+#content > .component > .container > h1{
+    font-size: 2rem !important;
+    margin-top: 3em;
+    color: rgb(102, 179, 19);
+}
+
+#content > .component > h1 + p{
+    margin-top: 2em !important;
+}
+
+#content > .component > .container > .show.grid{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#content > .component > .ui.text.container{
+    font-size: 14px;
+}
+
+
+#content > .component > .ui.text.container > p{
+    margin: 0 auto;
+    width:500px;
+    margin-bottom: 1em
+}
+
+#content > .component > .ui.container > p{
+    margin: 0 auto;
+    width:500px;
+    margin-bottom: 0;
+        padding: 3em 0em 2em;
+}
+
+#content > .component > .container > h3{
+    font-size: 1.5rem !important;
+    margin-bottom: 2em;
+}
+
+#content > .component > .container > p + .grid{
+    margin-top: 1em !important;
+}
+
+#content > .component > .container > .grid + h3{
+   margin-top: 2.5em !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .leftMenu,
+    .rightMenu{
+        display: none;
+    }
+    .container.first {
+        padding-top: 2em !important;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #content > .component p{
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 1em
+    }
+}
+
+
+/***********************
+
+    GRID
+
+************************/
+
+#grid .grid:before {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+ background-color: #F0F0F0;
+  content: '';
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+/*  box-shadow: 0px 0px 0px 1px #DDDDDD inset;*/
+}
+
+#grid .grid .column:not(.row):not(.grid):after {
+  background-color: #ffc266;
+  box-shadow: 0px 0px 0px 1px rgba(86, 61, 124, 0.2) inset;
+  content: "";
+  display: block;
+  min-height: 50px;
+}
+
+
+/***********************
+
+    COLOR
+
+************************/
+
+.component.color .colorItem{
+    
+}
+.component.color .colorItem > .colorName{
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.component.color .colorItem > .colorBox {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+.component.color .colorItem > .colorCode {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.colorP { background-color: #008bd9; }
+.colorPH { background-color: #009bf2; }
+.colorPA { background-color: #007bbf; }
+
+.colorI { background-color: #2BADD4; }
+.colorIH { background-color: #40b5d8; }
+.colorIA { background-color: #279cbf; }
+
+.colorS { background-color: #19b37b; }
+.colorSH { background-color: #1cc98a; }
+.colorSA { background-color: #169d6c; }
+
+.colorW { background-color:#E5791A; }
+.colorWH { background-color:#E88631; }
+.colorWA { background-color:#CE6D17; }
+
+.colorE { background-color:#E64333; }
+.colorEH { background-color:#E95849; }
+.colorEA { background-color:#E32E1C; }
+
+.colorPE { background-color:#E6DB19; }
+.colorPEH { background-color:#EBE247; }
+.colorPEA { background-color:#CFC517; }
+
+.colorMW { background-color:#E8E8E8; }
+.colorLG { background-color:#EEE; }
+.colorG { background-color:#767676; }
+.colorMG { background-color:#CCC; }
+.colorLB { background-color:#555; }
+.colorB { background-color:#414141; }
+    
+/***********************
+
+    FONT
+
+************************/
+
+.component.font .identifier {
+    font-size: 11px;
+    color: #777;
+    display: block;
+}
+
+
+.component.font .fontitem{
+    margin-bottom: 20px;
+}
+
+.component.font .Poppins-normal-300 {
+    font-style: normal;
+    font-weight: 300;
+}
+
+.component.font .Poppins-normal-400 {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.component.font .Poppins-normal-500 {
+    font-style: normal;
+    font-weight: 500;
+}
+
+.component.font .Poppins-normal-600 {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.component.font .Poppins-normal-700 {
+    font-style: normal;
+    font-weight: 700;
+}
+
+.component.font .headingOne{
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.component.font .headingOneVariation{
+    font-size: 42px;
+    font-weight: 300;
+}
+
+.component.font .headingTwo{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.component.font .headingTwoVariation{
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.component.font .headingThree{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.component.font .headingFour{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.component.font .headingFive{
+    font-size: 22px;
+    font-weight: 600;
+}
+.component.font .headingSix{
+    font-size: 15px;
+    font-weight: 600;
+}
+.component.font .headingSixUppercase{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/***********************
+
+    ICONS
+
+************************/
+
+.component.font .iconList{
+    
+}
+
+.component.font .iconList i.icon{
+    display: block;
+    margin: 0;
+    text-align: center;
+    width: auto;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.component.font .iconList span{
+    font-size: 12px;
+    line-height: 11px;
+   
+}
+
+.component.font i.icon.google + :before{
+    display: none;
+}
+
+/***********************
+
+    ELEMENTS
+
+************************/
+
+.ui.button{
+    height: 36px;
+}
+
+.component.element .column > .ui.button,
+.component.element .column > .ui.buttons{
+    margin: 0 10px 0px 0;
+    
+}
+
+.component.element .column > .ui.input,
+.component.element .column > .ui.checkbox,
+.component.element .column > .ui.selection{
+    margin: 0 10px 0px 0;
+}
+
+.component.element .container{
+    width: 960px;
+}
+
+.component.element .container .ui.divider:not(.vertical):not(.horizontal){
+    margin: 1.5rem 0;
+    border-top: 1px solid #ddd;
+}
+
+
+/***********************
+
+    DROPDOWN
+
+************************/
+
+
+
+/***********************
+
+    TOOLTIP
+
+************************/
+
+.showTooltip{
+    text-align: left;
+}
+
+
+/***********************
+
+    LABEL
+
+************************/
+
+
+.showLabel .ui.label + .label{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/***********************
+
+    CHECKBOX
+
+************************/
+
+
+/***********************
+
+    AUTHENTICAION
+
+************************/
+
+.signIn{
+    width: 500px !important;
+    border: 1px solid #ccc;
+    padding: 50px !important; 
+}
+
+
+p.more.info{
+    text-align: center
 }
 
