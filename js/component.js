@@ -1,13 +1,12 @@
 $(window).load(function() {
-        // Animate loader off screen
-        $("body > .loading").fadeOut("slow");
+    // Animate loader off screen
+    $("body > .loading").fadeOut("slow");
 
-    });
+});
 
 $(document).ready(function() {
+    //Modal
     
-    $('.present.modal')
-        .modal('attach events', '#clearing-row button');
     
     hljs.initHighlightingOnLoad();
     
