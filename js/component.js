@@ -7,7 +7,7 @@ $(document).ready(function() {
     
     if(id){
         $('html,body').animate({
-        scrollTop: $("#"+id).offset().top},
+        scrollTop: $(id).offset().top},
         'slow');
     }
    
