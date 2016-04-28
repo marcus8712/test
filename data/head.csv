@@ -8,7 +8,9 @@ meta,,,generator,Marcus,,,
 icon,,,,,stylesheet,image/png,img/connected.png
 css,,,,,stylesheet,text/css,css/semantic.min.css
 css,,,,,stylesheet,text/css,css/standard.css
-js,,,,,,,js/semantic.min.js
+css,,,,,stylesheet,text/css,css/code.css
+js,,,,,,,js/core/semantic.min.js
 js,,,,,,,js/core/jquery.min.js
 js,,,,,,,js/core/modernizr.js
+js,,,,,,,js/core/highlight.pack.js
 js,,,,,,,js/component.js
