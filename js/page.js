@@ -91,9 +91,8 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                 modal.append("i").attr("class","close icon");
                 var modalContent = modal.append("div").attr("class","content");
                 modalContent.append("h6").text(d.title);
-                d.modal.insertAfter(d.shortcut + "-modal")
                 
-                //modalContent.append("pre").append("code").attr("class","html hljs xml").html(d.modal);
+                modalContent.append("pre").html(d.modal);
                 
                 block.append("script").html("$('#" + d.shortcut + "-modal').modal('attach events', '#" + d.shortcut + " button');");
             }
