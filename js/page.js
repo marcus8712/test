@@ -53,7 +53,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
             
             //Column
             if(d.column){
-               grid.attr("class", d.column + " column stackable");
+               grid.addClass(d.column + " column stackable");
             }
             
             
