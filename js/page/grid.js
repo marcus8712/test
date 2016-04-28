@@ -1,15 +1,14 @@
-d3.csv("/test/data/body.csv", function(error, data) {
+d3.csv("/test/data/grid.csv", function(error, data) {
     var count;
     count = 0;
     var dselect = d3.select("head");
     var dselectID = dselect.attr("id");
+    d3.select("body > .container").attr("data-page", dselectID);
     
     var body = d3.select("#body");
     var container = body.select(".container");
     
     
-    
-   
     data.forEach(function(d) {
         
         
@@ -18,7 +17,9 @@ d3.csv("/test/data/body.csv", function(error, data) {
         
         if(d.id == "section") container.append("div").attr("class","section").text(d.text);
         
+        //Block
         if(d.id == "block"){
+            
             var block = container.append("div").attr("class","block");
             
             if(d.blockSize) block.attr("data-width", d.blockSize);
@@ -39,60 +40,27 @@ d3.csv("/test/data/body.csv", function(error, data) {
             
             //Description
             if(d.description) {
+                var paragraph = block.append("p");
+                paragraph.text(d.description);
+                
                 //Size
-                if(d.descriptionSize) block.append("p").attr("data-width", d.descriptionSize);
+                if(d.descriptionSize) paragraph.attr("data-width", d.descriptionSize);
                 
             }
-            
-            //Sub block
-            if(d.subBlock)
-            
+                
             //Grid
             var grid = block.append("div").attr("class","ui grid");
             
+            //Column
+            if(d.column){
+               grid.attr(d.column + " column stackable");
+            }
             
             
             
-            
         }
             
         
-        //Logo
-        if(dselectID == "home"){
-            if(d.id == "logo") logo.append("img").attr("src", d.href); 
-        }
-        else{
-            if(d.id == "logo") logo.append("img").attr("src","../" + d.href); 
-        }
-        
-        //Left Menu
-        if(d.id == "left"){
-            var itemLeft = leftMenu.append("li").attr("class","item");
-            var linkLeft = itemLeft.append("a").attr("href", d.href);
-            linkLeft.text(d.name);
-        }
-        
-        //Right Menu
-        if(d.id == "right"){
-            var itemRight = rightMenu.append("li").attr("class","item");
-            var linkRight = itemRight.append("a").attr("href", d.href);
-            linkRight.text(d.name);
-        }
-        
-        
-        //Page Info
-        if(d.page == "page"){
-            var itemPage = pageHeader.append("a").attr("href", d.href);
-            itemPage.text(d.content);
-        }
-        
-        //Wave
-        if(dselectID == "home"){
-            if(d.id == "wave") pageInfo.append("img").attr("src", d.href); 
-        }
-        else{
-            if(d.id == "wave") pageInfo.append("img").attr("src","../" + d.href); 
-        }
 
     });
 })
