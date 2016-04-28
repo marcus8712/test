@@ -38,7 +38,9 @@ code {
     max-width:500px;
 }
 
-
+body > .ui.fluid.container{
+    z-index: 1;
+}
 
 /*--------------
     Header

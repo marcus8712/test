@@ -17,11 +17,7 @@ $(document).ready(function() {
 
 
 
-$(window).load(function() {
-    // Animate loader off screen
-    $("body > .loading").fadeOut("slow");
 
-});
 
 $(document).bind('scroll',function(e){
     $('.block').each(function(){
