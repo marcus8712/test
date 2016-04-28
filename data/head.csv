@@ -15,6 +15,6 @@ css,,,,,stylesheet,text/css,css/standard.css
 css,,,,,stylesheet,text/css,css/code.css
 jquery,,,,,,,js/core/jquery.min.js
 modernizr,,,,,,,js/core/modernizr.js
-js,,,,,,,js/core/semantic.min.js
+semantic,,,,,,,js/core/semantic.min.js
 js,,,,,,,js/core/highlight.pack.js
 js,,,,,,,js/component.js
