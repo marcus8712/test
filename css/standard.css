@@ -189,8 +189,8 @@ body > .ui.fluid.container{
     .navbar > .navbar-content > .mobileMenu {
         display: block !important;
         position: absolute;
-        right: 50px;
-        top: -6px;
+        right: 30px;
+        top: 34px;
     }
 }
             

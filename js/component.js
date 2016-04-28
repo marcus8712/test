@@ -25,6 +25,7 @@ $(document).ready(function() {
 
 
 
+
 $(document).bind('scroll',function(e){
     $('.block').each(function(){
         if (
