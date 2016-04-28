@@ -1,12 +1,4 @@
 id,pageName,align,shortcut,title,showCode,blockSize,description,descriptionSize,row,columnOfRow,optionGrid,content,modal
 alignAll,,center,,,,,,,,,,,
 section,,,,A container,,,,,,,,,
-block,,,clearing-rows,Clearing Rows,yes,medium,A container is a fixed width element that wraps your site's content. It remains a constant size and uses <b>margin</b> to center. Containers are the simplest way to center page content inside a grid.,small,3,4,stackable,none,"&lt;div class=&quot;ui three column grid&quot;&gt;
-&lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;"
+block,,,clearing-rows,Clearing Rows,yes,medium,A container is a fixed width element that wraps your site's content. It remains a constant size and uses <b>margin</b> to center. Containers are the simplest way to center page content inside a grid.,small,3,4,stackable,none,"<div class=""row""><div class=""column""></div><div class=""column""></div><div class=""column""></div><div class=""column""></div></div>"
