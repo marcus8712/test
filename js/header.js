@@ -28,13 +28,15 @@ d3.csv("/test/data/header.csv", function(error, data) {
         //Left Menu
         if(d.id == "left"){
             var itemLeft = leftMenu.append("li").attr("class","item");
-            itemLeft.append("a").attr("href", d.href);
+            var linkLeft = itemLeft.append("a").attr("href", d.href);
+            linkLeft.text(d.name);
         }
         
         //Right Menu
         if(d.id == "right"){
             var itemRight = rightMenu.append("li").attr("class","item");
-            itemRight.append("a").attr("href", d.href);
+            var linkRight = itemRight.append("a").attr("href", d.href);
+            linkRight.text(d.name);
         }
         
         
@@ -42,6 +44,14 @@ d3.csv("/test/data/header.csv", function(error, data) {
         if(d.page == "page"){
             var itemPage = pageHeader.append("a").attr("href", d.href);
             itemPage.text(d.content);
+        }
+        
+        //Wave
+        if(dselectID == "home"){
+            pageInfo.append("img").attr("src", d.href); 
+        }
+        else{
+            pageInfo.append("img").attr("src","../" + d.href); 
         }
 
     });
