@@ -4,6 +4,14 @@ $(document).ready(function() {
         .modal('attach events', '#clearing-row button');
     
     hljs.initHighlightingOnLoad();
+    
+    var id =  window.location.hash;
+    
+    if(id){
+        $('html,body').animate({
+        scrollTop: $(id).offset().top},
+        'slow');
+    }
    
 });
 
@@ -13,13 +21,7 @@ $(window).load(function() {
     // Animate loader off screen
     $(".hoiio.loading").fadeOut("slow");
 
-    var id =  window.location.hash;
     
-    if("#text-aligment"){
-        $('html,body').animate({
-        scrollTop: $("#text-aligment").offset().top},
-        'slow');
-    }
     
     
     
