@@ -19,14 +19,8 @@ $(document).ready(function() {
 
 $(window).load(function() {
     // Animate loader off screen
-    $(".hoiio.loading").fadeOut("slow");
+    $("body > .loading").fadeOut("slow");
 
-    
-    
-    
-    
-    
-    
 });
 
 $(document).bind('scroll',function(e){

@@ -9,7 +9,7 @@ meta,,,viewport,"width=device-width, initial-scale=1.0, maximum-scale=1.0",,,
 meta,,,description,Design Standards is a carefully crafted design developed by Hoiio UX Team.,,,
 meta,,,keywords,Hoiio Standars Design Marcus,,,
 meta,,,generator,Marcus,,,
-icon,,,,,stylesheet,image/png,img/connected.png
+icon,,,,,icon,image/png,img/connected.png
 css,,,,,stylesheet,text/css,css/semantic.min.css
 css,,,,,stylesheet,text/css,css/standard.css
 css,,,,,stylesheet,text/css,css/code.css
