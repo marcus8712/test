@@ -1,0 +1,13 @@
+id,name,href,content
+logo,logo,img/connected.svg,
+left,intro,index,
+left,structure,/structure/index,
+left,styles,/style/index,
+left,components,/component/index,
+right,states,/state/index,
+right,app patterns,/pattern/index,
+right,samples,/sample/index,
+right,download,/download/index,
+mobile,,,
+page,grid,grid,#grids
+page,layout,layout,#layouts
