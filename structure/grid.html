@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head id="grid"></head>
+<head id="grid">
+    <script>
+    $(window).load(function() {
+        // Animate loader off screen
+        $("body > .loading").fadeOut("slow");
+
+    });
+    </script>
+</head>
 <body>
     
     <div class="loading">
