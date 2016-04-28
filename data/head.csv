@@ -17,3 +17,4 @@ js,,,,,,,js/core/semantic.min.js
 js,,,,,,,js/core/jquery.min.js
 js,,,,,,,js/core/modernizr.js
 js,,,,,,,js/core/highlight.pack.js
+js,,,,,,,js/component.js
