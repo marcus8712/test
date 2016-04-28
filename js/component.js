@@ -21,8 +21,6 @@ $(window).load(function() {
     
     
 });
-     
-});
 
 $(document).bind('scroll',function(e){
     $('.block').each(function(){
