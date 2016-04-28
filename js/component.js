@@ -3,14 +3,6 @@ $(document).ready(function() {
     $('.present.modal')
         .modal('attach events', '#clearing-row button');
     
-    var id =  window.location.hash;
-    
-    if("#text-aligment"){
-        $('html,body').animate({
-        scrollTop: $("#text-aligment").offset().top},
-        'slow');
-    }
-    
     hljs.initHighlightingOnLoad();
    
 });
@@ -21,6 +13,15 @@ $(window).load(function() {
     // Animate loader off screen
     $(".hoiio.loading").fadeOut("slow");
 
+    var id =  window.location.hash;
+    
+    if("#text-aligment"){
+        $('html,body').animate({
+        scrollTop: $("#text-aligment").offset().top},
+        'slow');
+    }
+    
+    
     
     
     
