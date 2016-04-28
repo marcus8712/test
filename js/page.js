@@ -87,13 +87,15 @@ d3.csv("/test/data/grid.csv", function(error, data) {
             
             //Modal
             if(d.modal){
-                var modal = block.append("div").attr("class","ui modal");
+                var modal = block.append("div").attr("class","ui modal").attr("id", d.shortcut + "-modal");
                 modal.append("i").attr("class","close icon");
                 var modalContent = modal.append("div").attr("class","content");
                 modalContent.append("h6").text(d.title);
-                modalContent.append("pre").append("code").attr("class","html hljs xml").html(d.modal);
+                d.modal.insertAfter(d.shortcut + "-modal")
                 
-                block.append("script").html("$('#" + d.shortcut + " .modal').modal('attach events', '#" + d.shortcut + " button');");
+                //modalContent.append("pre").append("code").attr("class","html hljs xml").html(d.modal);
+                
+                block.append("script").html("$('#" + d.shortcut + "-modal').modal('attach events', '#" + d.shortcut + " button');");
             }
             
             
