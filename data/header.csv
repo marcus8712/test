@@ -1,5 +1,14 @@
-name,content
-viewport,"width=device-width, initial-scale=1.0, maximum-scale=1.0"
-description,Design Standards is a carefully crafted design developed by Hoiio UX Team.
-keywords,Hoiio Standars Design Marcus
-generator,Marcus
+id,title,charset,name,content,rel,type,href
+title,Intro | Hoiio Design Standards,,,,,,
+charset,,utf-8,,,,,
+meta,,,viewport,"width=device-width, initial-scale=1.0, maximum-scale=1.0",,,
+meta,,,description,Design Standards is a carefully crafted design developed by Hoiio UX Team.,,,
+meta,,,keywords,Hoiio Standars Design Marcus,,,
+meta,,,generator,Marcus,,,
+icon,,,,,stylesheet,image/png,img/connected.png
+css,,,,,stylesheet,text/css,css/semantic.min.css
+css,,,,,stylesheet,text/css,css/standard.css
+js,,,,,,,js/semantic.min.js
+js,,,,,,,js/core/jquery.min.js
+js,,,,,,,js/core/modernizr.js
+js,,,,,,,js/component.js
