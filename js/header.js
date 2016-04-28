@@ -48,10 +48,10 @@ d3.csv("/test/data/header.csv", function(error, data) {
         
         //Wave
         if(dselectID == "home"){
-            pageInfo.append("img").attr("src", d.href); 
+            if(d.id == "wave") pageInfo.append("img").attr("src", d.href); 
         }
         else{
-            pageInfo.append("img").attr("src","../" + d.href); 
+            if(d.id == "wave") pageInfo.append("img").attr("src","../" + d.href); 
         }
 
     });
