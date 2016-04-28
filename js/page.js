@@ -52,8 +52,13 @@ d3.csv("/test/data/grid.csv", function(error, data) {
             
             
             //Column
-            if(d.column){
-               block.append("div").attr("class","ui " + d.column + " column stackable grid");
+            if(parseInt(d.column) == 16){
+               var grid = block.append("div").attr("class","ui " + d.column + "sixteen column stackable grid");
+                
+                for(i=0; i<16; i++){
+                    grid.append("div").attr("class","column");
+                }
+                
             }
             
             
