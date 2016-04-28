@@ -2,17 +2,19 @@
 <html>
 <head id="grid">
     <script src="../js/core/jquery.min.js"></script>
-    <script>
-        $(window).load(function() {
-    // Animate loader off screen
-    $("body > .loading").fadeOut("slow");
-
-});
-    </script>
+    <link rel="stylesheet" href="../css/loading.css" />
+    
 </head>
 <body>
-    
+    <script>
+            $(window).load(function() {
+        // Animate loader off screen
+        $("body > .loading").fadeOut("slow");
+
+    });
+    </script>
     <div class="loading"></div>
+    
     
     <div class="ui fluid container">
         <div class="ui grid">
