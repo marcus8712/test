@@ -1,0 +1,126 @@
+
+
+/***********************
+
+    SETUP
+
+************************/
+
+code {
+    background-color: #E0E0E0;
+    padding: 0.25em 0.3em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.grid {
+  position: relative;
+}
+
+.ui.divided.grid:before,
+.celled.grid:before {
+  display: none;
+}
+.ui.aligned .column:after {
+  display: none !important;
+}
+
+#footer{
+    display: block;
+    margin-top: 5em;
+    height: 70px;  
+}
+
+@media only screen and (max-width: 768px) {
+  .stackable.grid:before {
+    width: 100%;
+    left: 0em;
+  }
+}
+
+/***********************
+
+    NAVBAR
+
+************************/
+
+.navbar{
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 50px;
+    /* background: #fff; */
+    z-index: 99;
+    margin-bottom: 40px;
+}
+
+.navbar > .logo{
+    float: left;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+}
+
+.navbar > .logo > img {
+    width: 35px;
+    margin:-10px;
+    display:inline-block;
+}
+
+.navbar > .navbar-content > .rightMenu  {
+    padding-right: 60px;
+    float: right;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.navbar > .navbar-content > .leftMenu {
+    padding-left: 60px;
+    float: left;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.navbar > .navbar-content > .menu > .item {
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+}
+
+.navbar > .navbar-content > .menu > .item  {
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.navbar > .navbar-content > .menu > .item > a{
+    color: rgba(0,0,0,.75);
+}
+ 
+.navbar > .navbar-content > .menu > .item > a:hover{
+    color: rgba(0,0,0,1);
+    border-bottom: 1px solid #000;
+}
+
+.navbar > .navbar-content > .menu > .item  > a.active,
+.navbar > .navbar-content > .menu > .item  > a.active:hover{
+    color: rgba(0,0,0,.3);
+    text-decoration: none !important;
+    border-bottom:none;
+    cursor: default;
+}
+
