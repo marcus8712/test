@@ -1,8 +1,4 @@
-$(window).load(function() {
-    // Animate loader off screen
-    $("body > .loading").fadeOut("slow");
 
-});
 
 $(document).ready(function() {
     //Modal
