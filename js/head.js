@@ -4,9 +4,10 @@ d3.csv("/test/data/head.csv", function(error, data) {
    
     data.forEach(function(d) {
         var dselect = d3.select("head");
+        dselectID = dselect.attr("id");
         
         //Title
-        if(d.id == "title") dselect.append("title").text(d.title);
+        if(d.id == dselectID) dselect.append("title").text(d.title);
         
         //Charset
         if(d.id == "charset") dselect.append("meta").attr("charset", d.charset);

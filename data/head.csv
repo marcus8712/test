@@ -1,5 +1,9 @@
 id,title,charset,name,content,rel,type,href
-title,Intro | Hoiio Design Standards,,,,,,
+home,Hoiio Design Standards,,,,,,
+grid,Grid | Hoiio Design Standards,,,,,,
+layout,,,,,,,
+component,,,,,,,
+pattern,,,,,,,
 charset,,utf-8,,,,,
 meta,,,viewport,"width=device-width, initial-scale=1.0, maximum-scale=1.0",,,
 meta,,,description,Design Standards is a carefully crafted design developed by Hoiio UX Team.,,,
