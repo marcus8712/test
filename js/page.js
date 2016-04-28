@@ -49,15 +49,18 @@ d3.csv("/test/data/grid.csv", function(error, data) {
             }
                 
             //Grid
-            
-            
-            //Column
-            if(parseInt(d.column) == 16){
-               var grid = block.append("div").attr("class","ui " + d.column + "sixteen column stackable grid");
+            if(d.columnOfRow && d.content == "none"){
+                var grid = block.append("div").attr("class","ui " + d.optionGrid + " grid");
                 
-                for(i=0; i<16; i++){
-                    grid.append("div").attr("class","column");
+                for(i=0; i<parseInt(d.row); i++){
+                    var row = grid.append("div").attr("class","row");
+                    
+                    for(j=0; j<parseInt(d.columnOfRow); j++){
+                        row.append("div").attr("class","column");
+                    }
                 }
+                
+                
                 
             }
             

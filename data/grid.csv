@@ -1,4 +1,4 @@
-id,pageName,align,shortcut,title,showCode,blockSize,description,descriptionSize,column,optionGrid,content
-alignAll,,center,,,,,,,,,
-section,,,,A container,,,,,,,
-block,,,clearing-rows,Clearing Rows,yes,medium,A container is a fixed width element that wraps your site's content. It remains a constant size and uses <b>margin</b> to center. Containers are the simplest way to center page content inside a grid.,small,16,stackable,
+id,pageName,align,shortcut,title,showCode,blockSize,description,descriptionSize,row,columnOfRow,optionGrid,content
+alignAll,,center,,,,,,,,,,
+section,,,,A container,,,,,,,,
+block,,,clearing-rows,Clearing Rows,yes,medium,A container is a fixed width element that wraps your site's content. It remains a constant size and uses <b>margin</b> to center. Containers are the simplest way to center page content inside a grid.,small,3,4,stackable,none
