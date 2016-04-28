@@ -75,13 +75,22 @@ code {
     text-align: left;
 }
 
-*[data-width="large"]{
-    max-width:800px;
+*[data-width="small"]{
+    max-width:500px;
 }
 
 *[data-width="medium"]{
-    max-width:500px;
+    max-width:800px;
 }
+
+*[data-width="large"]{
+    max-width:960px;
+}
+
+*[data-width="huge"]{
+    max-width:1200px;
+}
+
 
 body > .ui.fluid.container{
     z-index: 1;
@@ -250,14 +259,14 @@ body > .ui.fluid.container{
 #body > .container{
     
 }
-#body > .container > .part{
+#body > .container > .section{
     font-size:30px !important;
     margin: 20px 0 10px;
     color: rgb(102, 179, 19);
     font-weight: 600;
 }
 
-#body > .container > .part:first-child{
+#body > .container > .section:first-child{
     margin-top: 0;
 }
 

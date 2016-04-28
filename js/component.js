@@ -17,6 +17,33 @@ $(document).ready(function() {
         scrollTop: $(id).offset().top},
         'slow');
     }
+    
+    
+    // Generate
+    var loading="";
+    loading += "    <section id=\"hexCont\">";
+    loading += "        <div id=\"triforce1\">";
+    loading += "            <div class=\"triangle triangle1\"><\/div>";
+    loading += "        <\/div>";
+    loading += "        <div id=\"triforce2\">";
+    loading += "            <div class=\"triangle flipped triangle2\"><\/div>";
+    loading += "        <\/div>";
+    loading += "        <div id=\"triforce3\">";
+    loading += "            <div class=\"triangle triangle3\"><\/div>";
+    loading += "        <\/div>";
+    loading += "        <div id=\"triforce4\">";
+    loading += "            <div class=\"triangle flipped triangle4\"><\/div>";
+    loading += "        <\/div>";
+    loading += "        <div id=\"triforce5\">";
+    loading += "            <div class=\"triangle triangle5\"><\/div>";
+    loading += "        <\/div>";
+    loading += "        <div id=\"triforce6\">";
+    loading += "            <div class=\"triangle flipped triangle6\"><\/div>";
+    loading += "        <\/div>";
+    loading += "    <\/section>";
+   
+    $(".loading").append(loading);
+    
    
 });
 
