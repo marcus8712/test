@@ -1,6 +1,6 @@
-function toText(col){
+function toText(cod){
     var colS = "";
-    if (col == 1) colS = "one";
+    if (cod == 1) colS = "one";
     else if(cod == 2) colS ="two";
     else if(cod == 3) colS ="three";
     else if(cod == 4) colS ="four";
