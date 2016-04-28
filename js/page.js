@@ -49,11 +49,11 @@ d3.csv("/test/data/grid.csv", function(error, data) {
             }
                 
             //Grid
-            var grid = block.append("div").attr("class","ui grid");
+            
             
             //Column
             if(d.column){
-               grid.addClass(d.column + " column stackable");
+               block.append("div").attr("class","ui " + d.column + " column stackable grid");
             }
             
             
