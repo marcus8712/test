@@ -3,10 +3,12 @@ $(document).ready(function() {
     $('.present.modal')
         .modal('attach events', '#clearing-row button');
     
-    var x =  window.location.hash;
+    var id =  window.location.hash;
     
-    if(x){
-        $(document).scrollTo('#' + x);
+    if(id){
+        $('html,body').animate({
+        scrollTop: $("#"+id).offset().top},
+        'slow');
     }
    
 });
