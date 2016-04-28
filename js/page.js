@@ -74,16 +74,25 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                 var column = toText(d.columnOfRow);
                 var grid = block.append("div").attr("class","ui " + column + " column " + d.optionGrid + " grid");
                 
+                //Row
                 for(i=0; i<parseInt(d.row); i++){
                     var row = grid.append("div").attr("class","row");
                     
+                    //Column
                     for(j=0; j<parseInt(d.columnOfRow); j++){
                         row.append("div").attr("class","column");
                     }
                 }
-                
-                
-                
+            }
+            
+            //Modal
+            if(d.modal){
+                var modal = block.append("div").attr("class","ui modal");
+                modal.append("i").attr("class","close icon");
+                var modalContent = modal.append("div").attr("class","content");
+                modalContent.append("h6").text(d.title);
+                modalContent.append("pre");
+                modalContent.append("code").attr("class","html hljs xml").text(d.modal);
             }
             
             
