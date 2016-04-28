@@ -5,9 +5,9 @@ $(document).ready(function() {
     
     var id =  window.location.hash;
     
-    if(id){
+    if("#text-aligment"){
         $('html,body').animate({
-        scrollTop: $(id).offset().top},
+        scrollTop: $("#text-aligment").offset().top},
         'slow');
     }
     
