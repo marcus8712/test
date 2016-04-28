@@ -96,6 +96,13 @@ body > .ui.fluid.container{
     z-index: 1;
 }
 
+@media only screen and (max-width: 789px) {
+
+    *[data-width]{
+        max-width: 100%;
+    }
+    
+}
 /*--------------
     Header
 ---------------*/
