@@ -39,4 +39,5 @@ $(document).bind('scroll',function(e){
 
 $('a.active').click(function(){
     return false;
-     
+  });
+   
