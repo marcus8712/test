@@ -187,19 +187,9 @@
     
     <!-- Custom Script -->
     <script src="../js/core/jquery.min.js"></script>
-    <script src="../js/core/modernizr.js"></script>
-    <script src="../js/core/highlight.pack.js"></script>
-    <script src="../js/core/semantic.min.js"></script>
-    <script src="../js/component.js"></script>
-    <script src="../js/core/d3.js"></script>
-    <script src="../js/core/lodash.js"></script>
-    <script src="../js/head.js"></script>
-    <script src="../js/header.js"></script>
+    <div id="script"></div>
     <script>
-        $('#special-variations .modal')
-            .modal('attach events', '#special-variations button')
-        ;
-
+    $("#script").load("../script.html");
     </script>
 </body>
 </html>

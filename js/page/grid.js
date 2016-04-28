@@ -9,20 +9,10 @@ d3.csv("/test/data/body.csv", function(error, data) {
     
     
     
-    
-    
-    
-    var navbar = header.append("div").attr("class","navbar");
-    var pageInfo = header.append("div").attr("class","page-info");
-    var pageHeader = pageInfo.append("div").attr("class","ui header");
-    
-    var logo = navbar.append("div").attr("class","logo");
-    var navbarContent = navbar.append("div").attr("class","navbar-content");
-    var leftMenu = navbarContent.append("ul").attr("class","menu leftMenu");
-    var rightMenu = navbarContent.append("ul").attr("class","menu rightMenu");
-    var mobileMenu = navbarContent.append("ul").attr("class","menu mobileMenu");
    
     data.forEach(function(d) {
+        
+        
         
         if(d.id == "alignAll") container.attr("data-align", d.align);
         
