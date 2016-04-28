@@ -1,28 +1,67 @@
-d3.csv("/test/data/header.csv", function(error, data) {
+d3.csv("/test/data/grid.csv", function(error, data) {
     var count;
     count = 0;
-   
+    var dselect = d3.select("head");
+    var dselectID = dselect.attr("id");
+    d3.select("body > .container").attr("data-page", dselectID);
+    
+    var body = d3.select("#body");
+    var container = body.select(".container");
+    
+    
     data.forEach(function(d) {
-        var dselect = d3.select("head");
         
-        //Title
-        if(d.id == "title") dselect.append("title").text(d.title);
         
-        //Charset
-        if(d.id == "charset") dselect.append("meta").attr("charset", d.charset);
         
-        //Meta
-        if(d.id == "meta") dselect.append("meta").attr("name", d.name).attr("content", d.content);
+        if(d.id == "alignAll") container.attr("data-align", d.align);
         
-        //Icon
-        if(d.id == "icon") dselect.append("link").attr("rel", d.rel).attr("type", d.type).attr("href", d.href);
+        if(d.id == "section") container.append("div").attr("class","section").text(d.title);
         
-        //Link
-        if(d.id == "css") dselect.append("link").attr("rel", d.rel).attr("type", d.type).attr("href", d.href);
+        //Block
+        if(d.id == "block"){
+            
+            var block = container.append("div").attr("class","block");
+            
+            if(d.blockSize) block.attr("data-width", d.blockSize);
+            if(d.shortcut) block.attr("id", d.shortcut);
+            
+            //Title
+            if(d.title) {
+                var title = block.append("div").attr("class","title");
+                title.text(d.title);
+            }
+            
+            //Show code
+            if(d.showCode == "yes") {
+                var btn = title.append("button").attr("class","ui round icon button");
+                btn.append("i").attr("class","icon code");
+            }
+            
+            
+            //Description
+            if(d.description) {
+                var paragraph = block.append("p");
+                paragraph.text(d.description);
+                
+                //Size
+                if(d.descriptionSize) paragraph.attr("data-width", d.descriptionSize);
+                
+            }
+                
+            //Grid
+            var grid = block.append("div").attr("class","ui grid");
+            
+            //Column
+            if(d.column){
+               grid.attr("class", d.column + " column stackable");
+            }
+            
+            
+            
+        }
+            
         
-        //JS
-        if(d.id == "js") dselect.append("script").attr("src", d.href);
-        
+
     });
 })
 
