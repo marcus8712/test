@@ -1,31 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- Standard Meta -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="Design Standards is a carefully crafted design developed by Hoiio UX Team.">
-    <meta name="keywords" content="Hoiio Standars Design Marcus">
-    <meta name="generator" content="Marcus">
-
-    <!-- Site Properties -->
-    <title>Grid | Hoiio Design Standards</title>
-    <link rel="icon" type="image/png" href="../img/connected.png">
-    
-    <!-- Semantic CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
-    
-    <!-- Library JS -->
-    <script src="../js/core/jquery.min.js"></script>
-    <script src="../js/core/modernizr.js"></script>
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/standard.css">
-    
-</head>
+<head></head>
 <body>
-    
     <div class="ui fluid container" data-page="structure">
         <div class="ui grid">
             <!-- Header -->
@@ -120,7 +96,7 @@
                     </div>
                     
                     <!-- Block -->
-                    <div class="block" data-width="large">
+                    <div class="block" data-width="large" id="clearing-row">
                         <div class="title">Clearing Rows <button class="ui round icon button"><i class="icon code"></i></button></div>
                         <p data-width="medium">Adding row wrappers allow you to manually specify you want a new row to begin.</p>
 
@@ -132,10 +108,31 @@
                               <div class="column"></div>
                             </div>
                         </div>
+                        <div class="ui present modal">
+                            <i class="close icon"></i>
+                            <div class="content">
+                                <h6>Clearing Rows</h6>
+                                <pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui three column grid&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+                                </pre>
+                            </div>
+
+                        </div>
                     </div>
                     
+                    
                     <!-- Block -->
-                    <div class="block" data-width="large">
+                    <div class="block" data-width="large" id="specifying-row-width">
                         <div class="title">Specifying Row Width <button class="ui round icon button"><i class="icon code"></i></button></div>
                         
                         <p data-width="medium">Specifying a grid column count will divide columns into rows of predetermined column count. Additional columns will automatically flow to the next row.</p>
@@ -153,7 +150,7 @@
                     </div>
                     
                     <!-- Block -->
-                    <div class="block" data-width="large">    
+                    <div class="block" data-width="large" id="specifying-column-width">    
                         <div class="title">Specifying Column Width <button class="ui round icon button"><i class="icon code"></i></button></div>
                         <p data-width="medium">You can also specify column widths for each column individually</p>
                         <div class="ui three column grid">
@@ -165,7 +162,7 @@
                     
                     
                     <!-- Block -->
-                    <div class="block" data-width="large">    
+                    <div class="block" data-width="large" id="special-variations">    
                         <div class="title">Special Variations <button class="ui round icon button"><i class="icon code"></i></button></div>
                         <p data-width="medium">Some special variations that format grids like tables require you to specify rows. For example a <code>divided grid</code> or a <code>celled grid</code> requires row wrappers.</p>
 
@@ -239,7 +236,7 @@
                     </div>
                     
                     <!-- Block -->
-                    <div class="block" data-width="large">  
+                    <div class="block" data-width="large" id="centering-content">  
                       <div class="title">Centering Content <button class="ui round icon button"><i class="icon code"></i></button></div>
                       <p data-width="medium">If a row does not take up all sixteen grid columns, you can use a <code>ui centered grid</code>, <code>centered row</code>, or <code>centered column</code> to center the column contents inside the grid.
                       </p>
@@ -253,7 +250,7 @@
                     </div>
                     
                     <!-- Block -->
-                    <div class="block" data-width="large">  
+                    <div class="block" data-width="large" id="floating-rows">  
                       <div class="title">Floating Rows <button class="ui round icon button"><i class="icon code"></i></button></div>
                       <p data-width="medium">Since Semantic UI's grid is based on flex box, a <code>left floated</code> item should come first, and a <code>right floated</code> item last in its row.</p>
 
@@ -268,7 +265,7 @@
                       </div>
                     </div>
                     <!-- Block -->
-                    <div class="block" data-width="large">      
+                    <div class="block" data-width="large" id="text-aligment">      
 
                       <div class="title">Text Alignment <button class="ui round icon button"><i class="icon code"></i></button></div>
                       <p data-width="medium">You can specify text alignment using alignment variations on a grid, row, or column level.</p>
@@ -295,7 +292,7 @@
                     </div>
                     
                     <!-- Block -->
-                    <div class="block" data-width="large">      
+                    <div class="block" data-width="large" id="vertical-alignment">      
 
                       <div class="title">Vertical Alignment <button class="ui round icon button"><i class="icon code"></i></button></div>
                       <p data-width="medium">You can specify vertical alignment on a grid, row, or column level.</p>
@@ -409,309 +406,13 @@
             <div id="footer" class="row"></div>
         </div> 
     </div> 
+
     
-    
-    <!-- Content 
-    <div id="content">
-        <div class="component" id="grid">
-            
-            <div class="ui container">
-                
-            </div>
-            
-            <h1>Grid Content</h1>
-            
-            <div class="block" data-width="large">
-                
-                <p data-width="medium">A grid does not necessarily need to specify rows. If you include <code>columns</code> as direct child of <code>ui grid</code> content will automatically flow to the next row when all the grid columns are taken in the current row.</p>
-
-                <div class="ui grid">
-                    <div class="four wide column"></div>
-                    <div class="four wide column"></div>
-                    <div class="four wide column"></div>
-                    <div class="four wide column"></div>
-                    <div class="four wide column"></div>
-                    <div class="four wide column"></div>
-                    <div class="four wide column"></div>
-                    <div class="four wide column"></div>
-                </div>
-            </div>
-            <div class="block" data-width="large">
-                <div class="title">Clearing Rows</div>
-                <p data-width="medium">Adding row wrappers allow you to manually specify you want a new row to begin.</p>
-
-                <div class="ui three column grid">
-                    <div class="column"></div>
-                    <div class="row">
-                      <div class="column"></div>
-                      <div class="column"></div>
-                      <div class="column"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="block" data-width="large">
-                <div class="title">Specifying Row Width</div>
-                <p data-width="medium">Specifying a grid column count will divide columns into rows of predetermined column count. Additional columns will automatically flow to the next row.</p>
-                <div class="ui three column grid">
-                    <div class="column"></div>
-                    <div class="column"></div>
-                    <div class="column"></div>
-                    <div class="column"></div>
-                    <div class="column"></div>
-                    <div class="column"></div>
-                </div>
-            </div>
-            <div class="block" data-width="large">    
-                <div class="title">Specifying Column Width</div>
-                <p data-width="medium">You can also specify column widths for each column individually</p>
-                <div class="ui three column grid">
-                    <div class="four wide column">four wide column</div>
-                    <div class="eight wide column">eight wide column</div>
-                    <div class="four wide column">four wide column</div>
-                </div>
-            </div>
-            <div class="block" data-width="large">    
-                <div class="title">Special Variations</div>
-              <p data-width="medium">Some special variations that format grids like tables require you to specify rows. For example a <code>divided grid</code> or a <code>celled grid</code> requires row wrappers.</p>
-
-              <div class="ui horizontal section divider">Celled Grid</div>
-              <div class="ui celled grid">
-                <div class="row">
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                </div>
-                <div class="row">
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                </div>
-              </div>
-
-              <div class="ui horizontal section divider">Internally Celled Grid</div>
-
-              <div class="ui internally celled grid">
-                <div class="row">
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                </div>
-                <div class="row">
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                </div>
-              </div>
-
-
-              <div class="ui horizontal section divider">Divided Grid</div>
-
-              <div class="ui divided grid">
-                <div class="row">
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                </div>
-                <div class="row">
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                </div>
-              </div>
-
-              <div class="ui horizontal section divider">Vertically Divided Grid</div>
-
-              <div class="ui vertically divided grid">
-                <div class="row">
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                </div>
-                <div class="row">
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                  <div class="four wide column"></div>
-                </div>
-              </div>
-            </div>
-            <div class="block" data-width="large">  
-              <h3 class="first">Centering Content</div>
-              <p data-width="medium">If a row does not take up all sixteen grid columns, you can use a <code>ui centered grid</code>, <code>centered row</code>, or <code>centered column</code> to center the column contents inside the grid.
-              </p>
-              <div class="ui two column centered grid">
-                <div class="column"></div>
-                <div class="four column centered row">
-                  <div class="column"></div>
-                  <div class="column"></div>
-                </div>
-              </div>
-            </div>
-            <div class="block" data-width="large">  
-              <div class="title">Floating Rows</div>
-              <p data-width="medium">Since Semantic UI's grid is based on flex box, a <code>left floated</code> item should come first, and a <code>right floated</code> item last in its row.</p>
-
-              <div class="ui grid">
-                <div class="left floated six wide column">
-                  Left floated
-                </div>
-                <div class="right floated six wide column">
-                  Right floated
-                
-                </div>
-              </div>
-            </div>
-            <div class="block" data-width="large">      
-
-              <div class="title">Text Alignment</div>
-              <p data-width="medium">You can specify text alignment using alignment variations on a grid, row, or column level.</p>
-
-              <div class="ui grid">
-                <div class="right aligned eight wide column">
-                  right aligned column
-                </div>
-                <div class="left aligned eight wide column">
-                  left aligned column
-                </div>
-                <div class="center aligned two column row">
-                  <div class="column">
-                    center aligned row
-                  </div>
-                  <div class="column">
-                    center aligned row
-                  </div>
-                </div>
-                <div class="sixteen wide right aligned column">
-                  right aligned column
-                </div>
-              </div>
-            </div>
-            <div class="block" data-width="large">      
-
-              <div class="title">Vertical Alignment</div>
-              <p data-width="medium">You can specify vertical alignment on a grid, row, or column level.</p>
-              <div class="ui middle aligned four column centered grid">
-                <div class="row">
-                  <div class="column">
-                    <img class="ui wireframe image" src="img/image.png">
-                  </div>
-                  <div class="column">
-                    <img class="ui wireframe image" src="img/image.png">
-                    <img class="ui wireframe image" src="img/image.png">
-                  </div>
-                  <div class="column">
-                    <img class="ui wireframe image" src="img/image.png">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="block" data-width="large">      
-
-              <div class="title">Equal Width Columns</div>
-              <p data-width="medium">Specifying an <code>equal width grid</code> will automatically determine column sizes to fit evenly inside one row</p>
-              <div class="ui equal width grid">
-                <div class="row">
-                  <div class="column"></div>
-                  <div class="column"></div>
-                  <div class="column"></div>
-                  <div class="column"></div>
-                </div>
-                <div class="row">
-                  <div class="column"></div>
-                  <div class="column"></div>
-                  <div class="column"></div>
-                </div>
-              </div>
-            </div>
-            
-            <h1>Responsive Patterns</h1>
-            
-            <div class="block" data-width="large">  
-
-              
-
-              <h3 class="first">Doubling</div>
-              <p data-width="medium">You can set columns to double in width at each device jump</p>
-              <div class="ui five column doubling grid">
-                <div class="column"></div>
-                <div class="column"></div>
-                <div class="column"></div>
-                <div class="column"></div>
-                <div class="column"></div>
-              </div>
-            </div>
-            <div class="block" data-width="large">  
-
-              <div class="title">Stackable</div>
-              <p data-width="medium">You can set columns to stack on mobile</p>
-              <div class="ui three column stackable grid">
-                <div class="column"></div>
-                <div class="column"></div>
-                <div class="column"></div>
-              </div>
-                
-            </div>
-            <div class="block" data-width="large">      
-
-              <div class="title">Responsive Width Adjustments</div>
-              <p data-width="medium">You can specify columns to appear at different widths on different screens</p>
-
-              <div class="ui grid">
-                <div class="eight wide mobile six wide tablet four wide computer column"></div>
-                <div class="eight wide mobile six wide tablet four wide computer column"></div>
-                <div class="eight wide mobile six wide tablet four wide computer column"></div>
-                <div class="eight wide mobile six wide tablet four wide computer column"></div>
-                <div class="eight wide mobile six wide tablet four wide computer column"></div>
-              </div>
-              <div class="ui grid">
-                <div class="four wide two wide large screen one wide widescreen column"></div>
-                <div class="four wide two wide large screen one wide widescreen column"></div>
-                <div class="four wide two wide large screen one wide widescreen column"></div>
-                <div class="four wide two wide large screen one wide widescreen column"></div>
-              </div>
-            </div>
-            <div class="block" data-width="large">  
-              <div class="title">Specifying Device Visibility</div>
-              <p data-width="medium">You can specify columns to appear only a particular screen</p>
-              <div class="ui grid">
-                <div class="two column computer only row">
-                  <div class="ten wide column">ten wide column computer only</div>
-                  <div class="six wide column">six wide column computer only</div>
-                </div>
-                <div class="sixteen wide mobile only column">sixteen wide column mobile only</div>
-                <div class="three column computer only row">
-                  <div class="column">computer only row</div>
-                  <div class="column">computer only row</div>
-                  <div class="column">computer only row</div>
-                </div>
-                <div class="two column mobile only row">
-                  <div class="column">mobile only column</div>
-                  <div class="column">mobile only column</div>
-                </div>
-                <div class="two column row">
-                  <div class="column"></div>
-                  <div class="column"></div>
-                </div>
-              </div>
-                </div>  
-        </div>
-    </div>
-    -->
-    
-  
-    
-    <!-- Semantic Script -->
-    <script src="../js/core/semantic.min.js"></script>
     
     <!-- Custom Script -->
-    <script src="../js/component.js"></script>
+    <script src="js/core/d3.js"></script>
+    <script src="js/core/lodash.js"></script>
+    <script src="js/head.js"></script>
 
 </body>
 </html>

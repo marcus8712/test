@@ -26,6 +26,10 @@ code {
     text-align: center;
 }
 
+*[data-align="left"]{
+    text-align: left;
+}
+
 *[data-width="large"]{
     max-width:700px;
 }
@@ -46,7 +50,7 @@ code {
     display: block;
     width: 100%;
     height: 30px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 40px;
     z-index: 99;
     background: #fff;
@@ -154,7 +158,8 @@ code {
 
     }
 
-        #header > .page-info >  .header > a.active {
+        #header > .page-info >  .header > a.active,
+        #header > .page-info >  .header > a.active:hover{
             color: rgba(0,0,0,.3);
             text-decoration: none !important;
             border-bottom: none;
@@ -163,7 +168,7 @@ code {
         
         #header > .page-info >  .header > a:hover{
             color: #2C83C5;
-    border-bottom: 2px solid #2C83C5;
+            border-bottom: 2px solid #2C83C5;
         }
 
         #header > .page-info > .header > a {
@@ -202,7 +207,7 @@ code {
 }
 #body > .container > .part{
     font-size:30px !important;
-    margin: 60px 0;
+    margin: 20px 0 10px;
     color: rgb(102, 179, 19);
     font-weight: 600;
 }
@@ -220,7 +225,8 @@ code {
 }
 
 #body > .container > .block{
-    margin-bottom: 90px;
+    margin-bottom: 60px;
+    padding-top: 30px;
 }
 
 #body > .container > .block > .title{
@@ -231,7 +237,7 @@ code {
 }
 
 #body > .container > .block > .title .button{
-       width: 29px;
+    width: 29px;
     height: 29px;
     padding: 6px 5px;
     margin-top: 0px;

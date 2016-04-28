@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-
+    
     
     
     
@@ -15,8 +15,6 @@ $(document).ready(function() {
         .sidebar('setting', 'transition', 'overlay')
         .sidebar('toggle')
     ;
-    
-    
     
     
     /*--------------------
@@ -61,12 +59,6 @@ $(document).ready(function() {
     ;
     
     
-
-
-    
-    
-
-    
     /*--------------------
         ACCORDION
     ----------------------*/ 
@@ -103,124 +95,13 @@ $(document).ready(function() {
         MODAL
     ----------------------*/ 
     
-    //Standard Modal
-    $('#demo-modal')
-        .modal('attach events', '#demo')
+    $('.present.modal')
+        .modal('attach events', '#clearing-row button')
     ;
-    
-    $('#demo-image-modal')
-        .modal('attach events', '#demo-image')
-    ;
-    
-    //Basic Modal
-    $('.basic.modal')
-        .modal('attach events', '#basic-button')
-    ;
-    
-    //Fullscreen Modal
-    $('.fullscreen.modal')
-        .modal('attach events', '#fullscreen-button')
-    ;
-    
-    //Small Modal
-    $('#small-modal')
-        .modal('attach events', '#small-button')
-    ;
-    
-    //Large Modal
-    $('.large.modal')
-        .modal('attach events', '#large-button')
-    ;
-    
-    //Autofocus Modal
-    $('#autofocus-false-modal')
-        .modal('setting', 'autofocus', false)
-        .modal('attach events', '#autofocus-false')
-    ;
- 
-    $('#autofocus-true-modal')
-        .modal('attach events', '#autofocus-true')
-    ;
-    
-    //Couple Modal
-    $('.coupled.modal')
-      .modal('setting', ' allowMultiple', false)
-    ;
-    // Click the button to show first modal.
-    $('.first.modal')
-      .modal('attach events', '.coupled.button')
-    ;
-    // Click action button in first modal to show second modal.
-    $('.second.modal')
-      .modal('attach events', '.first.modal .button')
-    ;
-    
-    //Closable Modal
-    $('#closable-false-modal')
-        .modal('setting', 'closable', false)
-        .modal('attach events', '#closable-false')
-    ;
-    
-    //Duration
-    $('.duration.modal')
-        .modal('setting', 'duration', 100)
-        .modal('attach events', '.duration.button')
-    ;
-    
-    //Transition
-    $('#transitions')
-      .dropdown({
-        onChange: function(value) {
-          $('.demo.modal')
-            .modal('setting', 'transition', value)
-            .modal('show')
-          ;
-        }
-      })
-    ;
-    
-    
-    //Event Modal
-    $('#event-modal')
-      .modal({
-        onVisible    : function(){
-          window.alert('Show');
-        }, 
-        onDeny    : function(){
-          window.alert('Wait not yet!');
-          return false;
-        },
-        onApprove : function() {
-          window.alert('Approved!');
-        }
-      })
-      .modal('attach events', '#event-button', 'show')
-    ;
-    
-
     
     /*--------------------
         Navigation
     ----------------------*/
-    
-    
-    /*
-    if(window.location.hash) {
-          var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-         var par = $( "#" + hash).parent().parent();
-          $(".segment").removeClass("active");
-          par.addClass("active");
-          var tab = par.data("tab");
-       
-          $('.menu > a').removeClass("active");
-          $('a[data-tab='+tab+']').addClass("active");
-    } else{
-      $('a[data-tab="first"]').addClass("active");
-      $('div[data-tab="first"]').addClass("active"); 
-    } 
-    
-    */
-   
     
     // Set Active
     function capitalise(string) {
@@ -248,7 +129,7 @@ $(window).load(function() {
 });
 
 $(document).bind('scroll',function(e){
-    $('section').each(function(){
+    $('.block').each(function(){
         if (
            $(this).offset().top < window.pageYOffset + 10
 //begins before top
@@ -256,13 +137,14 @@ $(document).bind('scroll',function(e){
 //but ends in visible area
 //+ 10 allows you to change hash before it hits the top border
         ) {
-            $('section .fadeleft').addClass('active');
             window.location.hash = $(this).attr('id');
-        }
-        else{
-            $('section .fadeleft').removeClass('active');
         }
     });
 });
 
- 
+hljs.initHighlightingOnLoad();
+
+$('a.active').click(function(){
+    return false;
+});
+          
