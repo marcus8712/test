@@ -93,7 +93,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                 modalContent.append("h6").text(d.title);
                 modalContent.append("pre").append("code").attr("class","html hljs xml").html(d.modal);
                 
-                block.append("script").html("$('#" + d.shortcut + " .modal').modal('attach events', '#" + d.shortcut + " button)");
+                block.append("script").html("$('#" + d.shortcut + " .modal').modal('attach events', '#" + d.shortcut + " button');");
             }
             
             
