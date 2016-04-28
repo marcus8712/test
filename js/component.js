@@ -1,6 +1,6 @@
 $(window).load(function() {
     // Animate loader off screen
-    $("body > .loading").fadeOut(3000);
+    $("body > .loading").fadeOut("slow");
 
 });
 

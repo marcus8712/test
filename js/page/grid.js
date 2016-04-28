@@ -15,7 +15,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
         
         if(d.id == "alignAll") container.attr("data-align", d.align);
         
-        if(d.id == "section") container.append("div").attr("class","section").text(d.text);
+        if(d.id == "section") container.append("div").attr("class","section").text(d.title);
         
         //Block
         if(d.id == "block"){
