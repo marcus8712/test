@@ -65,14 +65,24 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                 paragraph.html(d.description);
                 
                 //Size
-                if(d.descriptionSize) paragraph.attr("data-width", d.descriptionSize);
+                if(d.descriptionSize) { 
+                    paragraph.attr("data-width", d.descriptionSize);
+                }
+                esle paragraph.attr("data-width", "small");
                 
             }
                 
-            //Grid
-            if(d.columnOfRow && d.content == "none"){
+            //Auto Generate Grid
+            if(d.columnOfRow){
                 var column = toText(d.columnOfRow);
-                var grid = block.append("div").attr("class","ui " + column + " column " + d.optionGrid + " grid");
+                
+                //Option Grid
+                if(d.optionGrid) {
+                    var grid = block.append("div").attr("class","ui " + column + " column " + d.optionGrid + " grid");
+                }
+                else {
+                    var grid = block.append("div").attr("class","ui " + column + " column grid");
+                }
                 
                 //Row
                 for(i=0; i<parseInt(d.row); i++){
@@ -83,18 +93,32 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                         row.append("div").attr("class","column");
                     }
                 }
+                
+                //Modal
+                if(d.content){
+                    var modal = block.append("div").attr("class","ui modal").attr("id", d.shortcut + "-modal");
+                    modal.append("i").attr("class","close icon");
+                    var modalContent = modal.append("div").attr("class","content");
+                    modalContent.append("h6").text(d.title);
+
+                    modalContent.append("pre").append("code").attr("class","html hljs xml").text(d.content);
+
+                    block.append("script").html("$('#" + d.shortcut + "-modal').modal('attach events', '#" + d.shortcut + " button');");
+                }
             }
             
-            //Modal
-            if(d.modal){
-                var modal = block.append("div").attr("class","ui modal").attr("id", d.shortcut + "-modal");
-                modal.append("i").attr("class","close icon");
-                var modalContent = modal.append("div").attr("class","content");
-                modalContent.append("h6").text(d.title);
+            //Generate ui grid
+            else{
+                    
+                //Option Grid
+                if(d.optionGrid) {
+                    var grid = block.append("div").attr("class","ui " + d.optionGrid + " grid");
+                }
+                else {
+                    var grid = block.append("div").attr("class","ui grid");
+                }
                 
-                modalContent.append("pre").append("code").attr("class","html hljs xml").text(d.modal);
-                
-                block.append("script").html("$('#" + d.shortcut + "-modal').modal('attach events', '#" + d.shortcut + " button');");
+                grid.html(d.content);
             }
             
             
