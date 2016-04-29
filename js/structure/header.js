@@ -22,15 +22,7 @@ d3.csv("/test/data/header.csv", function(error, data) {
     data.forEach(function(d) {
         
         
-        //Logo
-        if(parent == "intro"){
-            if(d.id == "logo") logo.append("img").attr("src", "img/" +d.href);
-            if(d.id == "wave") pageInfo.append("img").attr("src", "img/" +d.href); 
-        }
-        else{
-            if(d.id == "logo") logo.append("img").attr("src", "../img/" + d.href); 
-            if(d.id == "wave") pageInfo.append("img").attr("src", "../img/" + d.href);
-        }
+        /
         
         
         //Left Menu
@@ -47,6 +39,15 @@ d3.csv("/test/data/header.csv", function(error, data) {
             
             if(d.shortcut == parent){
                 linkLeft.attr("class","active");
+                //Logo
+                if(d.shortcut == "intro"){
+                    if(d.id == "logo") logo.append("img").attr("src", "img/" +d.href);
+                    if(d.id == "wave") pageInfo.append("img").attr("src", "img/" +d.href); 
+                }
+                else{
+                    if(d.id == "logo") logo.append("img").attr("src", "../img/" + d.href); 
+                    if(d.id == "wave") pageInfo.append("img").attr("src", "../img/" + d.href);
+                }
             }
             
             linkLeft.text(d.content);
