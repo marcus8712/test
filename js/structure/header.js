@@ -31,17 +31,11 @@ d3.csv("/test/data/header.csv", function(error, data) {
         if(d.id == "left"){
             var itemLeft = leftMenu.append("li").attr("class","item").attr("data-link", d.shortcut);
             
-            if(d.href != null){
-                var linkLeft = itemLeft.append("a").attr("href", "../" + d.shortcut + "/" + d.href);    
+            if(d.shortcut == "intro") {
+                var linkLeft = itemLeft.append("a").attr("href", "../");  
             }
-            else{
-                
-                if(d.shortcut == "intro") {
-                    var linkLeft = itemLeft.append("a").attr("href", "../");  
-                }
-                else { 
-                    var linkLeft = itemLeft.append("a").attr("href", "../" + d.shortcut + "/");
-                }
+            else { 
+                var linkLeft = itemLeft.append("a").attr("href", "../" + d.shortcut + "/" + d.href);
             }
             
             linkLeft.text(d.content);
@@ -51,12 +45,7 @@ d3.csv("/test/data/header.csv", function(error, data) {
         if(d.id == "right"){
             var itemRight = rightMenu.append("li").attr("class","item").attr("data-link", d.shortcut);
             
-            if(d.href != null){
-                var linkRight = itemRight.append("a").attr("href", "../" + d.shortcut + "/" + d.href);    
-            }
-            else{
-                var linkRight = itemRight.append("a").attr("href", "../" + d.shortcut + "/");
-            }
+            var linkRight = itemRight.append("a").attr("href", "../" + d.shortcut + "/" + d.href);    
             
             linkRight.text(d.content);
         }
