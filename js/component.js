@@ -11,7 +11,7 @@ $(document).ready(function() {
     hljs.initHighlightingOnLoad();
     
 
-    var id = window.location.hash.replace(/^#!/, '');
+    var id = window.location.hash.substring(1);
     if(id) scrollToAnchor(id);
     
    
