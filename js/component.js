@@ -10,14 +10,11 @@ $(document).ready(function() {
     
     hljs.initHighlightingOnLoad();
     
-    var id =  window.location.hash;
+
+    var id = window.location.hash.replace(/^#!/, '');
+    if(id) scrollToAnchor(id);
     
-    if(id){
-        $('html,body').animate({
-        scrollTop: $(id).offset().top},
-        'slow');
-    }
-    
+   
     
     // Generate
     var loading="";
@@ -48,7 +45,11 @@ $(document).ready(function() {
 });
 
 
-
+//scroll to section process page
+function scrollToAnchor(aid){
+    var aTag = $("#"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
 
 
 
