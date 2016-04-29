@@ -1,14 +1,12 @@
 $(window).load(function() {
     // Animate loader off screen
     $("body > .loading").fadeOut("slow");
-    
-    var hash = window.location.hash;
-    var target = hash;
-    console.log(target);
-    $('html,body').animate({
-        'scrollTop' : $(target).offset().top
-    },900,'swing');
 
+});
+
+$(document).ready(function(){
+    var hash = window.location.hash;
+    $("html, body").animate({ scrollTop: $(hash).offset().top }, 500);
 });
 
 $(document).ready(function() {
