@@ -41,7 +41,7 @@ d3.csv("/test/data/header.csv", function(error, data) {
         
         
         //Page Info
-        if(d.page == "page"){
+        if(d.id == "page"){
             var itemPage = pageHeader.append("a").attr("href", d.href);
             itemPage.text(d.content);
         }
