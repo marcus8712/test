@@ -1,26 +1,34 @@
-id,align,shortcut,title,showCode,blockSize,description,descriptionSize,row,columnOfRow,optionGrid,content
-alignAll,center,,,,,,,,,,
-section,,,A Container,,,,,,,,
-block,,a-container,,no,,A container is a fixed width element that wraps your site's content. It remains a constant size and uses <b>margin</b> to center. Containers are the simplest way to center page content inside a grid.,,1,16,stackable,
-section,,,A Grid,,,,,,,,
-block,,a-grid,,no,medium,A grid does not necessarily need to specify rows. If you include <code>columns</code> as direct child of <code>ui grid</code> content will automatically flow to the next row when all the grid columns are taken in the current row.,,2,4,stackable,
-block,,clearing-rows,Clearing Rows,yes,medium,Adding row wrappers allow you to manually specify you want a new row to begin.,,2,3,stackable,"<div class=""ui three column grid"">
-    <div class=""column""></div>
-    <div class=""row"">
-      <div class=""column""></div>
-      <div class=""column""></div>
-      <div class=""column""></div>
-    </div>
-</div>"
-block,,clearing-rows-2,Clearing Rows 2,no,medium,Hihi,,,,ble,
-block,,clearing-rows-3,Clearing Rows 3,yes,medium,Hehe,,,,asdfasdf,"<div class=""column""></div>
+id,align,shortcut,title,blockSize,description,descriptionSize,row,columnOfRow,optionGrid,pPosition,pContent,iPosition,iContent,cPosition,content,modal
+alignAll,center,,,,,,,,,,,,,,,
+section,,,A Container,,,,,,,,,,,,,
+block,,a-container,,,A container is a fixed width element that wraps your site's content. It remains a constant size and uses <b>margin</b> to center. Containers are the simplest way to center page content inside a grid.,,1,16,stackable,,,,,,,
+section,,,A Grid,,,,,,,,,,,,,
+block,,a-grid,,medium,A grid does not necessarily need to specify rows. If you include <code>columns</code> as direct child of <code>ui grid</code> content will automatically flow to the next row when all the grid columns are taken in the current row.,,2,4,stackable,,,,,,,
+block,,clearing-rows,Clearing Rows,medium,Adding row wrappers allow you to manually specify you want a new row to begin.,,1,2,stackable,,,,,,,
+column,,col1,,,,,,,,1,asdkf;ljas;df,2,img/,3,<button></button>,
+column,,col2,,,,,,,,2,asdkf;ljas;df,1,img/,,<button></button>,
+block,,clearing-rows-2,Clearing Rows 2,medium,Hihi,,,,ble,,,,,,,
+block,,clearing-rows-3,Clearing Rows 3,medium,Hehe,,,,asdfasdf,,,,,,"<div class=""column""></div>
+<div class=""row"">
+<div class=""column""></div>
+<div class=""column""></div>
+<div class=""column""></div>
+</div>
+","<div class=""column""></div>
 <div class=""row"">
 <div class=""column""></div>
 <div class=""column""></div>
 <div class=""column""></div>
 </div>
 "
-block,,specifying-row-width,Specifying Row Width,yes,medium,Specifying a grid column count will divide columns into rows of predetermined column count. Additional columns will automatically flow to the next row.,,2,3,stackable,"<div class=""ui three column grid"">
+block,,specifying-row-width,Specifying Row Width,medium,Specifying a grid column count will divide columns into rows of predetermined column count. Additional columns will automatically flow to the next row.,,2,3,stackable,,,,,,"<div class=""ui three column grid"">
+    <div class=""column""></div>
+    <div class=""column""></div>
+    <div class=""column""></div>
+    <div class=""column""></div>
+    <div class=""column""></div>
+    <div class=""column""></div>
+</div>","<div class=""ui three column grid"">
     <div class=""column""></div>
     <div class=""column""></div>
     <div class=""column""></div>

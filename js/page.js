@@ -43,6 +43,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
             
             var block = container.append("div").attr("class","block");
             
+            if(d.align) block.attr("data-align", d.align);
             if(d.blockSize) block.attr("data-width", d.blockSize);
             if(d.shortcut) block.attr("id", d.shortcut);
             
@@ -51,25 +52,6 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                 var title = block.append("div").attr("class","title");
                 title.text(d.title);
             }
-            
-            //Show code
-            if(d.showCode == "yes" && d.content) {
-                var btn = title.append("button").attr("class","ui round icon button");
-                btn.append("i").attr("class","icon code");
-                
-                //Modal
-                if(d.content){
-                    var modal = block.append("div").attr("class","ui modal").attr("id", d.shortcut + "-modal");
-                    modal.append("i").attr("class","close icon");
-                    var modalContent = modal.append("div").attr("class","content");
-                    modalContent.append("h6").text(d.title);
-
-                    modalContent.append("pre").append("code").attr("class","html hljs xml").text(d.content);
-
-                    block.append("script").html("$('#" + d.shortcut + "-modal').modal('attach events', '#" + d.shortcut + " button');");
-                }
-            }
-            
             
             //Description
             if(d.description) {
@@ -82,8 +64,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                 }
                 else {
                     paragraph.attr("data-width", "small");
-                }
-                
+                } 
             }
                 
             //Auto Generate Grid
@@ -99,12 +80,12 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                 }
                 
                 //Row
-                for(i=0; i<parseInt(d.row); i++){
+                for(i=1; i<=parseInt(d.row); i++){
                     var row = grid.append("div").attr("class","row");
                     
                     //Column
-                    for(j=0; j<parseInt(d.columnOfRow); j++){
-                        row.append("div").attr("class","column");
+                    for(j=1; j<=parseInt(d.columnOfRow); j++){
+                        row.append("div").attr("class","column").attr("id","col" + j);
                     }
                 }
             }
@@ -121,13 +102,37 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                 }
                 
                 grid.html(d.content);
+            }
+            
+            //Modal
+            if(d.modal) {
+                var btn = title.append("button").attr("class","ui round icon button");
+                btn.append("i").attr("class","icon code");
                 
+                var modal = block.append("div").attr("class","ui modal").attr("id", d.shortcut + "-modal");
+                modal.append("i").attr("class","close icon");
+                var modalContent = modal.append("div").attr("class","content");
+                modalContent.append("h6").text(d.title);
+
+                modalContent.append("pre").append("code").attr("class","html hljs xml").text(d.content);
+
+                block.append("script").html("$('#" + d.shortcut + "-modal').modal('attach events', '#" + d.shortcut + " button');");  
             }
             
             
             
         }
+        
+        if(d.id == "column"){
+            var col = d3.select("#"+ d.shortcut);
+            if(d.pPosition){
+                
+            }
             
+            if(d.pContent) col.append("p").html(d.pContent);
+            if(d.iContent) col.append("img").attr("src",d.iContent);
+            if(d.content) col.append("div").html(d.content);
+        }
         
 
     });
