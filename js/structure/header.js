@@ -23,7 +23,7 @@ d3.csv("/test/data/header.csv", function(error, data) {
         
         
         //Logo
-        if(page == "intro"){
+        if(parent == "intro"){
             if(d.id == "logo") logo.append("img").attr("src", "img/" +d.href);
             if(d.id == "wave") pageInfo.append("img").attr("src", "img/" +d.href); 
         }
