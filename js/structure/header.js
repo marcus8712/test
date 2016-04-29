@@ -14,11 +14,12 @@ d3.csv("/test/data/header.csv", function(error, data) {
     var pageInfo = header.append("div").attr("class","page-info");
             var pageHeader = pageInfo.append("div").attr("class","ui header");
     
+    var source;
     data.forEach(function(d) {
         
-        var source = "/" + d.source + "/";
+        //Source
+        if(d.source) source = "/" + d.source + "/";
         
-    
         //Logo
         if(page == "intro"){
             if(d.id == "logo") logo.append("img").attr("src", "img/" +d.href);
