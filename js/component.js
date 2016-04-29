@@ -12,6 +12,8 @@ $(document).ready(function() {
     },900,'swing');
     */
     
+    $('#body').fullpage();
+    
     // Generate
     var loading="";
     loading += "    <section id=\"hexCont\">";
