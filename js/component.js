@@ -4,9 +4,10 @@ $(window).load(function() {
 
 });
 
-$(document).ready(function(){
+$(function() { // when the DOM is ready...
+    //  Move the window's scrollTop to the offset position of #now
     var hash = window.location.hash;
-    $("html, body").animate({ scrollTop: $(hash).offset().top }, 500);
+    $(window).scrollTop($(hash).offset().top);
 });
 
 $(document).ready(function() {
