@@ -4,6 +4,7 @@ $(window).load(function() {
     
     var hash = window.location.hash;
     var target = hash;
+    console.log(target);
     $('html,body').animate({
         'scrollTop' : $(target).offset().top
     },900,'swing');
