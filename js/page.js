@@ -85,7 +85,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                     
                     //Column
                     for(j=1; j<=parseInt(d.columnOfRow); j++){
-                        row.append("div").attr("class","column").attr("id","col" + j);
+                        row.append("div").attr("class","column");
                     }
                 }
             }
@@ -124,7 +124,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
         }
         
         if(d.id == "column"){
-            var col = d3.select("#"+ d.shortcut);
+            var col = d3.select("#"+ d.shortcut + " .column");
             if(d.pPosition){
                 
             }
