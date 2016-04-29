@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head id="structure-grid">
-    <script src="../js/core/jquery.min.js"></script>
+    <script src="../js/core/jquery-2.2.3.min.js"></script>
     <script src="../js/core/modernizr.js"></script> 
     <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="../css/standard.css">
     <script>
          $(window).bind("load", function() {
-                var hash = window.location.hash;
-                $('html,body').animate({
-                    'scrollTop' : $(hash).offset().top
-                },900,'swing');
+            var hash = window.location.hash;
+            $('html,body').animate({
+                'scrollTop' : $(hash).offset().top
+            },900,'swing');
         });
     </script>
 </head>
