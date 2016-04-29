@@ -47,7 +47,7 @@ $(document).ready(function() {
 
 //scroll to section process page
 function scrollToAnchor(aid){
-    var aTag = $("#"+ aid);
+    var aTag = $(aid);
     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
 }
 
