@@ -267,7 +267,7 @@ body > .ui.fluid.container{
     
 }
 #body > .container > .section{
-    font-size:30px !important;
+    font-size:26px !important;
     margin: 20px 0 10px;
     color: rgb(102, 179, 19);
     font-weight: 600;
@@ -320,6 +320,9 @@ body > .ui.fluid.container{
     font-weight: 500;
 }
 
+.ui.modal .content h6{
+  font-size: 18px;
+}    
 
 /*--------------
     Footer
