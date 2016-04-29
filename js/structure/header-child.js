@@ -32,43 +32,29 @@ d3.csv("/test/data/header.csv", function(error, data) {
         if(d.id == "left"){
             var itemLeft = leftMenu.append("li").attr("class","item").attr("data-link", d.shortcut);
             
-            if(d.shortcut == "intro") {
-                var linkLeft = itemLeft.append("a").attr("href", "../");
-            }
+            if(d.shortcut == "intro") itemLeft.append("a").attr("href", "../").text(d.content);
             else { 
-                var linkLeft = itemLeft.append("a").attr("href", "../" + d.shortcut + "/" + d.href);
-                
+                if(d.shortcut == parent)itemLeft.append("a").attr("class","active").text(d.content);
+                else itemLeft.append("a").attr("href", "../" + d.shortcut + "/" + d.href).text(d.content);
             }
-            
-            if(d.shortcut == parent){
-                linkLeft.attr("class","active");
-                
-            }
-            
-            linkLeft.text(d.content);
         }
         
         //Right Menu
         if(d.id == "right"){
             var itemRight = rightMenu.append("li").attr("class","item").attr("data-link", d.shortcut);
             
-            var linkRight = itemRight.append("a").attr("href", "../" + d.shortcut + "/" + d.href);    
-            
-            if(d.shortcut == parent){
-                linkRight.attr("class","active");
-            }
-            
-            linkRight.text(d.content);
+            if(d.shortcut == parent) itemRight.append("a").attr("class","active").text(d.content);
+            else itemRight.append("a").attr("href", "../" + d.shortcut + "/" + d.href).text(d.content);    
+        
         }
         
         
         //Page Info
         if(d.id == "page"){
             if(d.shortcut == parent){
-                var itemPage = pageHeader.append("a").attr("href", d.href);
-                itemPage.text(d.content);
                 
-                if(d.href == child) itemPage.attr("class","active");
+                if(d.href == child) pageHeader.append("a").attr("class","active").text(d.content);
+                else pageHeader.append("a").attr("href", d.href).text(d.content);
             }
         }
         
