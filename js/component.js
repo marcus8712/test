@@ -5,11 +5,12 @@ $(window).load(function() {
 });
 
 $(document).ready(function() {
-    
+    /*
     var hash = window.location.hash;
     $('html,body').animate({
         'scrollTop' : $("#clearing-rows-3").offset().top
     },900,'swing');
+    */
     
     // Generate
     var loading="";
@@ -41,21 +42,18 @@ $(document).ready(function() {
 
 
 
-
+/*
 $(document).bind('scroll',function(e){
     $('.block').each(function(){
         if (
            $(this).offset().top < window.pageYOffset + 10
-//begins before top
         && $(this).offset().top + $(this).height() > window.pageYOffset + 10
-//but ends in visible area
-//+ 10 allows you to change hash before it hits the top border
         ) {
             window.location.hash = $(this).attr('id');
         }
     });
 });
-
+*/
 
 $('a.active').click(function(){
     return false;
