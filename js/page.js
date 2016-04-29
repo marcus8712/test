@@ -53,9 +53,21 @@ d3.csv("/test/data/grid.csv", function(error, data) {
             }
             
             //Show code
-            if(d.showCode == "yes") {
+            if(d.showCode == "yes" && d.content) {
                 var btn = title.append("button").attr("class","ui round icon button");
                 btn.append("i").attr("class","icon code");
+                
+                //Modal
+                if(d.content){
+                    var modal = block.append("div").attr("class","ui modal").attr("id", d.shortcut + "-modal");
+                    modal.append("i").attr("class","close icon");
+                    var modalContent = modal.append("div").attr("class","content");
+                    modalContent.append("h6").text(d.title);
+
+                    modalContent.append("pre").append("code").attr("class","html hljs xml").text(d.content);
+
+                    block.append("script").html("$('#" + d.shortcut + "-modal').modal('attach events', '#" + d.shortcut + " button');");
+                }
             }
             
             
@@ -95,18 +107,6 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                         row.append("div").attr("class","column");
                     }
                 }
-                
-                //Modal
-                if(d.content){
-                    var modal = block.append("div").attr("class","ui modal").attr("id", d.shortcut + "-modal");
-                    modal.append("i").attr("class","close icon");
-                    var modalContent = modal.append("div").attr("class","content");
-                    modalContent.append("h6").text(d.title);
-
-                    modalContent.append("pre").append("code").attr("class","html hljs xml").text(d.content);
-
-                    block.append("script").html("$('#" + d.shortcut + "-modal').modal('attach events', '#" + d.shortcut + " button');");
-                }
             }
             
             //Generate ui grid
@@ -121,6 +121,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                 }
                 
                 grid.html(d.content);
+                
             }
             
             
