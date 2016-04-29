@@ -2,6 +2,7 @@ id,content,shortcut,href
 wave,,,wave.svg
 logo,,logo,connected.svg
 left,intro,intro,
+page,#introduction,intro,
 left,structure,structure,grid
 page,#grids,structure,grid
 page,#layouts,structure,layout

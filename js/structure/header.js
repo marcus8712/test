@@ -20,6 +20,7 @@ d3.csv("/test/data/header.csv", function(error, data) {
         if(d.id == "wave") pageInfo.append("img").attr("src", "img/" + d.href);
         
         
+        
         //Left Menu
         if(d.id == "left"){
             var itemLeft = leftMenu.append("li").attr("class","item").attr("data-link", d.shortcut);
@@ -44,6 +45,15 @@ d3.csv("/test/data/header.csv", function(error, data) {
             
             linkRight.text(d.content);
         }
+        
+        
+        //Page Info
+        if(d.id == "page"){
+            if(d.shortcut == "intro"){
+                pageHeader.append("a").attr("class","active").text(d.content);
+            }
+        }
+        
         
 
     });
