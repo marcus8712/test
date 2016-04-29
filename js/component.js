@@ -49,7 +49,7 @@ $(document).ready(function() {
 function scrollToAnchor(hash){
     var target = hash;
     $('html,body').animate({
-        scrollTop: aTag.offset().top
+        'scrollTop' : $(target).offset().top
     },900,'swing');
 }
 
