@@ -321,7 +321,8 @@ body > .ui.fluid.container{
 }
 
 .ui.modal .content h6{
-  font-size: 18px;
+    font-size: 18px;
+    font-weight: 600;
 }    
 
 /*--------------

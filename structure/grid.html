@@ -5,6 +5,16 @@
     <script src="../js/core/modernizr.js"></script> 
     <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="../css/standard.css">
+    <script>
+         document.onreadystatechange = function(){
+            if(document.readyState === 'complete'){
+                 var hash = window.location.hash;
+                $('html,body').animate({
+                    'scrollTop' : $(hash).offset().top
+                },900,'swing');
+            }
+         }
+    </script>
 </head>
 <body>
     <div class="loading"></div>
