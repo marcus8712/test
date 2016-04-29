@@ -167,7 +167,7 @@ body > .ui.fluid.container{
                 }
                 #header > .navbar > .navbar-content > .menu > .item  > a.active,
                 #header > .navbar > .navbar-content > .menu > .item  > a.active:hover{
-                    color: rgba(0,0,0,.3);
+                    color: #2C83C5;
                     text-decoration: none !important;
                     border-bottom:none;
                     cursor: default;
@@ -211,17 +211,22 @@ body > .ui.fluid.container{
         margin-right: auto!important;
         text-transform: uppercase;
         letter-spacing: 2px;
-        color: #2C83C5;
-        font-size: 18px;
+        font-size: 17px;
         margin-bottom: 25px;
         font-weight: 700;
         text-align: center;
 
     }
-
-        #header > .page-info >  .header > a.active,
-        #header > .page-info >  .header > a.active:hover{
-            color: rgba(0,0,0,.3);
+        #header > .page-info > .header > a{
+            color: rgba(0,0,0,.75);
+        }
+        #header > .page-info > .header > a:hover{
+            color: rgba(0,0,0,1);
+            border-bottom: 1px solid #000;
+        }
+        #header > .page-info > .header > a.active,
+        #header > .page-info > .header > a.active:hover{
+            color: #2C83C5;
             text-decoration: none !important;
             border-bottom: none;
             cursor: default;
