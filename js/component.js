@@ -1,16 +1,16 @@
 $(window).load(function() {
     // Animate loader off screen
     $("body > .loading").fadeOut("slow");
+    
+    var hash = window.location.hash;
+    var target = hash;
+    $('html,body').animate({
+        'scrollTop' : $(target).offset().top
+    },900,'swing');
 
 });
 
 $(document).ready(function() {
-    
-
-    var hash = window.location.hash;
-    if(hash) scrollToAnchor(hash);
-    
-    
     
     // Generate
     var loading="";
@@ -39,16 +39,6 @@ $(document).ready(function() {
     
    
 });
-
-
-//scroll to section process page
-function scrollToAnchor(hash){
-    var target = hash;
-    $('html,body').animate({
-        'scrollTop' : $(target).offset().top
-    },900,'swing');
-}
-
 
 
 
