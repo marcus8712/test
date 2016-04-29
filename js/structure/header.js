@@ -36,11 +36,11 @@ d3.csv("/test/data/header.csv", function(error, data) {
             }
             else{
                 
-                if(d.shortcut != "intro") {
-                    var linkLeft = itemLeft.append("a").attr("href", "../" + d.shortcut + "/");
+                if(d.shortcut == "intro") {
+                    var linkLeft = itemLeft.append("a").attr("href", "../");  
                 }
                 else { 
-                    var linkLeft = itemLeft.append("a").attr("href", "../");
+                    var linkLeft = itemLeft.append("a").attr("href", "../" + d.shortcut + "/");
                 }
             }
             
