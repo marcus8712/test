@@ -1,6 +1,8 @@
 d3.csv("/test/data/header.csv", function(error, data) {
     
     var page = d3.select("head").attr("id");
+        var parent = page.split("-")[0];
+        var child = page.split("-")[1];
 
     var header = d3.select("#header");
     
@@ -53,10 +55,11 @@ d3.csv("/test/data/header.csv", function(error, data) {
         
         //Page Info
         if(d.id == "page"){
-            var subpage = d.shortcut + "-" + d.href;
-            if(page == subpage){;
+            if(d.shortcut == parent){
                 var itemPage = pageHeader.append("a").attr("href", d.href);
                 itemPage.text(d.content);
+                
+                if(d.href == child) itemPage.attr("class","active");
             }
         }
         
