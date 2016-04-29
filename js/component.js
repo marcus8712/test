@@ -5,10 +5,6 @@ $(window).load(function() {
 });
 
 $(document).ready(function() {
-    //Modal
-    
-    
-    hljs.initHighlightingOnLoad();
     
 
     var hash = window.location.hash;
