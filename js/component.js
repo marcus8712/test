@@ -4,13 +4,9 @@ $(window).load(function() {
 
 });
 
-$(function() { // when the DOM is ready...
-    //  Move the window's scrollTop to the offset position of #now
-    var hash = window.location.hash;
-    $(window).scrollTop($(hash).offset().top);
-});
-
 $(document).ready(function() {
+    
+
     
     // Generate
     var loading="";
@@ -39,7 +35,6 @@ $(document).ready(function() {
     
    
 });
-
 
 
 $(document).bind('scroll',function(e){
