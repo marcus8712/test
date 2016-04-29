@@ -22,8 +22,7 @@ d3.csv("/test/data/header.csv", function(error, data) {
     data.forEach(function(d) {
         
         
-        /
-        
+       
         
         //Left Menu
         if(d.id == "left"){
