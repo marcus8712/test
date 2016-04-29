@@ -7,9 +7,9 @@ $(window).load(function() {
 $(document).ready(function() {
     
     var hash = window.location.hash;
-            $('html,body').animate({
-                'scrollTop' : $('\'' + hash + '\'').offset().top
-            },900,'swing');
+    $('html,body').animate({
+        'scrollTop' : $("#clearing-rows-3").offset().top
+    },900,'swing');
     
     // Generate
     var loading="";
