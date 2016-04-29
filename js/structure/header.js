@@ -39,14 +39,14 @@ d3.csv("/test/data/header.csv", function(error, data) {
             
             if(d.shortcut == "intro") {
                 var linkLeft = itemLeft.append("a").attr("href", "../");
-                linkLeft.attr("class","active");
             }
             else { 
                 var linkLeft = itemLeft.append("a").attr("href", "../" + d.shortcut + "/" + d.href);
                 
-                if(d.shortcut == parent){
-                    linkLeft.attr("class","active");
-                }
+            }
+            
+            if(d.shortcut == parent){
+                linkLeft.attr("class","active");
             }
             
             linkLeft.text(d.content);
