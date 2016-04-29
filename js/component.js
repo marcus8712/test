@@ -15,11 +15,6 @@ $(document).ready(function() {
     if(hash) scrollToAnchor(hash);
     
     
-    var page = window.location.pathname.split("/")[2];
-    
-    
-    
-    
     
     // Generate
     var loading="";
