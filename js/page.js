@@ -68,7 +68,9 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                 if(d.descriptionSize) { 
                     paragraph.attr("data-width", d.descriptionSize);
                 }
-                esle paragraph.attr("data-width", "small");
+                else {
+                    paragraph.attr("data-width", "small");
+                }
                 
             }
                 
