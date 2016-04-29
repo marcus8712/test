@@ -11,8 +11,8 @@ $(document).ready(function() {
     hljs.initHighlightingOnLoad();
     
 
-    var id = window.location.hash.substring(1);
-    if(id) scrollToAnchor(id);
+    var hash = window.location.hash;
+    if(hash) scrollToAnchor(hash);
     
    
     
@@ -46,10 +46,13 @@ $(document).ready(function() {
 
 
 //scroll to section process page
-function scrollToAnchor(aid){
-    var aTag = $("#" + aid);
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+function scrollToAnchor(hash){
+    var target = hash;
+    $('html,body').animate({
+        scrollTop: aTag.offset().top
+    },900,'swing');
 }
+
 
 
 

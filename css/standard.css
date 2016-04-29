@@ -302,7 +302,8 @@ body > .ui.fluid.container{
     height: 29px;
     padding: 6px 5px;
     margin-top: 0px;
-    vertical-align: middle
+    vertical-align: middle;
+    margin-left: 10px;
 }
 
 #body > .container > .block > p{
