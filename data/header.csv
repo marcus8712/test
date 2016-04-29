@@ -1,14 +1,18 @@
-id,name,href,content
-logo,logo,img/connected.svg,
-left,intro,index,
-left,structure,/structure/index,
-left,styles,/style/index,
-left,components,/component/index,
-right,states,/state/index,
-right,app patterns,/pattern/index,
-right,samples,/sample/index,
-right,download,/download/index,
+id,content,shortcut,href
+source,,,test
+wave,,,wave.svg
+logo,,logo,connected.svg
+left,intro,intro,
+left,structure,structure,grid
+page,#grids,structure,grid
+page,#layouts,structure,layout
+left,styles,style,font
+page,#font,style,font
+page,#icon,style,icon
+page,#color,style,color
+left,components,component,
+right,states,state,
+right,app patterns,pattern,
+right,samples,sample,
+right,download,download,
 mobile,,,
-page,grid,grid,#grids
-page,layout,layout,#layouts
-wave,,img/wave.svg,
