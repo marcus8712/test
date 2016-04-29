@@ -6,14 +6,12 @@
     <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="../css/standard.css">
     <script>
-         document.onreadystatechange = function(){
-            if(document.readyState === 'complete'){
-                 var hash = window.location.hash;
+         $(window).bind("load", function() {
+                var hash = window.location.hash;
                 $('html,body').animate({
                     'scrollTop' : $(hash).offset().top
                 },900,'swing');
-            }
-         }
+        });
     </script>
 </head>
 <body>
