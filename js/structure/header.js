@@ -14,11 +14,8 @@ d3.csv("/test/data/header.csv", function(error, data) {
     var pageInfo = header.append("div").attr("class","page-info");
             var pageHeader = pageInfo.append("div").attr("class","ui header");
     
-    var source;
     data.forEach(function(d) {
         
-        //Source
-        if(d.source) source = "/" + d.source + "/";
         
         //Logo
         if(page == "intro"){
@@ -35,15 +32,15 @@ d3.csv("/test/data/header.csv", function(error, data) {
             var itemLeft = leftMenu.append("li").attr("class","item").attr("data-link", d.shortcut);
             
             if(d.href != null){
-                var linkLeft = itemLeft.append("a").attr("href", source + d.shortcut + "/" + d.href);    
+                var linkLeft = itemLeft.append("a").attr("href", "../" + d.shortcut + "/" + d.href);    
             }
             else{
                 
                 if(d.shortcut != "intro") {
-                    var linkLeft = itemLeft.append("a").attr("href", source + d.shortcut + "/");
+                    var linkLeft = itemLeft.append("a").attr("href", "../" + d.shortcut + "/");
                 }
                 else { 
-                    var linkLeft = itemLeft.append("a").attr("href", source);
+                    var linkLeft = itemLeft.append("a").attr("href", "../");
                 }
             }
             
@@ -55,11 +52,10 @@ d3.csv("/test/data/header.csv", function(error, data) {
             var itemRight = rightMenu.append("li").attr("class","item").attr("data-link", d.shortcut);
             
             if(d.href != null){
-                var linkRight = itemRight.append("a").attr("href", source + d.shortcut + "/" + d.href);    
+                var linkRight = itemRight.append("a").attr("href", "../" + d.shortcut + "/" + d.href);    
             }
             else{
-                
-                var linkRight = itemRight.append("a").attr("href", source + d.shortcut + "/");
+                var linkRight = itemRight.append("a").attr("href", "../" + d.shortcut + "/");
             }
             
             linkRight.text(d.content);
