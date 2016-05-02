@@ -85,9 +85,17 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                     
                     //Column
                     for(j=1; j<=parseInt(d.columnOfRow); j++){
-                        row.append("div").attr("class","column").attr("id", j);
+                        row.append("div").attr("class","column");
                     }
                 }
+                
+                var totalCol = parseInt(d.row) * parseInt(d.columnOfRow);
+                
+                // Assign Id to column
+                for(c=1; c<=totalCol; c++){
+                    $("#" + d.shortcut + " .column" ).attr("id", c);
+                }
+                
             }
             
             //Generate ui grid
