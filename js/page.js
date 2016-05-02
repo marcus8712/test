@@ -85,7 +85,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                     
                     //Column
                     for(j=1; j<=parseInt(d.columnOfRow); j++){
-                        row.append("div").attr("class","column");
+                        row.append("div").attr("class","column").attr("id", j);
                     }
                 }
             }
@@ -124,14 +124,18 @@ d3.csv("/test/data/grid.csv", function(error, data) {
         }
         
         if(d.id == "column"){
-            var col = d3.select("#"+ d.shortcut + " .column");
+            var grid = d3.select("#"+ d.shortcut + " .grid");
+            var col = grid.select("#" + d.title);
+            if(d.content) col.html(d.content);
+            
+           /* 
             if(d.pPosition){
                 
             }
             
             if(d.pContent) col.append("p").html(d.pContent);
             if(d.iContent) col.append("img").attr("src",d.iContent);
-            if(d.content) col.append("div").html(d.content);
+            */
         }
         
 
