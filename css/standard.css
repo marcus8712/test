@@ -9,8 +9,8 @@
     Grid
 ---------------*/
 
-div[data-page="structure-grid"]{
-    
+div[data-page="structure-grid"] .grid{
+    position: relative;
 }
 
 div[data-page="structure-grid"] .container > .block > .grid:not(.after) .column:not(#special-variations-col1):not(#special-variations-col2):not(#special-variations-col3):not(#special-variations-col4):not(.row):not(.grid):after {
