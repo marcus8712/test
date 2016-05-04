@@ -139,8 +139,8 @@ d3.csv("/test/data/grid.csv", function(error, data) {
             if(d.content) col.html(d.content);
             
             if(d.modal){
-                var currentModal = d3.select("#"+ d.shortcut + "-modal");
-                if (currentModal){
+                var currentModal = d3.select("#"+ d.shortcut + " .modal").attr("id");
+                if (currentModal == (d.shortcut + "-modal")){
                     currentModal.select(".content").append("h5").text(d.title);
                     currentModal.select(".content").append("code").attr("class","html hljs xml").text(d.modal);
                 }
