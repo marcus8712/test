@@ -139,13 +139,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
             if(d.content) col.html(d.content);
             
             if(d.modal){
-                var selectModal = d3.select(".modal");
-                var currentModal = selectModal.select("#" + d.shortcut + "-modal");
-                if (currentModal != ""){
-                    d3.select("#" + d.shortcut + "-modal .content").append("h5").text(d.title);
-                    d3.select("#" + d.shortcut + "-modal .content").append("code").attr("class","html hljs xml").text(d.modal);
-                }
-                else {
+                if(d.no == "1"){
                     var title = d3.select("#" + d.shortcut + " .title");
                     var btn = title.append("button").attr("class","ui round icon button");
                     btn.append("i").attr("class","icon code");
@@ -160,6 +154,10 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                     modalContent.append("pre").append("code").attr("class","html hljs xml").text(d.modal);
 
                     block.append("script").html("$('#" + d.shortcut + "-modal').modal('attach events', '#" + d.shortcut + " button');");  
+                }
+                else {
+                    d3.select("#" + d.shortcut + "-modal .content").append("h5").text(d.title);
+                    d3.select("#" + d.shortcut + "-modal .content").append("code").attr("class","html hljs xml").text(d.modal);
                 }
             }
             
