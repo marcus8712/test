@@ -90,7 +90,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                     
                     //Column
                     while(j<=colNumUpdate){
-                        row.append("div").attr("class","column").attr("id", j);
+                        row.append("div").attr("class","column").attr("id", "col" + j);
                         j++;
                     }
                     
@@ -135,7 +135,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
         
         if(d.id == "column"){
             var grid = d3.select("#"+ d.shortcut + " .grid");
-            var col = grid.select("#" + d.title);
+            var col = grid.select("#col" + d.title);
             if(d.content) col.html(d.content);
             
            /* 

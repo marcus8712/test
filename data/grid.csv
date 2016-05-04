@@ -39,9 +39,78 @@ block,,special-variations,Special Variations,medium,Some special variations that
     <div class=""eight wide column"">eight wide column</div>
     <div class=""four wide column"">four wide column</div>
 </div>"
-column,,special-variations,1,,,,,,,,,,,,"<div class=""ui horizontal section divider"">Celled Grid</div>",
-column,,special-variations,2,,,,,,,,,,,,"<div class=""ui horizontal section divider"">Internally Celled Grid</div>",
-column,,special-variations,3,,,,,,,,,,,,"<div class=""ui horizontal section divider"">Divided Grid</div>",
+column,,special-variations,1,,,,,,,,,,,,"<div class=""ui horizontal section divider"">Celled Grid</div>
+<div class=""ui celled grid"">
+                <div class=""row"">
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                </div>
+                <div class=""row"">
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                </div>
+              </div>","<div class=""ui celled grid"">
+    <div class=""row"">
+       <div class=""four wide column""></div>
+       <div class=""four wide column""></div>
+       <div class=""four wide column""></div>
+       <div class=""four wide column""></div>
+    </div>
+    <div class=""row"">
+       <div class=""four wide column""></div>
+       <div class=""four wide column""></div>
+       <div class=""four wide column""></div>
+       <div class=""four wide column""></div>
+    </div>
+</div>"
+column,,special-variations,2,,,,,,,,,,,,"<div class=""ui horizontal section divider"">Internally Celled Grid</div>
+<div class=""ui internally celled grid"">
+                <div class=""row"">
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                </div>
+                <div class=""row"">
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                </div>
+              </div>","<div class=“ui internally celled grid"">
+    <div class=""row"">
+       …
+    </div>
+    <div class=""row"">
+       …
+    </div>
+</div>"
+column,,special-variations,3,,,,,,,,,,,,"<div class=""ui horizontal section divider"">Divided Grid</div>
+<div class=""ui divided grid"">
+                <div class=""row"">
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                </div>
+                <div class=""row"">
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                  <div class=""four wide column""></div>
+                </div>
+              </div>","<div class=“ui divided grid"">
+    <div class=""row"">
+       …
+    </div>
+    <div class=""row"">
+       …
+    </div>
+</div>"
 column,,special-variations,4,,,,,,,,,,,,"<div class=""ui horizontal section divider"">Vertically Divided Grid</div>",
 ,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,
