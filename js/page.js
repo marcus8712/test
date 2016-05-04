@@ -135,7 +135,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
         
         if(d.id == "column"){
             var grid = d3.select("#"+ d.shortcut + " .grid");
-            var col = grid.select("#col" + d.no);
+            var col = grid.select("#" + + d.shortcut "-col" + d.no);
             if(d.content) col.html(d.content);
             
             if(d.modal){
