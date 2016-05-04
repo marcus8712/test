@@ -21,6 +21,17 @@ div[data-page="structure-grid"] .container > .block > .grid:not(.after) .column:
     min-height: 50px;
 }
 
+div[data-page="structure-grid"] .grid:before {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #F0F0F0;
+    content: '';
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    /* box-shadow: 0px 0px 0px 1px #DDDDDD inset; */
+}
+
 
 
 /*--------------
