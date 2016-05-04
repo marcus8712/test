@@ -21,7 +21,7 @@ div[data-page="structure-grid"] .container > .block > .grid:not(.after) .column:
     min-height: 50px;
 }
 
-div[data-page="structure-grid"] .grid:before {
+div[data-page="structure-grid"] .container .block .grid:before {
     position: absolute;
     top: 1rem;
     left: 1rem;
