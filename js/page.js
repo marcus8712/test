@@ -146,13 +146,17 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                     currentModal.select(".content").append("code").attr("class","html hljs xml").text(d.modal);
                 }
                 else {
-                    var btn =  d3.select("#"+ d.shortcut + " .title").append("button").attr("class","ui round icon button");
+                    var title = d3.select("#" + d.shortcut + " .title");
+                    var btn = title.append("button").attr("class","ui round icon button");
                     btn.append("i").attr("class","icon code");
-
-                    var modal = d3.select("#"+ d.shortcut).append("div").attr("class","ui modal").attr("id", d.shortcut + "-modal");
+                    
+                    
+                    var block = d3.select("#" + d.shortcut);
+                    var modal = block.append("div").attr("class","ui modal").attr("id", d.shortcut + "-modal");
                     modal.append("i").attr("class","close icon");
                     var modalContent = modal.append("div").attr("class","content");
                     modalContent.append("h5").text(d.title);
+
                     modalContent.append("pre").append("code").attr("class","html hljs xml").text(d.modal);
 
                     block.append("script").html("$('#" + d.shortcut + "-modal').modal('attach events', '#" + d.shortcut + " button');");  
