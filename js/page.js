@@ -90,7 +90,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                     
                     //Column
                     while(j<=colNumUpdate){
-                        row.append("div").attr("class","column").attr("id", "col" + j);
+                        row.append("div").attr("class","column").attr("id", d.shortcut + "-col" + j);
                         j++;
                     }
                     
