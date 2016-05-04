@@ -140,8 +140,9 @@ d3.csv("/test/data/grid.csv", function(error, data) {
             
             if(d.modal){
                 var selectModal = d3.select(".modal");
-                var currentModal = selectModal.is("#" + d.shortcut + "-modal");
-                if (currentModal){
+                var nameModal = d.shortcut + "-modal";
+                var currentModal = selectModal.attr("id");
+                if (currentModal == nameModal){
                     d3.select("#" + d.shortcut + "-modal .content").append("h5").text(d.title);
                     d3.select("#" + d.shortcut + "-modal .content").append("code").attr("class","html hljs xml").text(d.modal);
                 }
