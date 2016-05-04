@@ -79,21 +79,23 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                     var grid = block.append("div").attr("class","ui " + column + " column grid");
                 }
                 
+                var j=1;
+                var rowNum = parseInt(d.row);
+                var colNum = parseInt(d.columnOfRow);
+                var colNumUpdate = colNum;
+                
                 //Row
                 for(i=1; i<=parseInt(d.row); i++){
                     var row = grid.append("div").attr("class","row");
                     
                     //Column
-                    for(j=1; j<=parseInt(d.columnOfRow); j++){
-                        row.append("div").attr("class","column");
+                    while(j<=colNumUpdate){
+                        row.append("div").attr("class","column").attr("id", j);
+                        j++;
                     }
-                }
-                
-                var totalCol = parseInt(d.row) * parseInt(d.columnOfRow);
-                
-                // Assign Id to column
-                for(c=1; c<=totalCol; c++){
-                    $("#" + d.shortcut + " .column" ).attr("id", c);
+                    
+                    colNumUpdate = colNumUpdate + colNum;
+                    
                 }
                 
             }
