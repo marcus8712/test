@@ -157,7 +157,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                 }
                 else {
                     d3.select("#" + d.shortcut + "-modal .content").append("h5").text(d.title);
-                    d3.select("#" + d.shortcut + "-modal .content").append("code").attr("class","html hljs xml").text(d.modal);
+                    d3.select("#" + d.shortcut + "-modal .content").append("pre").append("code").attr("class","html hljs xml").text(d.modal);
                 }
             }
             
