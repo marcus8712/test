@@ -122,7 +122,7 @@ d3.csv("/test/data/grid.csv", function(error, data) {
                 var modal = block.append("div").attr("class","ui modal").attr("id", d.shortcut + "-modal");
                 modal.append("i").attr("class","close icon");
                 var modalContent = modal.append("div").attr("class","content");
-                modalContent.append("h6").text(d.title);
+                modalContent.append("h4").text(d.title);
 
                 modalContent.append("pre").append("code").attr("class","html hljs xml").text(d.modal);
 
