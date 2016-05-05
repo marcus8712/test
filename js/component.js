@@ -12,7 +12,7 @@ $(window).load(function() {
 $(document).ready(function() {
    
     var page = $('head').attr("id");
-    if(page == "grid") $('head').append("title").text("Grid | Hoiio Design Standards");
+    if(page == "grid") $('head title').text("Grid | Hoiio Design Standards");
     
     
     // Generate
