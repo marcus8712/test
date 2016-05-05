@@ -9,11 +9,11 @@
     Grid
 ---------------*/
 
-div[data-page="structure-grid"] .grid{
+div[data-page="grid"] .grid{
     position: relative;
 }
 
-div[data-page="structure-grid"] .container > .block > .grid:not(.after) .column:not(#special-variations-col1):not(#special-variations-col2):not(#special-variations-col3):not(#special-variations-col4):not(.row):not(.grid):after {
+div[data-page="grid"] .container > .block > .grid:not(.after) .column:not(#special-variations-col1):not(#special-variations-col2):not(#special-variations-col3):not(#special-variations-col4):not(.row):not(.grid):after {
     background-color: #ffc266;
     box-shadow: 0px 0px 0px 1px rgba(86, 61, 124, 0.2) inset;
     content: "";
@@ -21,7 +21,7 @@ div[data-page="structure-grid"] .container > .block > .grid:not(.after) .column:
     min-height: 50px;
 }
 
-div[data-page="structure-grid"] .container .block .grid:before {
+div[data-page="grid"] .container .block .grid:before {
     position: absolute;
     top: 1rem;
     left: 1rem;
