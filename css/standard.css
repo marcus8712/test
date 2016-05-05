@@ -38,8 +38,118 @@ div[data-page="grid"] .container .block:not(#special-variations) .grid:before {
     Font
 ---------------*/
 
-div[data-page="font"]{
-    
+div[data-page="typo"] #poppins .column,
+div[data-page="typo"] #heading .column{
+    padding: 0 !important;
+}
+
+div[data-page="typo"] .fontitem {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
+div[data-page="typo"] .identifier {
+    font-size: 11px;
+    color: #777;
+    display: block;
+}
+
+div[data-page="typo"] .Poppins-normal-300 {
+    font-style: normal;
+    font-weight: 300;
+}
+
+div[data-page="typo"] .Poppins-normal-400 {
+    font-style: normal;
+    font-weight: 400;
+}
+
+div[data-page="typo"] .Poppins-normal-500 {
+    font-style: normal;
+    font-weight: 500;
+}
+
+div[data-page="typo"] .Poppins-normal-600 {
+    font-style: normal;
+    font-weight: 600;
+}
+
+div[data-page="typo"] .Poppins-normal-700 {
+    font-style: normal;
+    font-weight: 700;
+}
+
+div[data-page="typo"] .headingOne{
+    font-size: 42px;
+    font-weight: 700;
+}
+
+div[data-page="typo"] .headingOneVariation{
+    font-size: 42px;
+    font-weight: 300;
+}
+
+div[data-page="typo"] .headingTwo{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+div[data-page="typo"] .headingTwoVariation{
+    font-size: 38px;
+    font-weight: 300;
+}
+
+div[data-page="typo"] .headingThree{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+div[data-page="typo"] .headingFour{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+div[data-page="typo"] .headingFive{
+    font-size: 22px;
+    font-weight: 600;
+}
+div[data-page="typo"] .headingSix{
+    font-size: 15px;
+    font-weight: 600;
+}
+div[data-page="typo"] .headingSixUppercase{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*--------------
+    Icon
+---------------*/
+
+div[data-page="icon"] .block:first-child > .title{
+    margin-top: -30px;
+}
+
+div[data-page="icon"] .iconList {
+    width: 100% !important;
+}
+
+div[data-page="icon"] .iconList i.icon {
+    display: block;
+    margin: 0;
+    text-align: center;
+    width: auto;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+div[data-page="icon"] .iconList span {
+    font-size: 12px;
+    line-height: 11px;
+    text-transform: lowercase;
 }
 
 /*--------------
@@ -340,6 +450,7 @@ body > .ui.fluid.container{
 ---------------*/
 #body {
     margin: 0 auto;
+    padding-top:0 !important;
 }
 #body > .container{
     
@@ -363,7 +474,7 @@ body > .ui.fluid.container{
 }
 
 #body > .container > .block > .grid{
-    width: 800px;
+    
 }
 
 #body > .container > .block{
@@ -392,6 +503,7 @@ body > .ui.fluid.container{
     margin-right: auto;
     margin-bottom: 30px;
     max-width:500px;
+    padding-bottom: 30px;
 }
 
 
@@ -411,8 +523,14 @@ body > .ui.fluid.container{
     font-size: 13.5px;
     font-weight: 700;
     text-transform: uppercase;
-}    
+}  
 
+@media only screen and (min-width: 992px) {
+    #body > .container > .block > .grid{
+        width: 800px;
+    }
+
+}
 /*--------------
     Footer
 ---------------*/
