@@ -510,6 +510,7 @@ body > .ui.fluid.container{
     width:100%;
 }
 
+#body > .container > .section.trigger .button,
 #body > .container > .block > .title .button{
     width: 29px;
     height: 29px;

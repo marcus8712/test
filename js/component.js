@@ -246,6 +246,8 @@ $(document).ready(function() {
         .modal('attach events', '#responsive-width button');
     $('#specifying-device-modal')
         .modal('attach events', '#specifying-device button');
+    $('#button-modal')
+        .modal('attach events', '#button-trigger button');
     
     
     
