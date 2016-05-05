@@ -415,12 +415,6 @@ body > .ui.fluid.container{
             border-bottom: none;
             cursor: default;
         }
-        
-        #header > .page-info >  .header > a:hover{
-            color: #2C83C5;
-            border-bottom: 2px solid #2C83C5;
-        }
-
         #header > .page-info > .header > a {
             margin-right: 1rem;
         }
