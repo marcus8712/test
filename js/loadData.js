@@ -55,6 +55,7 @@ navbar +="         <ul class=\"menu mobileMenu\">";
 navbar +="         <\/ul>";
 navbar +="     <\/div>";
 navbar +=" <\/div>";
+
 $("#header").append(navbar);
 
 

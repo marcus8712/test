@@ -6,7 +6,7 @@ $(window).load(function() {
     $('meta[name=author]').attr("content","Hoiio UX Team");
     
     // Animate loader off screen
-    $("body > .loading").fadeOut("slow");
+    $("body > .hexagon-loading").fadeOut("slow");
     
     var hash = window.location.hash;
     $('html,body').animate({
