@@ -52,11 +52,17 @@ $(document).ready(function() {
     
     
     // Set Active to Page Header
-    var x = window.location.href.match(/.*\/(.*)$/)[1];
     
-    if(x){
-        $('.page-info .header a[href$='+x+']').addClass("active").removeAttr("href");
+    var hash = window.location.href.split("#")[1];
+    
+    if(hash) {
+        var uri = window.location.href.split("#")[0];
+        var x = uri.match(/.*\/(.*)$/)[1];
     }
+    else var x = window.location.href.match(/.*\/(.*)$/)[1];
+    
+    $('.page-info .header a[href$='+x+']').addClass("active").removeAttr("href");
+
     
 });
 
