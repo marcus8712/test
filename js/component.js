@@ -267,7 +267,7 @@ $(document).ready(function() {
 
 
 $(document).bind('scroll',function(e){
-    $('.block').each(function(){
+    $('#body > .container > .block').each(function(){
         if (
            $(this).offset().top < window.pageYOffset + 10
         && $(this).offset().top + $(this).height() > window.pageYOffset + 10
