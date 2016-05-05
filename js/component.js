@@ -51,7 +51,7 @@ $(document).ready(function() {
     navbar +="             <li class=\"item\" data-link=\"structure\"><a class=\"active\">structure</a></li>";
     navbar +="             <li class=\"item\" data-link=\"style\"><a href=\"../style/font\">styles</a></li>";
     navbar +="             <li class=\"item\" data-link=\"component\"><a href=\"../component/\">components</a></li>";
-    navbar +="         <\/ul>
+    navbar +="         <\/ul>";
     navbar +="         <ul class=\"menu rightMenu\">";
     navbar +="             <li class=\"item\" data-link=\"state\"><a href=\"../state/\">states</a></li>";
     navbar +="             <li class=\"item\" data-link=\"pattern\"><a href=\"../pattern/\">app patterns</a></li>";
