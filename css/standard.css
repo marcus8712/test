@@ -13,7 +13,7 @@ div[data-page="grid"] .grid{
     position: relative;
 }
 
-div[data-page="grid"] .container > .block > .grid:not(.after) .column:not(#special-variations-col1):not(#special-variations-col2):not(#special-variations-col3):not(#special-variations-col4):not(.row):not(.grid):after {
+div[data-page="grid"] .container > .block > .grid:not(.notafter) .column:not(.row):not(.grid):not(.notafter):after {
     background-color: #ffc266;
     box-shadow: 0px 0px 0px 1px rgba(86, 61, 124, 0.2) inset;
     content: "";
@@ -21,7 +21,7 @@ div[data-page="grid"] .container > .block > .grid:not(.after) .column:not(#speci
     min-height: 50px;
 }
 
-div[data-page="grid"] .container .block .grid:before {
+div[data-page="grid"] .container .block:not(#special-variations) .grid:before {
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -310,6 +310,10 @@ body > .ui.fluid.container{
 #body > .container > .block > .grid{
     margin-left: auto;
     margin-right: auto;
+}
+
+#body > .container > .block > .grid{
+    width: 800px;
 }
 
 #body > .container > .block{

@@ -11,10 +11,7 @@ $(window).load(function() {
 
 $(document).ready(function() {
    
-    var page = $('head').attr("id");
-    if(page == "grid") $('head title').text("Grid | Hoiio Design Standards");
-    
-    
+   
     // Generate
     var loading="";
     loading += "    <section id=\"hexCont\">";
@@ -77,17 +74,37 @@ $(document).ready(function() {
                 
     
     
-    $('#clearing-rows-modal').modal('attach events', '#clearing-rows button');
-    $('#specifying-row-width-modal').modal('attach events', '#specifying-row-width button');
-    $('#specifying-column-width-modal').modal('attach events', '#specifying-column-width button');
-    $('#special-variations-modal').modal('attach events', '#special-variations button');
-    $('#centering-content-modal').modal('attach events', '#centering-content button');
-    $('#vertical-alignment-modal').modal('attach events', '#vertical-alignment button');
-    $('#text-alignment-modal').modal('attach events', '#text-alignment button');
-    $('#floating-rows-modal').modal('attach events', '#floating-rows button');
+        
+    //Modal Trigger
+    $('#clearing-rows-modal')
+        .modal('attach events', '#clearing-rows button');
+    $('#specifying-row-width-modal')
+        .modal('attach events', '#specifying-row-width button');
+    $('#specifying-column-width-modal')
+        .modal('attach events', '#specifying-column-width button');
+    $('#special-variations-modal')
+        .modal('attach events', '#special-variations button');
+    $('#centering-content-modal')
+        .modal('attach events', '#centering-content button');
+    $('#vertical-alignment-modal')
+        .modal('attach events', '#vertical-alignment button');
+    $('#text-alignment-modal')
+        .modal('attach events', '#text-alignment button');
+    $('#floating-rows-modal')
+        .modal('attach events', '#floating-rows button');
+    $('#equal-with-columns-modal')
+        .modal('attach events', '#equal-with-columns button');
+    $('#doubling-modal')
+        .modal('attach events', '#doubling button');
+    $('#stackable-modal')
+        .modal('attach events', '#stackable button');
+    $('#responsive-width-modal')
+        .modal('attach events', '#responsive-width button');
+    $('#specifying-device-modal')
+        .modal('attach events', '#specifying-device button');
+    
    
 });
-
 
 
 
