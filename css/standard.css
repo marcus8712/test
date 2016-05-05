@@ -542,7 +542,7 @@ body > .ui.fluid.container{
     Loading
 ---------------*/
 
-.loading {
+.hexagon-loading {
     position: fixed;
     left: 0px;
     top: 0px;
