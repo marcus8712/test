@@ -11,8 +11,9 @@ $(window).load(function() {
 
 $(document).ready(function() {
    
-   
-    // Generate
+    var page = $("body > .container").data().page;
+    
+    // Loading
     var loading="";
     loading += "    <section id=\"hexCont\">";
     loading += "        <div id=\"triforce1\">";
@@ -38,6 +39,7 @@ $(document).ready(function() {
     $(".loading").append(loading);
     
     
+    // Navbar
     var navbar ="";
     navbar +=" <div class=\"navbar\">";
     navbar +="     <div class=\"logo\">";
@@ -46,7 +48,9 @@ $(document).ready(function() {
     navbar +="     <div class=\"navbar-content\">";
     navbar +="         <ul class=\"menu leftMenu\">";
     navbar +="             <li class=\"item\" data-link=\"intro\"><a href=\"../\">intro</a></li>";
-    navbar +="             <li class=\"item\" data-link=\"structure\"><a class=\"active\">structure</a></li>";
+    if(page == "grid" || page == "layout") {
+        navbar +="             <li class=\"item\" data-link=\"structure\"><a class=\"active\">structure</a></li>";
+    }
     navbar +="             <li class=\"item\" data-link=\"style\"><a href=\"../style/font\">styles</a></li>";
     navbar +="             <li class=\"item\" data-link=\"component\"><a href=\"../component/\">components</a></li>";
     navbar +="         <\/ul>";
@@ -62,16 +66,26 @@ $(document).ready(function() {
     navbar +=" <\/div>";
     $("#header").append(navbar);
     
+    
+    // Page Info
     var pageInfo ="";
     pageInfo += "<div class=\"page-info\">";
     pageInfo += "   <div class=\"ui header\">";
-    pageInfo += "       <a class=\"active\">#grids</a>";
-    pageInfo += "       <a href=\"layout\">#layouts</a>";
+        
+        if(page == "grid") {
+            pageInfo += "       <a class=\"active\">#grids</a>";
+            pageInfo += "       <a href=\"layout\">#layouts</a>";
+        }
+        else if(page == "layout") {
+            pageInfo += "       <a href=\"grid\">#grids</a>";
+            pageInfo += "       <a class=\"active\">#layouts</a>";
+        }
     pageInfo += "   <\/div>";
     pageInfo += "   <img src=\"../img/wave.svg\">";
     pageInfo += "<\/div>";
+    
     $("#header").append(pageInfo);
-                
+    
     
     
         

@@ -1,81 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- Standard Meta -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<head id="layout">
+    
+    <title>Layout | Hoiio Design Standards</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
+    <!-- Page Info -->
     <meta name="description" content="Design Standards is a carefully crafted design developed by Hoiio UX Team.">
     <meta name="keywords" content="Hoiio Standars Design Marcus">
     <meta name="generator" content="Marcus">
-
-    <!-- Site Properties -->
-    <title>Layout | Hoiio Design Standards</title>
-    <link rel="stylesheet" type="text/css" href="../dist/semantic.min.css">
-
-    <script src="../source/js/jquery.min.js"></script>
-    <script src="../source/js/modernizr.js"></script>
     
-    <!-- Custom -->
-    <link rel="stylesheet" type="text/css" href="../source/css/style.css">
-    <link rel="icon" type="image/png" href="../source/img/connected.png">
+    <link rel="icon" type="image/png" href="../img/connected.png">
+    
+    <!-- Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/code.css">
+    <link rel="stylesheet" type="text/css" href="../css/standard.css">
+    
+    <!-- Core JS -->
+    <script src="../js/core/jquery-2.2.3.min.js"></script>
+    <script src="../js/core/modernizr.js"></script> 
+    
+    <!-- Semantic -->
+    <link rel="stylesheet" type="text/css" href="../dist/semantic.min.css">
+    <script src="../dist/semantic.min.js"></script>
     
 </head>
 <body>
-    <!-- Header -->
-    <div class="navbar">
-        <div class="logo"><img src="../source/img/connected.svg"></div>
-        <div class="navbar-content"></div>
-    </div>
     
-    <!-- Content -->
-    <div id="content">
-        <div class="component" id="layout">
-            <div class="ui header">
-                <a href="grid">#grids</a>
-                <a class="active">#layouts</a>
-            </div>
-            <img src="../source/img/wave.svg">
-            <div class="ui text container">
-                <p>We are currently updating this page.</p>
-            </div>
-            <!--<div class="ui container">
-                <div class="ui show grid">
-                    <div class="left aligned column">
-                        <div class="ui top attached app menu">
-                            <div class="menu item">
-                                <button class="ui icon button">
-                                 <i class="icon menu"></i>
-                                </button>
+    <!-- Page Loading -->
+    <div class="loading"></div>
+    
+    <!-- Page Content -->
+    <div class="ui fluid container" data-page="layout">
+        <div class="ui grid">
+            <!-- Header -->
+            <div id="header" class="row"></div>
+            
+            <!-- Body -->
+            <div id="body" class="one column row">
+                <div class="ui container" data-align="center">
+                    <div class="section">Page</div>
+                    <div class="block" id="page">
+                        <p>A page lists and describles all same data. Page includes menu with links of sub pages, header, and content.</p>
+                        <div class="ui grid" data-width="small">
+                            <div class="column">
+                                <img class="ui image" src="../img/layout/page.jpg" alt="image">
                             </div>
-                            <div class="header item">App Name</div>
-                            <div class="active item">Page 1</div>
-                            <a class="item">Page 2</a>
-                            <a class="item">Page 3</a>
                         </div>
-                        <div class="ui attached app segment" style="border-bottom: 1px solid #ccc;">
-                            Page Name
-                        </div>
-                        <div class="ui attached app segment" style="border-bottom: 1px solid #ccc; min-height:100px">
-                            Content Page
-                        </div>
-                        <div class="ui bottom attached app segment">
-                            Bottom
-                        </div>
-                    
                     </div>
-                    
-                </div>
-            </div>-->
-        </div>
-    </div>
+                    <div class="section">Card</div>
+                    <div class="block" id="card">
+                        <p>Cards display independent content as blocks. Layout with one card looks like a page with one column.</p>
+                        <div class="ui grid" data-width="small">
+                            <div class="column">
+                                <img class="ui image" src="../img/layout/card.jpg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">Sidebar</div>
+                    <div class="block" id="sidebar">
+                        <p>A sidebar, which is placed on the left of screen, is used to view more detail content without leaving the parent.</p>
+                        <div class="ui grid" data-width="small">
+                            <div class="column">
+                                <img class="ui image" src="../img/layout/sidebar.jpg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">Dialog</div>
+                    <div class="block" id="dialog">
+                        <p>A dialog contains the short information, which is used to display the confirmation, additional content.</p>
+                        <div class="ui grid" data-width="small">
+                            <div class="column">
+                                <img class="ui image" src="../img/layout/modal.jpg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            
+            <!-- Footer -->
+            <div id="footer" class="row"></div>
+        </div> 
+    </div> 
     
-    <!-- Footer -->
-    <div id="footer"></div>
-    <script src="../dist/semantic.min.js"></script>
-    <script src="../source/js/main.js"></script>
-    <script src="../source/js/component.js"></script>
-
+    <!-- Custom JS -->
+    <script src="../js/core/highlight.pack.js"></script>
+    <script src="../js/component.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>
