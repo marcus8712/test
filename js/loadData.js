@@ -24,7 +24,7 @@ loading += "            <div class=\"triangle flipped triangle6\"><\/div>";
 loading += "        <\/div>";
 loading += "    <\/section>";
 
-$(".loading").append(loading);
+$(".hexagon-loading").append(loading);
 
 
 // Navbar
