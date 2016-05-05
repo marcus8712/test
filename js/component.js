@@ -50,10 +50,12 @@ $(document).ready(function() {
         .modal('attach events', '#specifying-device button');
     
     
+    
+    // Set Active to Page Header
     var x = window.location.href.match(/.*\/(.*)$/)[1];
     
     if(x){
-        $('.page-info .header a[href$='+x+']').addClass("active");
+        $('.page-info .header a[href$='+x+']').addClass("active").attr("href","");
     }
     
 });
