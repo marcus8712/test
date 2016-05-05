@@ -43,7 +43,7 @@ else navbar +="<li class=\"item\" data-link=\"structure\"><a href=\"/test/struct
 if(page == "color" || page == "typo" || page == "icon") navbar +="<li class=\"item\" data-link=\"style\"><a class=\"active\">styles</a></li>";
 else  navbar +="<li class=\"item\" data-link=\"style\"><a href=\"/test/style/color\">styles</a></li>";
 
-navbar +="             <li class=\"item\" data-link=\"component\"><a href=\"/test/component\">components</a></li>";
+navbar +="             <li class=\"item\" data-link=\"component\"><a href=\"/test/components/component\">components</a></li>";
 navbar +="         <\/ul>";
 navbar +="         <ul class=\"menu rightMenu\">";
 navbar +="             <li class=\"item\" data-link=\"state\"><a href=\"/test/state\">states</a></li>";
