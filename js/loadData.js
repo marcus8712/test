@@ -35,7 +35,7 @@ navbar +="         <img src=\"/test/img/connected.svg\">";
 navbar +="     <\/div>";
 navbar +="     <div class=\"navbar-content\">";
 navbar +="         <ul class=\"menu leftMenu\">";
-navbar +="             <li class=\"item\" data-link=\"intro\"><a href=\"/test/\">intro</a></li>";
+navbar +="             <li class=\"item\" data-link=\"intro\"><a href=\"/test\">intro</a></li>";
 
 if(page == "grid" || page == "layout") navbar +="<li class=\"item\" data-link=\"structure\"><a class=\"active\">structure</a></li>";
 else navbar +="<li class=\"item\" data-link=\"structure\"><a href=\"/test/structure/layout\">structure</a></li>";
@@ -43,13 +43,13 @@ else navbar +="<li class=\"item\" data-link=\"structure\"><a href=\"/test/struct
 if(page == "color" || page == "typo" || page == "icon") navbar +="<li class=\"item\" data-link=\"style\"><a class=\"active\">styles</a></li>";
 else  navbar +="<li class=\"item\" data-link=\"style\"><a href=\"/test/style/color\">styles</a></li>";
 
-navbar +="             <li class=\"item\" data-link=\"component\"><a href=\"/test/component/\">components</a></li>";
+navbar +="             <li class=\"item\" data-link=\"component\"><a href=\"/test/component\">components</a></li>";
 navbar +="         <\/ul>";
 navbar +="         <ul class=\"menu rightMenu\">";
-navbar +="             <li class=\"item\" data-link=\"state\"><a href=\"/test/state/\">states</a></li>";
-navbar +="             <li class=\"item\" data-link=\"pattern\"><a href=\"/test/pattern/\">app patterns</a></li>";
-navbar +="             <li class=\"item\" data-link=\"sample\"><a href=\"/test/sample/\">samples</a></li>";
-navbar +="             <li class=\"item\" data-link=\"download\"><a href=\"/test/download/\">download</a></li>";
+navbar +="             <li class=\"item\" data-link=\"state\"><a href=\"/test/state\">states</a></li>";
+navbar +="             <li class=\"item\" data-link=\"pattern\"><a href=\"/test/pattern\">app patterns</a></li>";
+navbar +="             <li class=\"item\" data-link=\"sample\"><a href=\"/test/sample\">samples</a></li>";
+navbar +="             <li class=\"item\" data-link=\"download\"><a href=\"/test/download\">download</a></li>";
 navbar +="         <\/ul>";
 navbar +="         <ul class=\"menu mobileMenu\">";
 navbar +="         <\/ul>";
