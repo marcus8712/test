@@ -69,9 +69,9 @@ if(page == "grid" || page =="layout"){
 }
 
 if(page == "color" || page == "typo" || page == "icon"){
-    pageInfo += "       <a data-link=\"color\" href=\"layout\">#colors</a>";
-    pageInfo += "       <a data-link=\"typo\" href=\"grid\">#typo</a>";
-    pageInfo += "       <a data-link=\"icon\" href=\"grid\">#icons</a>";
+    pageInfo += "       <a data-link=\"color\" href=\"color\">#colors</a>";
+    pageInfo += "       <a data-link=\"typo\" href=\"typo\">#typo</a>";
+    pageInfo += "       <a data-link=\"icon\" href=\"icon\">#icons</a>";
 }
 pageInfo += "   <\/div>";
 pageInfo += "   <img src=\"../img/wave.svg\">";

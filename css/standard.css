@@ -50,9 +50,59 @@ div[data-page="layout"]{
     
 }
 
+/*--------------
+    Color
+---------------*/
+
+div[data-page="color"] .colorItem > .colorName{
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+div[data-page="color"] .colorItem > .colorBox {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+div[data-page="color"] .colorItem > .colorCode {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
 
 
+.colorP { background-color: #008bd9; }
+.colorPH { background-color: #009bf2; }
+.colorPA { background-color: #007bbf; }
 
+.colorI { background-color: #2BADD4; }
+.colorIH { background-color: #40b5d8; }
+.colorIA { background-color: #279cbf; }
+
+.colorS { background-color: #19b37b; }
+.colorSH { background-color: #1cc98a; }
+.colorSA { background-color: #169d6c; }
+
+.colorW { background-color:#E5791A; }
+.colorWH { background-color:#E88631; }
+.colorWA { background-color:#CE6D17; }
+
+.colorE { background-color:#E64333; }
+.colorEH { background-color:#E95849; }
+.colorEA { background-color:#E32E1C; }
+
+.colorPE { background-color:#E6DB19; }
+.colorPEH { background-color:#EBE247; }
+.colorPEA { background-color:#CFC517; }
+
+.colorMW { background-color:#E8E8E8; }
+.colorLG { background-color:#EEE; }
+.colorG { background-color:#767676; }
+.colorMG { background-color:#CCC; }
+.colorLB { background-color:#555; }
+.colorB { background-color:#414141; }
 
 /***********************
 
