@@ -1,17 +1,16 @@
 $(window).load(function() {
     // Animate loader off screen
     $("body > .loading").fadeOut("slow");
+    
+    var hash = window.location.hash;
+    $('html,body').animate({
+        'scrollTop' : $(hash).offset().top - 50
+    },'slow');
 
 });
 
 $(document).ready(function() {
-    /*
-    var hash = window.location.hash;
-    $('html,body').animate({
-        'scrollTop' : $("#clearing-rows-3").offset().top
-    },900,'swing');
-    */
-    
+   
     
     
     // Generate
@@ -89,7 +88,7 @@ $(document).ready(function() {
 
 
 
-/*
+
 $(document).bind('scroll',function(e){
     $('.block').each(function(){
         if (
@@ -100,8 +99,8 @@ $(document).bind('scroll',function(e){
         }
     });
 });
-*/
+
 
 $('a.active').click(function(){
     return false;
-  });
+});

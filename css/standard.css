@@ -73,6 +73,15 @@ code {
     padding: 0.25em 0.3em;
 }
 
+pre, .hljs {
+    background: none !important;
+    border: 0;
+    border-radius: 0;
+    padding: 0 !important;
+    margin: 0;
+    line-height: 1.7;
+}
+
 /* Data */
 *[data-page]{
     
@@ -282,7 +291,6 @@ body > .ui.fluid.container{
 #body {
     margin: 0 auto;
 }
-
 #body > .container{
     
 }
