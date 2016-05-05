@@ -55,7 +55,7 @@ $(document).ready(function() {
     var x = window.location.href.match(/.*\/(.*)$/)[1];
     
     if(x){
-        $('.page-info .header a[href$='+x+']').addClass("active").attr("href","");
+        $('.page-info .header a[href$='+x+']').addClass("active").removeAttr("href");
     }
     
 });
