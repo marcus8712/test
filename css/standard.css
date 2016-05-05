@@ -449,14 +449,14 @@ body > .ui.fluid.container{
 #body > .container{
     
 }
-#body > .container > .section{
+#body > .container .section{
     font-size:26px !important;
     margin: 20px 0 10px;
     color: rgb(102, 179, 19);
     font-weight: 600;
 }
 
-#body > .container > .section:first-child{
+#body > .container .section:first-child{
     margin-top: 0;
 }
 
