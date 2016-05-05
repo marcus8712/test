@@ -39,6 +39,15 @@ $(document).ready(function() {
    
     $(".loading").append(loading);
     
+    
+    $('#clearing-rows-modal').modal('attach events', '#clearing-rows button');
+    $('#specifying-row-width-modal').modal('attach events', '#specifying-row-width button');
+    $('#specifying-column-width-modal').modal('attach events', '#specifying-column-width button');
+    $('#special-variations-modal').modal('attach events', '#special-variations button');
+    $('#centering-content-modal').modal('attach events', '#centering-content button');
+    $('#vertical-alignment-modal').modal('attach events', '#vertical-alignment button');
+    $('#text-alignment-modal').modal('attach events', '#text-alignment button');
+    $('#floating-rows-modal').modal('attach events', '#floating-rows button');
    
 });
 
