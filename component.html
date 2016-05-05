@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head id="home"></head>
+<head id="component">
+    
+    <title>Typography | Hoiio Design Standards</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
+    <!-- Page Info -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="">
+    
+    <link rel="icon" type="image/png" href="img/connected.png">
+    
+    <!-- Core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/code.css">
+    <link rel="stylesheet" type="text/css" href="css/standard.css">
+    
+    <!-- Core JS -->
+    <script src="js/core/jquery-2.2.3.min.js"></script>
+    <script src="js/core/modernizr.js"></script> 
+    
+    <!-- Semantic -->
+    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+    <script src="dist/semantic.min.js"></script>
+    
+</head>
 <body>
     
-    <!-- Header -->
-    <div class="navbar">
-        <div class="logo"><img src="../source/img/connected.svg"></div>
-        <div class="navbar-content"></div>
-    </div>
+    <!-- Page Loading -->
+    <div class="loading"></div>
     
-    <!-- Content -->
-    <div id="content">
-        <div class="component element">
-            <div class="ui header">#component</div>
-            <img src="../source/img/wave.svg">
-            <div class="ui container" style="margin:0 auto;">
+    <!-- Page Content -->
+    <div class="ui fluid container" data-page="component">
+        <div class="ui grid">
+            <!-- Header -->
+            <div id="header" class="row"></div>
+            
+            <!-- Body -->
+            <div id="body" class="one column row">
+                <div class="ui container" data-align="center">
                 
-                <section id="accordion">
-                    <h1>Accordion</h1>
+                <div class="block" id="accordion">
+                    <div class="section">Accordion</div>
                     <p>The accordion plugin makes it easy to make collapsing divisions of the page.</p> 
                     <div class="ui left aligned two column stackable grid">
                     
@@ -175,12 +200,12 @@
   </div>
 </div>
                     </div>
+                    </div>
                 </div>
-                </section>
                     
                 <!-- Breadcrumb -->
-                <section id="breadcrumb">
-                    <h1>Breadcrumb</h1>
+                <div class="block" id="breadcrumb">
+                    <div class="section">Breadcrumb</div>
                     <p>Breadcrumbs are a great way to show hierarchy-based information for a website. They can indicate the current page's location within a navigational hierarchy.</p> 
                     <div class="ui left aligned two column stackable grid">
                 <div class="column">
@@ -218,11 +243,11 @@
 </div>    
                 </div>
             </div>
-                </section>
+                </div>
                 
                 <!-- Image -->
-                <section id="image">
-                    <h1>Image</h1>
+                <div class="block" id="image">
+                    <div class="section">Image</div>
                     <p>A label provides additional information about something that is often used associate to a form.</p> 
                     <div class="ui center aligned one column stackable grid compactGrid">
                     <div class="column">
@@ -247,11 +272,11 @@
                     
                     
                 </div>
-                </section>
+                </div>
                     
                 <!-- Menu -->
-                <section id="menu">
-                    <h1>Menu</h1>
+                <div class="block" id="menu">
+                    <div class="section">Menu</div>
                     <p>A label provides additional information about something that is often used associate to a form.</p> 
                     <div class="ui one column stackable grid">
                         <div class="left aligned column">
@@ -454,11 +479,11 @@ Messages
 </div>
                     </div>
                     </div>    
-                </section>
+                </div>
                     
                 <!-- Message -->
-                <section id="message">
-                <h1>Message</h1>
+                <div class="block" id="message">
+                <div class="section">Message</div>
                 <p>A label provides additional information about something that is often used associate to a form.</p> 
                 <div class="ui two column stackable grid">
                     <div class="left aligned column">
@@ -563,11 +588,11 @@ Messages
  
                     </div>
                 </div>
-                </section>
+                </div>
                     
                 <!-- Statistic -->
-                <section id="statistic">
-                    <h1>Statistic</h1>
+                <div class="block" id="statistic">
+                    <div class="section">Statistic</div>
                     <p>A statistic can display a value with a label above or below it.</p>
                     <div class="ui left aligned two column stackable grid">
                     <div class="column">
@@ -712,11 +737,11 @@ Messages
                         </div>
                     </div>
                 </div>
-                </section>
+                </div>
                     
                 <!-- Button -->
-                <section id="button">
-                    <h1>Buttons</h1>
+                <div class="block" id="button">
+                    <div class="section">Buttons</div>
                     <p>Buttons provides our users a simple way to trigger an event, like searching for a query at a search engine, or to interact with dialog boxes, like confirming an action.</p>
                     <div class="ui left aligned  two column stackable grid">
                     <div class="column">
@@ -826,12 +851,12 @@ Messages
                     
                 </div>
                 </div>
-                </section>
+                </div>
                     
                 
                 <!-- Checkbox -->
-                <section id="checkbox">
-                    <h1>Checkbox</h1>
+                <div class="block" id="checkbox">
+                    <div class="section">Checkbox</div>
                     <p>A checkbox are used when we want to let user select one or more options from a set of alternatives. If only one option is to be selected, we use radio buttons instead. A checkbox does not require Javascript to function; it works with an input with a label.</p> 
                     <div class="ui left aligned two column stackable grid">
                     <div class="column">
@@ -886,11 +911,11 @@ Messages
 </div>
                     </div>
                 </div>
-                </section>
+                </div>
                     
                 <!-- Input -->
-                <section id="input">
-                    <h1>Input</h1>
+                <div class="block" id="input">
+                    <div class="section">Input</div>
                     <p>Input fields are used to gather short information from a user. An input field can be used to gather numerical data or text responses.</p>
                     <div class="ui left aligned two column stackable grid">
                     <div class="column">
@@ -1005,11 +1030,11 @@ Messages
 
               </div>
                 </div>
-                </section>
+                </div>
                     
                 <!-- Dropdown -->
-                <section id="dropdown">    
-                    <h1>Dropdown</h1>
+                <div class="block" id="dropdown">    
+                    <div class="section">Dropdown</div>
                     <p>A dropdown is a toggleable menu that allows the user to choose one value from a predefined list.</p>
                     <div class="ui left aligned two column stackable grid">
                     <div class="column">
@@ -1833,11 +1858,11 @@ Messages
                         
                     </div>
                 </div>
-                </section>
+                </div>
                     
                 <!-- Label -->
-                <section id="label">    
-                    <h1>Label</h1>
+                <div class="block" id="label">    
+                    <div class="section">Label</div>
                     <p>A label provides additional information about something that is often used associate to a form.</p>
                     <div class="ui left aligned two column stackable grid">
                     <div class="column">
@@ -2001,11 +2026,11 @@ Messages
                     </div>
           
                 </div>
-                </section>
+                </div>
                     
                 <!-- List -->
-                <section id="list">
-                    <h1>List</h1>
+                <div class="block" id="list">
+                    <div class="section">List</div>
                     <p>Lists are used to group items together in order to view and access easily. By default, a list is displayed without <b>list-style-type</b> property. You can use numbers or dots as the default list item marker with <b>ordered</b> or <b>bulleted</b>.</p>
                     <div class="ui left aligned two column stackable grid showList">
                         <div class="column">
@@ -2209,11 +2234,11 @@ Messages
 
 
                     </div>
-                </section>
+                </div>
                     
                 <!-- Step -->
-                <section id="step">    
-                    <h1>Step</h1>
+                <div class="block" id="step">    
+                    <div class="section">Step</div>
                     <p>A step shows the completion status of an activity in a series of activities.</p>
                     <div class="ui left aligned one column stackable grid">
                     <div class="column">
@@ -2315,11 +2340,11 @@ Messages
                     
                 
                 </div>
-                </section>
+                </div>
                     
                 <!-- Table -->
-                <section id="table">
-                    <h1>Table</h1>
+                <div class="block" id="table">
+                    <div class="section">Table</div>
                     <p></p>
                     <div class="ui two column stackable grid">
                   <div class="column">
@@ -2745,11 +2770,11 @@ Messages
 
 
                 </div>
-                </section>
+                </div>
                     
                 <!-- Form  -->
-                <section id="form">    
-                    <h1>Form</h1>
+                <div class="block" id="form">    
+                    <div class="section">Form</div>
                     <p></p>
                     <div class="ui left aligned two column stackable grid">
                     <div class="column">
@@ -2928,21 +2953,21 @@ Messages
 </div>
                     </div>
                 </div>
-                </section>
+                </div>
                 
             </div>
-        </div>
-    </div>
+            </div>
+            
+            <!-- Footer -->
+            <div id="footer" class="row"></div>
+        </div> 
+    </div> 
     
-    <!-- Footer -->
-    <div id="footer"></div>
-    
-    <!-- Semantic Script -->
-    <script src="../dist/semantic.min.js"></script>
-    
-    <!-- Custom Script -->
-    <script src="../source/js/main.js"></script>
-    <script src="../source/js/component.js"></script>
+    <!-- Custom JS -->
+    <script src="js/core/highlight.pack.js"></script>
+    <script src="js/loadData.js"></script> 
+    <script src="js/component.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>

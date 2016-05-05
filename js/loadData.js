@@ -31,7 +31,7 @@ $(".loading").append(loading);
 var navbar ="";
 navbar +=" <div class=\"navbar\">";
 navbar +="     <div class=\"logo\">";
-navbar +="         <img src=\"../img/connected.svg\">";
+navbar +="         <img src=\"/test/img/connected.svg\">";
 navbar +="     <\/div>";
 navbar +="     <div class=\"navbar-content\">";
 navbar +="         <ul class=\"menu leftMenu\">";
