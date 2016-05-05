@@ -40,7 +40,7 @@ navbar +="             <li class=\"item\" data-link=\"intro\"><a href=\"../\">in
 if(page == "grid" || page == "layout") navbar +="<li class=\"item\" data-link=\"structure\"><a class=\"active\">structure</a></li>";
 else navbar +="<li class=\"item\" data-link=\"structure\"><a href=\"../structure/layout\">structure</a></li>";
 
-if(page == "color" || page == "font" || page == "icon") navbar +="<li class=\"item\" data-link=\"style\"><a class=\"active\">styles</a></li>";
+if(page == "color" || page == "typo" || page == "icon") navbar +="<li class=\"item\" data-link=\"style\"><a class=\"active\">styles</a></li>";
 else  navbar +="<li class=\"item\" data-link=\"style\"><a href=\"../style/color\">styles</a></li>";
 
 navbar +="             <li class=\"item\" data-link=\"component\"><a href=\"../component/\">components</a></li>";
@@ -62,8 +62,17 @@ $("#header").append(navbar);
 var pageInfo ="";
 pageInfo += "<div class=\"page-info\">";
 pageInfo += "   <div class=\"ui header\">";
-pageInfo += "       <a data-link=\"layout\" href=\"layout\">#layouts</a>";
-pageInfo += "       <a data-link=\"grid\" href=\"grid\">#grids</a>";
+
+if(page == "grid" || page =="layout"){
+    pageInfo += "       <a data-link=\"layout\" href=\"layout\">#layouts</a>";
+    pageInfo += "       <a data-link=\"grid\" href=\"grid\">#grids</a>";
+}
+
+if(page == "color" || page == "typo" || page == "icon"){
+    pageInfo += "       <a data-link=\"color\" href=\"layout\">#colors</a>";
+    pageInfo += "       <a data-link=\"typo\" href=\"grid\">#typo</a>";
+    pageInfo += "       <a data-link=\"icon\" href=\"grid\">#icons</a>";
+}
 pageInfo += "   <\/div>";
 pageInfo += "   <img src=\"../img/wave.svg\">";
 pageInfo += "<\/div>";
