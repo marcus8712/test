@@ -1,4 +1,10 @@
 $(window).load(function() {
+    
+    // Page Info
+    $('meta[name=description]').attr("content","Design Standards is a carefully crafted design developed by Hoiio UX Team.");
+    $('meta[name=keywords]').attr("content","design, standards, hoiio, uxdesign, user interface, semantic");
+    $('meta[name=author]').attr("content","Hoiio UX Team");
+    
     // Animate loader off screen
     $("body > .loading").fadeOut("slow");
     
@@ -6,90 +12,16 @@ $(window).load(function() {
     $('html,body').animate({
         'scrollTop' : $(hash).offset().top - 50
     },'slow');
+    
+    
 
 });
 
 $(document).ready(function() {
-   
-    var page = $("body > .container").data().page;
-    
-    // Loading
-    var loading="";
-    loading += "    <section id=\"hexCont\">";
-    loading += "        <div id=\"triforce1\">";
-    loading += "            <div class=\"triangle triangle1\"><\/div>";
-    loading += "        <\/div>";
-    loading += "        <div id=\"triforce2\">";
-    loading += "            <div class=\"triangle flipped triangle2\"><\/div>";
-    loading += "        <\/div>";
-    loading += "        <div id=\"triforce3\">";
-    loading += "            <div class=\"triangle triangle3\"><\/div>";
-    loading += "        <\/div>";
-    loading += "        <div id=\"triforce4\">";
-    loading += "            <div class=\"triangle flipped triangle4\"><\/div>";
-    loading += "        <\/div>";
-    loading += "        <div id=\"triforce5\">";
-    loading += "            <div class=\"triangle triangle5\"><\/div>";
-    loading += "        <\/div>";
-    loading += "        <div id=\"triforce6\">";
-    loading += "            <div class=\"triangle flipped triangle6\"><\/div>";
-    loading += "        <\/div>";
-    loading += "    <\/section>";
-   
-    $(".loading").append(loading);
-    
-    
-    // Navbar
-    var navbar ="";
-    navbar +=" <div class=\"navbar\">";
-    navbar +="     <div class=\"logo\">";
-    navbar +="         <img src=\"../img/connected.svg\">";
-    navbar +="     <\/div>";
-    navbar +="     <div class=\"navbar-content\">";
-    navbar +="         <ul class=\"menu leftMenu\">";
-    navbar +="             <li class=\"item\" data-link=\"intro\"><a href=\"../\">intro</a></li>";
-    if(page == "grid" || page == "layout") {
-        navbar +="             <li class=\"item\" data-link=\"structure\"><a class=\"active\">structure</a></li>";
-    }
-    navbar +="             <li class=\"item\" data-link=\"style\"><a href=\"../style/font\">styles</a></li>";
-    navbar +="             <li class=\"item\" data-link=\"component\"><a href=\"../component/\">components</a></li>";
-    navbar +="         <\/ul>";
-    navbar +="         <ul class=\"menu rightMenu\">";
-    navbar +="             <li class=\"item\" data-link=\"state\"><a href=\"../state/\">states</a></li>";
-    navbar +="             <li class=\"item\" data-link=\"pattern\"><a href=\"../pattern/\">app patterns</a></li>";
-    navbar +="             <li class=\"item\" data-link=\"sample\"><a href=\"../sample/\">samples</a></li>";
-    navbar +="             <li class=\"item\" data-link=\"download\"><a href=\"../download/\">download</a></li>";
-    navbar +="         <\/ul>";
-    navbar +="         <ul class=\"menu mobileMenu\">";
-    navbar +="         <\/ul>";
-    navbar +="     <\/div>";
-    navbar +=" <\/div>";
-    $("#header").append(navbar);
-    
-    
-    // Page Info
-    var pageInfo ="";
-    pageInfo += "<div class=\"page-info\">";
-    pageInfo += "   <div class=\"ui header\">";
-        
-        if(page == "grid") {
-            pageInfo += "       <a class=\"active\">#grids</a>";
-            pageInfo += "       <a href=\"layout\">#layouts</a>";
-        }
-        else if(page == "layout") {
-            pageInfo += "       <a href=\"grid\">#grids</a>";
-            pageInfo += "       <a class=\"active\">#layouts</a>";
-        }
-    pageInfo += "   <\/div>";
-    pageInfo += "   <img src=\"../img/wave.svg\">";
-    pageInfo += "<\/div>";
-    
-    $("#header").append(pageInfo);
-    
-    
+
     
         
-    //Modal Trigger
+    // Modal Trigger
     $('#clearing-rows-modal')
         .modal('attach events', '#clearing-rows button');
     $('#specifying-row-width-modal')
@@ -117,7 +49,13 @@ $(document).ready(function() {
     $('#specifying-device-modal')
         .modal('attach events', '#specifying-device button');
     
-   
+    
+    var x = window.location.href.match(/.*\/(.*)$/)[1];
+    
+    if(x){
+        $('.page-info .header a[href$='+x+']').addClass("active");
+    }
+    
 });
 
 
@@ -137,3 +75,4 @@ $(document).bind('scroll',function(e){
 $('a.active').click(function(){
     return false;
 });
+
