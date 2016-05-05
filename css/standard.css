@@ -6,6 +6,33 @@
 ************************/
 
 /*--------------
+    Components
+---------------*/
+
+@media only screen and (max-width: 789px) {
+
+    #components > .block > .grid{
+        text-align: center !important;
+       
+    }
+    
+}
+
+#components > .block > .grid{
+    text-align: left;
+}
+
+#components .column > .ui.button, 
+#components .column > .ui.buttons {
+    margin: 10px 10px 10px 0;
+}
+
+#components .ui.divider:not(.vertical):not(.horizontal) {
+    margin: 1.5rem 0;
+    border-top: 1px solid #dedede;
+}
+
+/*--------------
     Grid
 ---------------*/
 
@@ -264,7 +291,7 @@ pre, .hljs {
 }
 
 *[data-width="large"]{
-    max-width:960px;
+    max-width:980px;
 }
 
 *[data-width="huge"]{
@@ -283,7 +310,7 @@ body > .ui.fluid.container{
 @media only screen and (max-width: 789px) {
 
     *[data-width]{
-        max-width: 100% !important;
+        /*max-width: 100% !important;*/
     }
     
 }
@@ -520,7 +547,7 @@ body > .ui.fluid.container{
 }  
 
 @media only screen and (min-width: 992px) {
-    #body > .container > .block > .grid{
+    #body > .container:not(#components) > .block > .grid{
         width: 800px;
     }
 
