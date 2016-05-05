@@ -12,7 +12,7 @@ $(document).ready(function() {
     },900,'swing');
     */
     
-    $('#body').fullpage();
+    
     
     // Generate
     var loading="";
@@ -105,4 +105,5 @@ $(document).bind('scroll',function(e){
 $('a.active').click(function(){
     return false;
   });
-   
+
+$('#body').fullpage();   
