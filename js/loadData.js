@@ -43,7 +43,9 @@ else navbar +="<li class=\"item\" data-link=\"structure\"><a href=\"/test/struct
 if(page == "color" || page == "typo" || page == "icon") navbar +="<li class=\"item\" data-link=\"style\"><a class=\"active\">styles</a></li>";
 else  navbar +="<li class=\"item\" data-link=\"style\"><a href=\"/test/style/color\">styles</a></li>";
 
-navbar +="             <li class=\"item\" data-link=\"component\"><a href=\"/test/components/component\">components</a></li>";
+if(page == "element" || page == "collection" || page == "view" || page == "module") navbar +="<li class=\"item\" data-link=\"component\"><a class=\"active\">components</a></li>";
+else navbar +="<li class=\"item\" data-link=\"component\"><a href=\"/test/components/element\">components</a></li>";
+
 navbar +="         <\/ul>";
 navbar +="         <ul class=\"menu rightMenu\">";
 navbar +="             <li class=\"item\" data-link=\"state\"><a href=\"/test/state\">states</a></li>";
@@ -73,6 +75,13 @@ if(page == "color" || page == "typo" || page == "icon"){
     pageInfo += "       <a data-link=\"color\" href=\"color\">#colors</a>";
     pageInfo += "       <a data-link=\"typo\" href=\"typo\">#typo</a>";
     pageInfo += "       <a data-link=\"icon\" href=\"icon\">#icons</a>";
+}
+
+if(page == "element" || page == "collection" || page == "view" || page == "module"){
+    pageInfo += "       <a data-link=\"element\" href=\"element\">#elements</a>";
+    pageInfo += "       <a data-link=\"collection\" href=\"collection\">#collections</a>";
+    pageInfo += "       <a data-link=\"view\" href=\"view\">#views</a>";
+    pageInfo += "       <a data-link=\"module\" href=\"module\">#modules</a>";
 }
 pageInfo += "   <\/div>";
 pageInfo += "   <img src=\"/test/img/wave.svg\">";
