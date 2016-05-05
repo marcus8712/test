@@ -102,6 +102,10 @@ code {
     max-width:1200px;
 }
 
+*[data-width="full"]{
+    width:100% !important;
+}
+
 
 body > .ui.fluid.container{
     z-index: 1;
@@ -110,7 +114,7 @@ body > .ui.fluid.container{
 @media only screen and (max-width: 789px) {
 
     *[data-width]{
-        max-width: 100%;
+        max-width: 100% !important;
     }
     
 }
@@ -296,7 +300,6 @@ body > .ui.fluid.container{
 /* Block */
 #body > .container > .block,
 #body > .container > .block > .grid{
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -326,6 +329,7 @@ body > .ui.fluid.container{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    max-width:500px;
 }
 
 
