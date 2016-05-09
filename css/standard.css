@@ -247,7 +247,9 @@ div[data-page="color"] .colorItem > .colorCode {
 ---------------*/
 #introduction{
     position: relative;
-    margin-top: 30px;
+    margin-top: 50px !important;
+    margin-bottom: 120px !important;
+    
 }
 
 #introduction > .text{  
@@ -291,7 +293,8 @@ div[data-page="color"] .colorItem > .colorCode {
 }
 
 #styles {
-    margin-top: 120px;
+    border-top: 1px solid #333;
+    padding-top: 60px !important;
 }
 
 #styles .head{
