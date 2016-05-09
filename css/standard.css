@@ -245,10 +245,12 @@ div[data-page="color"] .colorItem > .colorCode {
 /*--------------
     Intro
 ---------------*/
+
+/* Introduction */
 #introduction{
     position: relative;
     margin-top: 30px !important;
-    margin-bottom: 260px !important;
+    margin-bottom: 200px !important;
     
 }
 
@@ -272,6 +274,10 @@ div[data-page="color"] .colorItem > .colorCode {
     margin-bottom: 30px;
 }
 
+#introduction > .text > button{
+    margin-right: 10px;
+}
+
 #introduction > .frameTop {
     background: #dbdfe4;
     width: 240px;
@@ -292,9 +298,58 @@ div[data-page="color"] .colorItem > .colorCode {
     z-index: 0;
 }
 
+/* Style */
 #styles {
-    border-top: 1px solid #333;
-    padding-top: 60px !important;
+    position: relative;
+    margin-bottom: 200px !important;
+}
+
+#styles > .frameTop {
+    background: #dbdfe4;
+    width: 260px;
+    height: 340px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    z-index: 1;
+}
+
+#styles > .frameBot{
+    background: #f2f2f2;
+    width: 320px;
+    height: 340px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    z-index: 0;
+}
+
+#styles > .text{  
+    text-align: left;
+    position: relative;
+    left: 0;
+    width: calc(100% - 350px);
+}
+
+#styles > .text > .big{
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    /*text-shadow: 0px 6px 9px rgba(0,0,0,0.16);*/
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#styles > .text > .small{
+    margin-bottom: 30px;
+}
+
+#styles > .text > button{
+    margin-right: 10px;
+}
+
+#styles > .text .content{
+    margin-bottom: 20px;
 }
 
 #styles .head{
@@ -302,7 +357,7 @@ div[data-page="color"] .colorItem > .colorCode {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.5px;
-    font-size: 24px;
+    font-size: 14px;
 
 }
 
@@ -312,9 +367,135 @@ div[data-page="color"] .colorItem > .colorCode {
     color: white;
     margin-right: 10px;
     margin-bottom: 10px;
-    width: 70px;
+    width: 65px;
     float: left;
 }
+
+
+/* Component */
+
+#component {
+    position: relative;
+    margin-bottom: 200px !important;
+}
+
+#component > .frameTop {
+    background: #dbdfe4;
+    width: 240px;
+    height: 340px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: 1;
+}
+
+#component > .frameBot{
+    background: #f2f2f2;
+    width: 240px;
+    height: 350px;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    z-index: 0;
+}
+
+
+#component  > .text{  
+    text-align: left;
+    position: relative;
+    left: 380px;
+    width: calc(100% - 350px);
+}
+
+#component  > .text > .big{
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    /*text-shadow: 0px 6px 9px rgba(0,0,0,0.16);*/
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#component  > .text > .small{ margin-bottom: 30px; }
+
+#component > .text > button{ margin-right: 10px; }
+
+#component  > .text .content{ margin-bottom: 20px; }
+
+#component .label{ margin-bottom: 12px; }
+
+#component .head{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+
+/* patterns */
+#patterns {
+    position: relative;
+    margin-bottom: 200px !important;
+}
+
+#patterns > .frameTop {
+    background: #dbdfe4;
+    width: 260px;
+    height: 270px;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    z-index: 1;
+}
+
+#patterns > .frameBot{
+    background: #f2f2f2;
+    width: 320px;
+    height: 340px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 0;
+}
+
+#patterns > .text{  
+    text-align: left;
+    position: relative;
+    left: 0;
+    width: calc(100% - 360px);
+}
+
+#patterns > .text > .big{
+    font-size: 40px;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    /*text-shadow: 0px 6px 9px rgba(0,0,0,0.16);*/
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#patterns > .text > .small{
+    margin-bottom: 30px;
+}
+
+#patterns > .text > button{
+    margin-right: 10px;
+}
+
+#patterns > .text .content{
+    margin-bottom: 20px;
+}
+
+#patterns .head{
+
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+
+}
+
+
+
 
 @media only screen and (min-width: 768px) {
 
