@@ -241,6 +241,60 @@ div[data-page="color"] .colorItem > .colorCode {
 .colorLB { background-color:#555; }
 .colorB { background-color:#414141; }
 
+
+/*--------------
+    Intro
+---------------*/
+#banner-top{
+    position: relative;
+    margin-top: 30px;
+}
+
+
+#banner-top > .text{
+    
+    text-align: left;
+    position: absolute;
+    left: 380px;
+    width: 320px;
+
+}
+
+#banner-top > .text > .big{
+    font-size: 42px;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    /*text-shadow: 0px 6px 9px rgba(0,0,0,0.16);*/
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#banner-top > .text > .small{
+    font-size: 15px;
+}
+
+.frameTop {
+    background: #dbdfe4;
+    width: 240px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 1;
+}
+
+.frameBot{
+    background: #f2f2f2;
+    width: 260px;
+    height: 310px;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    z-index: 0;
+}
+
+
+
 /***********************
 
     STRUCTURE
