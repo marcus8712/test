@@ -246,6 +246,54 @@ div[data-page="color"] .colorItem > .colorCode {
     Intro
 ---------------*/
 
+div[data-page="intro"] #footer{
+    width: 100%;
+    
+}
+
+
+div[data-page="intro"] #footer .grid{
+    margin: 0 auto !important;
+}
+
+div[data-page="intro"] #footer .sub{
+    opacity: 0.6;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: -5px;
+    font-weight: 500;
+}
+
+div[data-page="intro"] #footer .head{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+div[data-page="intro"] #footer > img {
+    display: block;
+    max-width: 98.8%;
+    opacity: 0.8;
+}
+
+div[data-page="intro"] #footer .input{
+    margin-top: 5px;
+}
+
+div[data-page="intro"] #footer input{
+    border-radius: 500rem;
+}
+
+div[data-page="intro"] #footer input + button{
+    margin-left: 10px;
+    border-radius: 500rem;
+}
+
+
+div[data-page="intro"] #footer > .container{
+    margin-bottom: 200px;
+}
+
 /* Introduction */
 #introduction{
     position: relative;
@@ -259,6 +307,7 @@ div[data-page="color"] .colorItem > .colorCode {
     position: relative;
     left: 380px;
     width: 340px;
+    
 }
 
 #introduction > .text > .big{
@@ -272,10 +321,16 @@ div[data-page="color"] .colorItem > .colorCode {
 
 #introduction > .text > .small{
     margin-bottom: 30px;
+    
 }
 
 #introduction > .text > button{
     margin-right: 10px;
+    border-radius: 500rem;
+}
+
+#introduction > .text > span{
+    opacity: 0.6;
 }
 
 #introduction > .frameTop {
@@ -439,7 +494,7 @@ div[data-page="color"] .colorItem > .colorCode {
 /* patterns */
 #patterns {
     position: relative;
-    margin-bottom: 200px !important;
+    margin-bottom: 100px !important;
 }
 
 #patterns > .frameTop {
