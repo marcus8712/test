@@ -353,12 +353,16 @@ div[data-page="color"] .colorItem > .colorCode {
 }
 
 #styles .head{
-
+    
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.5px;
     font-size: 14px;
 
+}
+
+#styles .head:first-child{
+    margin-top: 8px;
 }
 
 #styles .item div {
