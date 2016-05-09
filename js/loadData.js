@@ -35,7 +35,8 @@ navbar +="         <img src=\"/test/img/connected.svg\">";
 navbar +="     <\/div>";
 navbar +="     <div class=\"navbar-content\">";
 navbar +="         <ul class=\"menu leftMenu\">";
-navbar +="             <li class=\"item\" data-link=\"intro\"><a href=\"/test\">intro</a></li>";
+if(page == "intro") navbar +="             <li class=\"item\" data-link=\"intro\"><a class=\"active\">intro</a></li>";
+else navbar +="             <li class=\"item\" data-link=\"intro\"><a href=\"/test\">intro</a></li>";
 
 if(page == "grid" || page == "layout") navbar +="<li class=\"item\" data-link=\"structure\"><a class=\"active\">structure</a></li>";
 else navbar +="<li class=\"item\" data-link=\"structure\"><a href=\"/test/structure/layout\">structure</a></li>";
@@ -65,6 +66,10 @@ $("#header").append(navbar);
 var pageInfo ="";
 pageInfo += "<div class=\"page-info\">";
 pageInfo += "   <div class=\"ui header\">";
+
+if(page == "intro"){
+    pageInfo += "       <a data-link=\"intro\" class=\"active\">#introduction</a>";
+}
 
 if(page == "grid" || page =="layout"){
     pageInfo += "       <a data-link=\"layout\" href=\"layout\">#layouts</a>";

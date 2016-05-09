@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Authentication Hoiio Page">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    
+    <title>Log in Modal</title>
+    <link rel="icon" type="image/png" href="http://d2hlei1umhw6cd.cloudfront.net/libs/img/logo_hoiio.png">
+    
+    <!-- Semantic CSS -->
+    <link rel="stylesheet" type="text/css" href="http://d2hlei1umhw6cd.cloudfront.net/libs/css/semantic.min.css">
+    
+    <!-- Library JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    
+</head>
+<body>
+    
+    <div class="ui signin hoiio modal">
+        <i class="close icon"></i>
+        <div class="header">
+            SIGN IN TO HOIIO
+        </div>
+        <div class="content">
+            <form class="ui form">
+
+                <div class="field">
+                   <label>Phone Number</label>
+                   <input type="text" value="+84 " name="phone">
+                </div>
+                <div class="field">
+                   <label>Password</label>
+                   <div class="ui input">
+                       <input type="password" name="password" placeholder="Minimum of 6 characters">
+                   </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="check2" class="hidden">
+                        <label for="check2">Remember me</label>
+                    </div>
+                    <span style="float:right"><a class="forgotpass">Forgot password?</a></span>
+                </div>
+
+            </form>
+        </div>
+        <div class="actions">
+            <div class="ui deny button">
+                Cancel
+            </div>
+            <div class="ui approve primary button">
+                Sign in
+            </div>
+        </div>
+    </div>
+    <div class="ui twofa hoiio modal">  
+        <i class="close icon"></i>
+        <div class="header">2-Step Verification</div>
+        <div class="content">
+            <p class="email-info">
+                <img align="left" src="http://d2hlei1umhw6cd.cloudfront.net/libs/img/icon_email.png" />
+                <span>An email message with your code has been sent to *****an@hoiio.com.</span>
+           </p>
+            <form class="ui form">
+               <div class="field">
+                   <div class="ui input">
+                       <input type="text" value="abc- " name="phone">
+                    </div>
+                </div>
+           </form>
+          
+        </div>
+        <div class="actions">
+            <p><a href="#">Didn’t receive the message?</a></p> 
+            <div class="ui approve primary button">
+                Verify
+            </div>
+        </div>
+    </div>
+    
+           
+    
+    
+    <!-- Semantic Script -->
+    <script src="http://d2hlei1umhw6cd.cloudfront.net/libs/js/semantic.min.js"></script>
+    
+    <!-- Custom Script -->
+    
+    <script>
+    $('.signin.modal')
+        .modal('setting', 'allowMultiple', true)
+        .modal('setting', 'autofocus', false)
+        .modal('setting', 'closable', false)
+        .modal('show')
+    ;
+        
+    $('.twofa.modal')
+        .modal('setting', 'closable', false)
+        .modal('attach events', '.signin.modal .button')
+        
+    ;
+        
+  
+    </script>
+    
+    
+   
+    
+
+</body>
+</html>

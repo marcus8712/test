@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Authentication Hoiio Page">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    
+    <title>Log in</title>
+    <link rel="icon" type="image/png" href="http://d2hlei1umhw6cd.cloudfront.net/libs/img/logo_hoiio.png">
+    
+    <!-- Semantic CSS -->
+    <link rel="stylesheet" type="text/css" href="http://d2hlei1umhw6cd.cloudfront.net/libs/css/semantic.min.css">
+    
+    <!-- Library JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    
+</head>
+<body>
+
+    <div class="hexagon background"></div>
+    <div class="ui center aligned auth grid container">
+       <div class="left aligned column">
+           <div class="card">
+                <div class="signin">
+                   <img class="svg-image" width="80px" alt="Hoiio" src="http://d2hlei1umhw6cd.cloudfront.net/libs/img/logo_hoiio_white.svg" />
+                   <h4 class="ui header">You already connect with Hoiio?</h4>
+                   <button class="ui inverted button">Sign in now</button>
+               </div>
+                <div class="signup">
+                   <img class="svg-image" alt="Hoiio" src="http://d2hlei1umhw6cd.cloudfront.net/libs/img/logo_hoiio_white.svg" />
+                   <div class="ui header">Don't have an account?</div>
+                   <p>Sign up now! It's free!</p>
+                   <button class="ui inverted button">Create new account</button>
+               </div>
+           </div>
+           <div class="content web">
+                <div class="signup">
+                   <div class="ui header">Create New Account</div>
+                   <form class="ui form">
+                       <div class="field">
+                               <label>Phone Number</label>
+                               <div class="ui input">
+                                   <input type="text" value="+84 " name="phone">
+                                </div>
+                           </div>
+                       <div class="field">
+                           <label>Confirm Your Identity</label>
+                           <div class="ui icon buttons">
+                              <button class="ui button"><i class="mobile icon"></i> Verify your number</button>
+                           </div>
+
+                        </div>
+                       <div class="field">
+                            <label>One-Time Password</label>
+                           <div class="ui input">
+                               <input type="password" name="password" placeholder="">
+                           </div>
+                        </div>
+                       <div class="field">
+                            <div class="ui fluid primary action button">Continue</div>
+                        </div>    
+                   </form>
+                </div>
+                <div class="enterinfo">
+                   <div class="ui header">Enter Information</div>
+                   <form class="ui form">
+                        <div class="two fields">
+                            <div class="field">
+                               <label>First Name</label>
+                               <input type="text" placeholder="First name" name="firstname">
+                            </div>
+                            <div class="field">
+                               <label>Last Name</label>
+                               <input type="text" placeholder="Last name" name="lastname">
+                            </div>
+                        </div>
+                        <div class="field">
+                           <label>Email</label>
+                           <input type="email" name="email" placeholder="name@company.com">
+                        </div>
+                        <div class="field">
+                           <label>Password</label>
+                           <input type="password" name="password" placeholder="Minimum of 6 characters">
+                        </div>
+                        <div class="field">
+                            <div class="ui fluid primary action button">Create account</div>
+                        </div>    
+                   </form>
+                </div>
+                <div class="signin">
+                   <div class="ui header">Sign in</div>
+                   <form class="ui form">
+                        <div class="field">
+                           <label>Phone Number</label>
+                           <input type="text" value="+84 " name="phone">
+                        </div>
+                        <div class="field">
+                           <label>Password</label>
+                           <input type="password" name="password" placeholder="Minimum of 6 characters">
+                        </div>
+                        <div class="field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" id="check1" class="hidden">
+                                <label for="check1">Remember me</label>
+                            </div>
+                        </div>
+                        <div class="ui error message">
+                        <ul class="list">
+                            <li>Wrong Password</li>
+                            <li>Password required at least 6 characters</li>
+                          </ul>
+                        </div>
+                        <div class="field">
+                            <div class="ui fluid primary action button">Sign in</div>
+                        </div>    
+                   </form>
+                   <p><a class="forgotpass">Forgot Password?</a></p>
+
+               </div>
+                <div class="twofa">
+                    <h2 class="ui header">2-Step Verification</h2>
+                        <p class="email-info">
+                            <img align="left" src="http://d2hlei1umhw6cd.cloudfront.net/libs/img/icon_email.png" />
+                            <span>An email message with your code has been sent to *****an@hoiio.com.</span>
+                       </p>
+                       <form class="ui form">
+                           <div class="field">
+                               <div class="ui input">
+                                   <input type="text" value="abc- " name="phone">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <button class="ui fluid primary action button">verify</button>
+                            </div>    
+                       </form>
+                      <p><a>Didn’t receive the message?</a></p> 
+                </div>
+                
+            </div>
+           <div class="content web special">
+                <div class="forgotpass">
+                   <div class="ui header">Reset Password</div>
+                   <form class="ui form">
+                        <div class="field">
+                               <label>Phone Number</label>
+                               <div class="ui input">
+                                   <input type="text" value="+84 " name="phone">
+                                </div>
+                           </div>
+                       <div class="field">
+                           <label>Confirm Your Identity</label>
+                           <div class="ui icon buttons">
+                              <button class="ui button" style="padding:15px !important">
+                                  <i class="mobile icon" style="margin-bottom:0px"></i> Text Me
+                               </button>
+                              <button class="ui button" style="padding:15px !important"><i class="mail icon" style="margin-bottom:0px"></i> Email Me</button>
+                            </div>
+
+                        </div>
+                       <div class="field">
+                            <label>One-Time Password</label>
+                           <div class="ui input">
+                               <input type="password" name="password" placeholder="">
+                           </div>
+                        </div>
+                       <div class="field">
+                            <div class="ui fluid primary action button">Continue</div>
+                        </div>          
+                   </form>
+                 </div> 
+            </div>
+           <div class="content mobile">
+                <div class="logo"><img src="http://hoiio-assets.s3.amazonaws.com/libs/img/logo_hoiio_blue.svg"></div>
+                
+                <div class="signup">
+                    <div class="ui header">Create New Account</div>
+                    <form class="ui form">
+                       <div class="field">
+                               <label>Phone Number</label>
+                               <div class="ui input">
+                                   <input type="text" value="+84 " name="phone">
+                                </div>
+                           </div>
+                       <div class="field">
+                           <label>Confirm Your Identity</label>
+                           <div class="ui icon buttons">
+                              <button class="ui button"><i class="mobile icon"></i> Text Me</button>
+                              <button class="ui button"><i class="phone icon"></i> Call Me</button>
+                            </div>
+
+                        </div>
+                       <div class="field">
+                            <label>One-Time Password</label>
+                           <div class="ui input">
+                               <input type="password" name="password" placeholder="">
+                           </div>
+                        </div>
+                       <div class="field">
+                            <div class="ui fluid primary action button">Continue</div>
+                        </div>    
+                   </form>
+                    <p>Already have an account? <a class="signin">Sign in now!</a></p>
+                </div>
+                <div class="enterinfo">
+                   <div class="ui header">Enter Information</div>
+                   <form class="ui form">
+                        <div class="two fields">
+                            <div class="field">
+                               <label>First Name</label>
+                               <input type="text" placeholder="First name" name="firstname">
+                            </div>
+                            <div class="field">
+                               <label>Last Name</label>
+                               <input type="text" placeholder="Last name" name="lastname">
+                            </div>
+                        </div>
+                        <div class="field">
+                           <label>Email</label>
+                           <input type="email" name="email" placeholder="name@company.com">
+                        </div>
+                        <div class="field">
+                           <label>Password</label>
+                           <input type="password" name="password" placeholder="Minimum of 6 characters">
+                        </div>
+                        <div class="field">
+                            <div class="ui fluid primary action button">Create account</div>
+                        </div>    
+                   </form>
+                 </div>
+                <div class="signin">
+                    <div class="ui header">Sign in</div>
+                    <form class="ui form">
+
+                        <div class="field">
+                           <label>Phone Number</label>
+                           <input type="text" value="+84 " name="phone">
+                        </div>
+                        <div class="field">
+                           <label>Password</label>
+                           <div class="ui input">
+                               <input type="password" name="password" placeholder="Minimum of 6 characters">
+                           </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" id="check2" class="hidden">
+                                <label for="check2">Remember me</label>
+                            </div>
+                            <span style="float:right"><a class="forgotpass">Forgot password?</a></span>
+                        </div>
+                        <div class="field">
+                            <div class="ui fluid primary action button">Sign in</div>
+                        </div>    
+                    </form>
+                    <p>Don't have an account? <a class="signup">Sign up now!</a></p>
+                </div>
+                <div class="twofa">
+                    <h2 class="ui header">2-Step Verification</h2>
+                        <p class="email-info">
+                            <img align="left" src="http://d2hlei1umhw6cd.cloudfront.net/libs/img/icon_email.png" />
+                            <span>An email message with your code has been sent to *****an@hoiio.com.</span>
+                       </p>
+                       <form class="ui form">
+                           <div class="field">
+                               <div class="ui input">
+                                   <input type="text" value="abc- " name="phone">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <button class="ui fluid primary action button">verify</button>
+                            </div>    
+                       </form>
+                      <p><a>Didn’t receive the message?</a></p> 
+                </div>
+                <div class="forgotpass">
+                   <div class="ui header">Reset Password</div>
+                   <form class="ui form">
+                        <div class="field">
+                               <label>Phone Number</label>
+                               <div class="ui input">
+                                   <input type="text" value="+84 " name="phone">
+                                </div>
+                           </div>
+                       <div class="field">
+                           <label>Confirm Your Identity</label>
+                           <div class="ui icon buttons">
+                              <button class="ui button">
+                                  <i class="mobile icon"></i>
+                                  <br>Text Me
+                               </button>
+                              <button class="ui button"><i class="phone icon"></i><br>Call Me</button>
+                               <button class="ui button"><i class="mail icon"></i><br> Email Me</button>
+                            </div>
+
+                        </div>
+                       <div class="field">
+                            <label>One-Time Password</label>
+                           <div class="ui input">
+                               <input type="password" name="password" placeholder="">
+                           </div>
+                        </div>
+                       <div class="field">
+                            <div class="ui fluid primary action button">Continue</div>
+                        </div>          
+                   </form>
+                </div> 
+           </div>
+            
+       </div>
+    </div>
+    
+    <!-- Semantic Script -->
+    <script src="http://d2hlei1umhw6cd.cloudfront.net/libs/js/semantic.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script>
+        
+    $(".card .signup button").click(function() {
+        $(this).each(function(){
+            $('.web').removeClass("slideLeft");			
+            $('.web').addClass("slideRight");
+            $('.web .signup').show();
+            $('.web .signin').hide();
+            $('.web .twofa').hide();
+            $('.card .signup').hide(); 
+            $('.card .signin').show();
+
+        });
+    });
+    
+    $(".card .signin button").click(function() {
+        $(this).each(function(){
+            $('.content').removeClass("slideRight");			
+            $('.content').addClass("slideLeft");
+            $('.content .signin').show();
+            $('.content .signup').hide();
+            $('.content .enterinfo').hide();
+            $('.card .signin').hide(); 
+            $('.card .signup').show();
+
+        });
+    }); 
+        
+    $(".web .signin .action.button").click(function() {
+        $(this).each(function(){
+            $('.web > .twofa').show();
+            $('.web > .signin').hide();
+        });
+    });   
+        
+   $(".web .signup .action.button").click(function() {
+        $(this).each(function(){
+            $('.web > .enterinfo').show();
+            $('.web > .signup').hide();
+        });
+    }); 
+        
+    $(".web .signin a.forgotpass").click(function() {
+        $(this).each(function(){
+            $('.card').hide(); 
+            $('.web').hide();
+            $('.special.content').show();
+            
+        });
+    });      
+      
+    $(".mobile .signin a.signup").click(function() {
+        $(this).each(function(){
+            $('.mobile > .signup').show();
+            $('.mobile > .signin').hide();
+        });
+    });
+        
+    $(".mobile .signup a.signin").click(function() {
+        $(this).each(function(){
+            $('.mobile > .signup').hide();
+            $('.mobile > .signin').show();
+        });
+    });
+    
+    $(".mobile .signin a.forgotpass").click(function() {
+        $(this).each(function(){
+            $('.mobile > .signin').hide();
+            $('.mobile > .forgotpass').show();
+            
+        });
+    });      
+        
+    $(".mobile .signin .action.button").click(function() {
+        $(this).each(function(){
+            $('.mobile > .twofa').show();
+            $('.mobile > .signin').hide();
+        });
+    });   
+        
+   $(".mobile .signup .action.button").click(function() {
+        $(this).each(function(){
+            $('.mobile > .enterinfo').show();
+            $('.mobile > .signup').hide();
+        });
+    });
+        
+        
+   
+    </script>
+
+</body>
+</html>
