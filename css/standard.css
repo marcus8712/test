@@ -301,7 +301,8 @@ div[data-page="color"] .colorItem > .colorCode {
 /* Style */
 #styles {
     position: relative;
-    margin-bottom: 200px !important;
+    margin-bottom: 160px !important;
+    padding-top: 40px !important;
 }
 
 #styles > .frameTop {
@@ -380,7 +381,7 @@ div[data-page="color"] .colorItem > .colorCode {
 
 #component {
     position: relative;
-    margin-bottom: 200px !important;
+    margin-bottom: 160px !important;
 }
 
 #component > .frameTop {
@@ -444,9 +445,9 @@ div[data-page="color"] .colorItem > .colorCode {
 #patterns > .frameTop {
     background: #dbdfe4;
     width: 260px;
-    height: 270px;
+    height: 280px;
     position: absolute;
-    top: 50px;
+    top: 30px;
     right: 30px;
     z-index: 1;
 }
@@ -456,7 +457,7 @@ div[data-page="color"] .colorItem > .colorCode {
     width: 320px;
     height: 340px;
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: 0;
     z-index: 0;
 }
