@@ -8,7 +8,7 @@ d3.csv("/test/data/table.csv", function(error, data) {
         numberOfCOlumns = columns.length;  // allows us to get the number of columns
 
     var numberOfRows = data.length
-    for(i=1; i< numberOfCOlumns - 2 ; i++){
+    for(i=1; i<= numberOfCOlumns - 2 ; i++){
         tbody.append("tr").attr("class", "row" + i);
     }
     
