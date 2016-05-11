@@ -715,16 +715,24 @@ div[data-page="intro"] #footer > .container{
     }
     .navbar > .navbar-content > .mobileMenu .button{
         border: none;
+    }
+    
+    .navbar > .navbar-content > .mobileMenu .button .icon{
         opacity: 0.8;
     }
     
-    .navbar > .navbar-content > .mobileMenu .button:hover{
-        background: none;
+    .navbar > .navbar-content > .mobileMenu .button .icon:hover{
         opacity: 1;
+    }
+    
+    .ui.active.button, .ui.active.button:active, .ui.button:active, .navbar > .navbar-content > .mobileMenu .button:hover{
+        background-color: white !important;
     }
     
     .navbar > .navbar-content > .mobileMenu .ui.dropdown .menu{
         right: 0 !important;
+        left: auto;
+        margin-top: -5px;
     }
     
     #header > .navbar > .navbar-content > .mobileMenu > .icon{
