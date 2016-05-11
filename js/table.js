@@ -3,6 +3,7 @@ d3.csv("/test/data/table.csv", function(error, data) {
     var tbody = d3.select("#test").append("tbody");
     //var tfoot = d3.select("#test").append("tfoot").append("tr");
     // Setup
+    var i;
     for(i=1; i< data[0].length-2 ; i++){
         tbody.append("tr").attr("class", "row" + i);
     }
