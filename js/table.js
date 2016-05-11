@@ -2,9 +2,13 @@ d3.csv("/test/data/table.csv", function(error, data) {
     var thead = d3.select("#test").append("thead").append("tr");
     var tbody = d3.select("#test").append("tbody");
     //var tfoot = d3.select("#test").append("tfoot").append("tr");
-    // Setup
-    var i;
-    for(i=1; i< 6 ; i++){
+    
+    var numberOfRows = data.length, // we can easily get the number of rows (excluding the title row)
+        columns = Object.keys( data[0] ),  // then taking the first row object and getting an array of the keys
+        numberOfCOlumns = columns.length;  // allows us to get the number of columns
+
+    var numberOfRows = data.length
+    for(i=1; i< numberOfCOlumns - 2 ; i++){
         tbody.append("tr").attr("class", "row" + i);
     }
     
