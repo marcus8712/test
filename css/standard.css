@@ -715,6 +715,20 @@ div[data-device="mobile"]{
     div[data-device="mobile"] {
         display: block !important;
     }
+    
+    
+    div[data-device="mobile"] > .navbar > .logo{
+        text-align: left !important;
+    }
+    
+    div[data-device="mobile"] > .navbar > .logo > img{
+        margin-left: 0  !important;
+    }
+    
+    
+    
+    
+    
     #header-mobile .navbar > .logo{
         text-align: left !important;
         left: 50px;
