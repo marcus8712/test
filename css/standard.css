@@ -641,7 +641,7 @@ div[data-page="intro"] #footer > .container{
 ************************/
 
 div[data-device="mobile"]{
-    display: none;
+    display: none !important;
 }
 
 @media only screen and (min-width: 768px) {
