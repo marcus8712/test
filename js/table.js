@@ -7,7 +7,7 @@ d3.csv("/test/data/table.csv", function(error, data) {
         columns = Object.keys( data[0] ),  // then taking the first row object and getting an array of the keys
         numberOfCOlumns = columns.length - 2;  // allows us to get the number of columns
 
-    for(i=1; i<= numberOfCOlumns; i++){
+    for(var i=1; i<= numberOfCOlumns; i++){
         tbody.append("tr").attr("class", "row" + i);
     }
     
@@ -22,8 +22,7 @@ d3.csv("/test/data/table.csv", function(error, data) {
                 checkbox.append("input").attr("type", "checkbox");
                 checkbox.append("label");
             
-            var td = tbody.append("tr").append("td");
-            for(i=1; i<= numberOfCOlumns; i++){
+            for(var i=1; i<= numberOfCOlumns; i++){
                 var tr = d3.select("#tableOne tr " + ".row" + i);
                 var td = tr.append("td");
                 var checkbox = td.append("div").attr("class", "ui checkbox");
