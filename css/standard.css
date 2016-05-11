@@ -6,6 +6,55 @@
 ************************/
 
 /*--------------
+    Patterns
+---------------*/
+
+div[data-page="pattern"] .app.menu + .app.menu,
+div[data-page="pattern"] .page.tabs + .page.tabs{
+    margin-top: 40px;
+ 
+}
+
+div[data-page="pattern"] .page.head,
+div[data-page="pattern"] .page.information{
+    margin-bottom: 40px !important;
+    border: 1px solid #ddd !important;
+}
+
+div[data-page="pattern"] span.time{
+    font-weight: 600;
+}
+
+div[data-page="pattern"] span.all{
+    font-weight: 600;
+}
+
+div[data-page="pattern"] span.all + a{
+    cursor: pointer;
+}
+
+div[data-page="pattern"] .ui.inline.dropdown > .text {
+    font-weight: 600!important;
+}
+
+.page.information .grid > .right.column > .ui + .ui {
+    margin-left: 0.51851852rem;
+}
+
+.page.information .ui.button.dropdown .menu {
+    margin-top: 10px;
+}
+
+.page.information .ui.dropdown .menu .selected.item, 
+.page.information .ui.dropdown.selected{
+    display: none;
+}
+
+.page.information .ui.dropdown:not(.top.right)>.dropdown.icon{
+    margin-left: 8px!important;
+}
+
+/*--------------
     Components
 ---------------*/
 
@@ -897,7 +946,7 @@ body > .ui.fluid.container{
 }  
 
 @media only screen and (min-width: 992px) {
-    #body > .container:not(#components) > .block > .grid{
+    #body > .container > .block > .grid:not(data-width="huge"){
         width: 800px;
     }
 

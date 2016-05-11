@@ -24,6 +24,10 @@ $(document).ready(function() {
         DROPDOWN
     ----------------------*/ 
     
+    $('.menu .item')
+  .tab()
+;
+    
     // Standard
     $('.ui.dropdown').dropdown();
     
@@ -32,6 +36,8 @@ $(document).ready(function() {
         .sidebar('toggle')
     ;
     
+    
+    $('.ui.label').popup();
     
     
     

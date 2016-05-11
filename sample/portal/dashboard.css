@@ -1,0 +1,228 @@
+
+/*======= Reset =======*/
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+/*======= Loading =======*/
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/loading.svg) center no-repeat #fff;
+}
+
+/*======= Main Styles =======*/
+
+html, body
+{
+    height: 100%;
+}
+
+
+title:first-letter {
+    text-transform:capitalize;
+}
+
+
+.container{
+    min-width: 1000px;
+}
+
+
+@media only screen and (max-width: 767px){
+    .ui.app.container.container {
+        margin-left: 0em!important;
+        margin-right: 0em!important;
+    }
+}
+
+.app.container > .grid > .row:not(:first-child) > .column{
+    padding: 0  2.929rem;
+}
+
+body{
+    background-color: white;
+}
+
+
+/*-----------------------------
+    01A Primary MENU
+-------------------------------*/
+.row:first-child {
+    padding:1rem 0 0 0!important
+
+}
+
+.row {
+    padding:0 !important;
+    margin: 0 !important;
+}
+
+.content.row > .left{
+    width: 475px!important;
+    padding:0 !important;
+    height: 100%;
+  
+}
+
+.ui.block.segments{
+    
+    border: none;
+    width: 475px;
+    display: block;
+    /*padding:0 2.929rem;*/
+}
+
+
+.ui.block.segments > .head{
+    vertical-align: middle;
+	padding: 0;
+	margin: 0;
+    width: 100% !important;
+    padding:20px 30px 20px 60px;
+    background-color: #F7F7F7;
+}
+
+/* Head */
+
+.ui.block.segments > .head > .title{
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border:none;
+    vertical-align: middle;
+   
+}
+
+
+.ui.block.segments > .head > .button{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 4px 8px;
+    border-radius: 500rem;
+    float: right
+}
+
+.ui.block.segments > .head > .button > .icon{
+    font-size: 24px;
+    height: auto;
+    width: auto;
+    
+}
+
+.ui.thumbnail.segment{
+    width: 100%;
+    padding: 0;
+    border: none;
+    margin: 0;
+    
+}
+
+.ui.thumbnail.segment > img{
+    width: 475px;
+    
+    
+}
+
+.ui.block > .header {
+    
+}
+
+
+/* Info */
+.ui.information.segment{
+    padding:15px 30px 15px 60px;
+    border: none;
+    
+}
+
+.ui.information.segment > .header{
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Email */
+.ui.email.segments{
+    padding:15px 30px 15px 60px;
+    border: none !important; 
+}
+
+.ui.email.segments > .ui.segment{
+    padding: 0;
+    
+    border: none;
+}
+
+.ui.email.segments > .ui.segment:first-child{
+    padding-right: 10px;
+}
+
+.ui.email.segments > .ui.segment:last-child{
+     padding-left: 15px;
+    border-left: 1px solid #ccc;
+}
+
+.ui.email.segments > .ui.segment > .header{
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    
+}
+
+
+/*-----------------------------
+    01B Secondary MENU
+-------------------------------*/
+
+.secondary.app.container.menu{
+    
+}
+
+
+
+/*-----------------------------
+    02 Main Info
+-------------------------------*/
+
+
+/*-----------------------------
+    03 Contents
+-------------------------------*/
+
+/*
+.app.container .content > .column > .segments > .segments > .segment:first-child{
+    padding-left: 0 !important;
+}
+
+.app.container .content > .column > .segments > .segments > .segment:last-child{
+    padding-right: 0 !important;
+}
+
+.app.container .content > .column > .segments .top{
+    background-color: #F9F9F9 !important;
+}
+*/
+
+
+
+
+
+

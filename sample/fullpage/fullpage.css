@@ -1,0 +1,239 @@
+/*-------------
+    Menu
+---------------*/
+
+.app.menu + .app.menu{
+    margin-top: 40px;
+ 
+}
+
+
+/*-------------
+    Page Head
+---------------*/
+
+.page.head + .page.head{
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ui.information.grid .input > input{
+    padding-top: 9px !important;
+    padding-bottom: 9px !important;
+    height: 36px !important;
+}
+
+/*
+.ui.content.segments,
+.ui.content.segment{
+    display: block;
+}
+*/
+
+
+/*-------------
+    LABEL POPUP
+---------------*/
+
+.ui.popup {
+    font-size: 0.8rem!important;
+    letter-spacing: 0.02rem!important;
+    line-height: 1rem !important;
+    margin-left: -0.7rem;
+}
+
+/*-------------
+    LABEL
+---------------*/
+.ui.label .icon{
+    font-size:1rem;
+    margin-right: 0.45em;
+    display: inline;
+}
+
+.page.content > table > tbody td[data-type="label-dot"]{
+    padding-right: 0.7rem!important;
+}
+
+
+.page.content > table > tbody td{
+    padding:20px 0 !important;
+}
+
+.page.content > table > tbody td.dots {
+    padding-right: 0.7rem !important;
+}
+
+
+.page.content > table > td .image{
+    margin-right: 8px;
+    margin-top: -1px;
+}
+
+.ui.pagination.menu{
+    min-height: 38px;   
+}
+
+.ui.pagination.menu .item{
+    padding-top: 10px !important;
+    padding-bottom: 9px !important;
+    min-width: 34px;
+}
+.ui.pagination.menu .icon.item {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.ui.pagination.menu .active.item{
+    background-color: rgba(238,238,238,1)
+}
+
+
+
+.ui.bottom.visible.sidebar, .ui.left.visible.sidebar, .ui.right.visible.sidebar, .ui.top.visible.sidebar{
+    box-shadow: none;
+}
+
+
+.detail.sidebar{
+    background: #fff;
+    min-width: 400px;
+   
+}
+
+.detail.sidebar .segments,
+.detail.sidebar .segments .segment,
+.detail.sidebar .segment{
+    border:none;
+}
+
+.detail.sidebar .header.segment{
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.detail.sidebar .header.segment .icon{
+       font-size: 20px;
+    margin-top: -5px;
+}
+
+.staff.segments{
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    
+    padding-top: 30px !important;
+    padding-bottom: 30px  !important;
+}
+.subscription.segment{
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    
+    padding-top: 35px !important;
+    padding-bottom: 20px  !important;
+}
+
+.subscription.segment{
+    
+}
+
+
+
+.staff.segments > .segment{
+    padding: 0;
+}
+
+.staff.segments > .segment:last-child > img{
+    float: right;
+    
+}
+
+
+.staff.horizontal.segments{
+     border-bottom: 1px solid #ddd !important;
+}
+
+.staff.horizontal.segments .segment .name{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.staff.horizontal.segments .segment .label{
+    margin: 0;
+    padding: 1px 10px 0;
+}
+
+.staff.horizontal.segments .segment .avatar{
+    width: 70px;
+    height: 70px;
+}
+
+.icon.close {
+    cursor: pointer;
+    position: absolute;
+    top: 1.64285714rem;
+    right: 1.64285714rem;
+    z-index: 1;
+    opacity: .8;
+    font-size: 1.25em;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: .625rem 0 0;
+}
+
+.subscription.segment > .list > .plan.item {
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    padding: 15px 0;
+}
+
+.subscription.segment > .list > .plan.item:first-child{
+    padding-top: 5px;
+}
+
+.subscription.segment > .list > .item: hover{
+    background: none !important;
+    
+}
+
+.subscription.segment > .header{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.subscription.segment > .list > .item > .content{
+    display: inline-block
+}
+
+.subscription.segment > .list > .item > .content .header{
+    margin-bottom: 0;
+    font-weight: 400;
+    margin-top: 3px;
+    
+}
+
+.subscription.segment > .list > .item > .app{
+    display: inline-block;
+    float: right;
+}
+
+.subscription.segment > .list > .item > .app .ui.avatar.image{
+    margin-right: 7px;
+    border-radius: 0;
+
+}
+

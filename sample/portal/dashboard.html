@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Dashboard - Hoiio Pte Ltd</title>
+    <!-- jQuery --->
+    <script src="../../js/core/jquery-2.2.3.min.js"></script>
+    <script src="../../js/core/modernizr.js"></script>
+
+    <!-- Core -->
+	<link rel="stylesheet" type="text/css" href="../../dist/semantic.min.css" />
+    
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="dashboard.css" />
+
+	
+</head>
+<body>
+    <div class="hoiio loading"></div>
+    <div class="ui fluid app container">
+        <div class="ui grid">
+            <div class="row">
+                <div class="column">
+                    <div class="ui app menu">
+                        <div class="item">
+                            <button class="ui button" id="open-button"></button>
+                        </div>
+                        <div class="item">
+                            <div class="app name">Dashboard</div>
+                        </div>
+                        <div class="active item">Overview</div>
+                        <a class="item">Members</a>
+                        <a class="item">Usage History</a>
+                        <a class="item">Subscriptions</a>
+                        <a class="item">Payment</a>
+                        <a class="item">Settings</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content row">
+                <div class="left column">
+                    <div class="ui block segments">
+                        <div class="ui head segment">
+                            <div class="title">Company Information</div>
+                            <div class="ui icon button"><i class="icon more horiz"></i></div>
+                        </div>
+                        <div class="ui thumbnail segment">
+                            <img src="img/thumb.png" />
+                        </div>
+                        <div class="ui information segment">
+                            <div class="header">Company Name</div>
+                            <p class="content">Hoiio Pte Ltd</p>
+                        </div>
+                        <div class="ui information segment">
+                            <div class="header">Company Owner</div>
+                            <p class="content">Ronald Adrianta</p>
+                        </div>
+                        <div class="ui email horizontal segments">
+                            <div class="ui segment">
+                                <div class="header">Company Email</div>
+                                <p class="content">radrianta@hoiio.com</p>
+                            </div>
+                            <div class="ui segment">
+                                <div class="header">Billing Email</div>
+                                <p class="content">billing@hoiio.com</p>
+                            </div>
+                        </div>
+                        <div class="ui information segment">
+                            <div class="header">Member</div>
+                            <p class="content">49</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="column">
+                
+                </div>
+                <div class="column">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../../dist/semantic.min.js"></script>
+    
+    <script>
+        $('.ui.rating')
+          .rating()
+        ;
+    </script>
+   
+</body>
+</html>
