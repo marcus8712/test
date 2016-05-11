@@ -13,7 +13,9 @@ $(window).load(function() {
         'scrollTop' : $(hash).offset().top - 70
     },'slow');
     
-    
+    $('.ui.rating')
+        .rating()
+    ;
 
 });
 
@@ -40,9 +42,7 @@ $(document).ready(function() {
     $('.ui.label').popup();
     
     
-    $('.ui.rating')
-  .rating()
-;
+    
     /*--------------------
         PROGRESS
     ----------------------*/ 
