@@ -55,6 +55,7 @@ navbar +="             <li class=\"item\" data-link=\"sample\"><a href=\"/test/s
 navbar +="             <li class=\"item\" data-link=\"download\"><a href=\"/test/download\">download</a></li>";
 navbar +="         <\/ul>";
 navbar +="         <ul class=\"menu mobileMenu\">";
+navbar +="           <i class=\"menu icon\">";
 navbar +="         <\/ul>";
 navbar +="     <\/div>";
 navbar +=" <\/div>";
