@@ -16,7 +16,7 @@ d3.csv("/test/data/table.csv", function(error, data) {
         
         
         // Checkbox
-        if(d.id == "checkbox" && d.row1 == "yes"){
+        if(d[0] == "checkbox" && d[2] == "yes"){
             var th = thead.append("th");
             var checkbox = th.append("div").attr("class", "ui checkbox");
                 checkbox.append("input").attr("type", "checkbox");
