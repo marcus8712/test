@@ -51,7 +51,7 @@ navbar +="         <\/ul>";
 navbar +="         <ul class=\"menu rightMenu\">";
 navbar +="             <li class=\"item\" data-link=\"state\"><a href=\"/test/state\">states</a></li>";
 navbar +="             <li class=\"item\" data-link=\"pattern\"><a href=\"/test/pattern\">app patterns</a></li>";
-navbar +="             <li class=\"item\" data-link=\"sample\"><a href=\"/test/sample\">samples</a></li>";
+navbar +="             <li class=\"item\" target=\"_blank\" data-link=\"sample\"><a href=\"/test/sample\">samples</a></li>";
 navbar +="             <li class=\"item\" data-link=\"download\"><a href=\"/test/download\">download</a></li>";
 navbar +="         <\/ul>";
 navbar +="         <ul class=\"menu mobileMenu\">";
@@ -69,6 +69,10 @@ pageInfo += "   <div class=\"ui header\">";
 
 if(page == "intro"){
     pageInfo += "       <a data-link=\"intro\" class=\"active\">#introduction</a>";
+}
+
+if(page == "pattern"){
+    pageInfo += "       <a data-link=\"intro\" class=\"active\">#patterns</a>";
 }
 
 if(page == "grid" || page =="layout"){
