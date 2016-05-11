@@ -1,12 +1,14 @@
 d3.csv("/test/data/table.csv", function(error, data) {
+    var thead = d3.select("#test").append("thead").append("tr");
+    var tbody = d3.select("#test").append("tbody");
+    //var tfoot = d3.select("#test").append("tfoot").append("tr");
+    // Setup
+    for(i=1; i< d.length -2; i++){
+        tbody.append("tr").attr("class", "row" + i);
+    }
+    
     data.forEach(function(d) {
-        var thead = d3.select("#test").append("thead").append("tr");
-        var tbody = d3.select("#test").append("tbody");
-        //var tfoot = d3.select("#test").append("tfoot").append("tr");
-        // Setup
-        for(i=1; i< d.length -2; i++){
-            tbody.append("tr").attr("class", d.row + i);
-        }
+        
         /*
         var th = thead.append("th");
         
