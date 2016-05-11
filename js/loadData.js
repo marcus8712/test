@@ -73,7 +73,7 @@ var mnavbar ="";
 mnavbar +=" <div class=\"navbar\">";
 mnavbar +="     <div class=\"logo\">";
 mnavbar +="         <img src=\"/test/img/connected.svg\">";
-mnavbar +="         <span>Hoiio Design Standards<\/span>";
+mnavbar +="         <span>Design Standards<\/span>";
 mnavbar +="     <\/div>";
 
 mnavbar +=" <\/div>";
