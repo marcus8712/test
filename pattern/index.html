@@ -585,112 +585,544 @@
                     <!-- Page Content -->
                     <div class="section">Page Content</div>
                     <div class="block" id="page-content-table">
-                        <div class="title">Table</div>
                         <p>Description of table.</p>
-                        <div class="ui grid" data-width="huge" data-align="left">
-                            <div class="row">
-                                <div class="column">
-                                    <!-- Text -->
-                                    <div class="ui page content segment">
-        <table class="ui very basic compact table" id="tableOne">
-           <tfoot>
-                <tr>
-                    <th>
-                        <div class="ui right floated pagination menu">
-                            <a class="icon item">
-                            <i class="chevron left icon"></i>
-                            </a>
-                            <a class="item active">1</a>
-                            <a class="item">2</a>
-                            <a class="item">3</a>
-                            <a class="item">4</a>
-                            <a class="icon item">
-                            <i class="chevron right icon"></i>
-                            </a>
-                        </div>
-                    </th>
-                </tr>
-            </tfoot>
-       </table>                                        
-                                        
-                                        
-        <table class="ui very basic compact table">
+                        <div class="ui one column grid" data-width="huge" data-align="center">
+                            <div class="title">Text Only</div>
+                            <div class="column">
+    <!-- Text -->
+    <div class="ui page content segment">
+        <table class="ui very basic compact unstackable table">
            <thead>
                 <tr>
-                    <th class="left aligned">Full Name</th>
+                    <th>Full Name</th>
+                    <th>Job Title</th>
                     <th>Phone Number</th>
-                    <th>Role</th>
-                    <th>hotlines</th>
+                    <th>Email</th>
                     <th>Last Accessed</th> 
                     <th></th>
                 </tr>
             </thead>
            <tbody>
                 <tr>
-                    <td><img class="ui avatar image" src="http://marcus8712.github.io/standards/source/img/square-image.jpg"><span>Steve Van</span></td>
+                    <td class="fullname">Steve Van</td>
+                    <td>General Manager</td>
                     <td>+84 905721417</td>
-                    <td>Owner</td>
-                    <td>121</td>
+                    <td>stevean@hoiio.com</td>
                     <td>03 Mar 2016, 11:47 AM</td>
                 </tr>
                 <tr>
-                    <td><img class="ui avatar image" src="http://marcus8712.github.io/standards/source/img/square-image.jpg"><span>Tuan Vo</span></td>
+                    <td class="fullname">Tuan Vo</td>
+                    <td>Team Lead</td>
                     <td>+65 91271034</td>
-                    <td>Admin</td>
-                    <td>32</td>
+                    <td>tuan@hoiio.com</td>
                     <td>26 Feb 2016, 08:18 AM</td>
                 </tr>
                 <tr>
-                    <td><img class="ui avatar image" src="http://marcus8712.github.io/standards/source/img/square-image.jpg"><span>Cash Hoang</span></td>
+                    <td class="fullname">Cash Hoang</td>
+                    <td>Senior Engineer</td>
                     <td>+65 97507182</td>
-                    <td>Member</td>
-                    <td>5</td>
+                    <td>cash@hoiio.com</td>
                     <td>01 Feb 2016, 11:42 AM</td>
                 </tr>
                 <tr>
-                    <td><img class="ui avatar image" src="http://marcus8712.github.io/standards/source/img/square-image.jpg"><span>Huyen Xu</span></td>
+                    <td class="fullname">Huyen Xu</td>
+                    <td>Admin Manager</td>
                     <td>+65 96445229</td>
-                    <td>Members</td>
-                    <td>16</td>
+                    <td>xu@hoiio.com</td>
                     <td>04 Mar 2016, 06:50 PM</td>
                 </tr>
                 <tr>
-                    <td><img class="ui avatar image" src="http://marcus8712.github.io/standards/source/img/square-image.jpg"><span>Cash Hoang</span></td>
+                    <td class="fullname">Uyen Hime</td>
+                    <td>UX Designer</td>
                     <td>+65 97507182</td>
-                    <td>Member</td>
-                    <td>5</td>
+                    <td>hime@hoiio.com</td>
+                    <td>01 Feb 2016, 11:42 AM</td>
+                </tr>
+           </tbody>
+           <tfoot></tfoot>
+       </table>
+    </div>         
+                            </div> 
+                            <div class="title">Text with Avatar</div>
+                            <div class="column">
+    <!-- Avatar -->
+    <div class="ui page content segment">
+        <table class="ui very basic compact unstackable table">
+           <thead>
+                <tr>
+                    <th class="left aligned">Full Name</th>
+                    <th>Job Title</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Last Accessed</th> 
+                    <th></th>
+                </tr>
+            </thead>
+           <tbody>
+                <tr>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_1.jpg"><span>Steve Van</span></td>
+                    <td>General Manager</td>
+                    <td>+84 905721417</td>
+                    <td>stevean@hoiio.com</td>
+                    <td>03 Mar 2016, 11:47 AM</td>
+                </tr>
+                <tr>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_2.jpg"><span>Tuan Vo</span></td>
+                    <td>Team Lead</td>
+                    <td>+65 91271034</td>
+                    <td>tuan@hoiio.com</td>
+                    <td>26 Feb 2016, 08:18 AM</td>
+                </tr>
+                <tr>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_3.jpg"><span>Cash Hoang</span></td>
+                    <td>Senior Engineer</td>
+                    <td>+65 97507182</td>
+                    <td>cash@hoiio.com</td>
+                    <td>01 Feb 2016, 11:42 AM</td>
+                </tr>
+                <tr>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_4.jpg"><span>Huyen Xu</span></td>
+                    <td>Admin Manager</td>
+                    <td>+65 96445229</td>
+                    <td>xu@hoiio.com</td>
+                    <td>04 Mar 2016, 06:50 PM</td>
+                </tr>
+                <tr>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_5.jpg"><span>Uyen Hime</span></td>
+                    <td>UX Designer</td>
+                    <td>+65 97507182</td>
+                    <td>hime@hoiio.com</td>
                     <td>01 Feb 2016, 11:42 AM</td>
                 </tr>
            </tbody>
            <tfoot>
-                <tr>
-                    <th colspan="5">
-                        <div class="ui right floated pagination menu">
-                            <a class="icon item">
-                            <i class="chevron left icon"></i>
-                            </a>
-                            <a class="item active">1</a>
-                            <a class="item">2</a>
-                            <a class="item">3</a>
-                            <a class="item">4</a>
-                            <a class="icon item">
-                            <i class="chevron right icon"></i>
-                            </a>
-                        </div>
-                    </th>
-                </tr>
+                
             </tfoot>
        </table>
     </div> 
-                                    <!-- Dots -->
-                                    <div class="ui page content segment">
+                                
+                            </div> 
+                            
+                            <div class="title">Image</div>
+                            <div class="column">
+    <!-- Image -->
+    <div class="ui page content segment">
+        <table class="ui very basic compact unstackable table">
+           <thead>
+                <tr>
+                    <th class="left aligned">Full Name</th>
+                    <th>App Usage</th>
+                    <th>Job Title</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Last Accessed</th> 
+                    <th></th>
+                </tr>
+            </thead>
+           <tbody>
+                <tr>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_1.jpg"><span>Steve Van</span></td>
+                    <td><img class="ui mini radius image" src="../img/app/app_1.png"></td>
+                    <td>General Manager</td>
+                    <td>+84 905721417</td>
+                    <td>stevean@hoiio.com</td>
+                    <td>03 Mar 2016, 11:47 AM</td>
+                </tr>
+                <tr>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_2.jpg"><span>Tuan Vo</span></td>
+                    <td><img class="ui mini radius image" src="../img/app/app_2.png"></td>
+                    <td>Team Lead</td>
+                    <td>+65 91271034</td>
+                    <td>tuan@hoiio.com</td>
+                    <td>26 Feb 2016, 08:18 AM</td>
+                </tr>
+                <tr>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_3.jpg"><span>Cash Hoang</span></td>
+                    <td><img class="ui mini radius image" src="../img/app/app_3.png"></td>
+                    <td>Senior Engineer</td>
+                    <td>+65 97507182</td>
+                    <td>cash@hoiio.com</td>
+                    <td>01 Feb 2016, 11:42 AM</td>
+                </tr>
+                <tr>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_4.jpg"><span>Huyen Xu</span></td>
+                    <td><img class="ui mini radius image" src="../img/app/app_4.png"></td>
+                    <td>Admin Manager</td>
+                    <td>+65 96445229</td>
+                    <td>xu@hoiio.com</td>
+                    <td>04 Mar 2016, 06:50 PM</td>
+                </tr>
+                <tr>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_5.jpg"><span>Uyen Hime</span></td>
+                    <td><img class="ui mini radius image" src="../img/app/app_5.png"></td>
+                    <td>UX Designer</td>
+                    <td>+65 97507182</td>
+                    <td>hime@hoiio.com</td>
+                    <td>01 Feb 2016, 11:42 AM</td>
+                </tr>
+           </tbody>
+           <tfoot>
+                
+            </tfoot>
+       </table>
+    </div> 
+                                
+                            </div> 
+                            <div class="title">Selection</div>
+                            <div class="column">    
+    <!-- Select box -->
+    <div class="ui page content segment">
+        <table class="ui very basic compact unstackable table">
+           <thead>
+                <tr>
+                    <th>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </th>
+                    <th>Full Name</th>
+                    <th>Job Title</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Last Accessed</th> 
+                    <th></th>
+                </tr>
+            </thead>
+           <tbody>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_1.jpg"><span>Steve Van</span></td>
+                    <td>General Manager</td>
+                    <td>+84 905721417</td>
+                    <td>stevean@hoiio.com</td>
+                    <td>03 Mar 2016, 11:47 AM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_2.jpg"><span>Tuan Vo</span></td>
+                    <td>Team Lead</td>
+                    <td>+65 91271034</td>
+                    <td>tuan@hoiio.com</td>
+                    <td>26 Feb 2016, 08:18 AM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_3.jpg"><span>Cash Hoang</span></td>
+                    <td>Senior Engineer</td>
+                    <td>+65 97507182</td>
+                    <td>cash@hoiio.com</td>
+                    <td>01 Feb 2016, 11:42 AM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_4.jpg"><span>Huyen Xu</span></td>
+                    <td>Admin Manager</td>
+                    <td>+65 96445229</td>
+                    <td>xu@hoiio.com</td>
+                    <td>04 Mar 2016, 06:50 PM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_5.jpg"><span>Uyen Hime</span></td>
+                    <td>UX Designer</td>
+                    <td>+65 97507182</td>
+                    <td>hime@hoiio.com</td>
+                    <td>01 Feb 2016, 11:42 AM</td>
+                </tr>
+           </tbody>
+           <tfoot>
+                
+            </tfoot>
+       </table>
+    </div>                                     
+                            
+                            </div>
+                            <div class="title">Stars</div>
+                            <div class="column">    
+    <!-- Star-->
+    <div class="ui page content segment">
+        <table class="ui very basic compact unstackable table">
+           <thead>
+                <tr>
+                    <th>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </th>
+                    <th></th>
+                    <th>Full Name</th>
+                    <th>Job Title</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Last Accessed</th> 
+                    <th></th>
+                </tr>
+            </thead>
+           <tbody>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td class="star"><div class="ui star rating" data-rating="1" data-max-rating="1"></div></td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_1.jpg"><span>Steve Van</span></td>
+                    <td>General Manager</td>
+                    <td>+84 905721417</td>
+                    <td>stevean@hoiio.com</td>
+                    <td>03 Mar 2016, 11:47 AM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td class="star"><div class="ui star rating" data-max-rating="1"></div></td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_2.jpg"><span>Tuan Vo</span></td>
+                    <td>Team Lead</td>
+                    <td>+65 91271034</td>
+                    <td>tuan@hoiio.com</td>
+                    <td>26 Feb 2016, 08:18 AM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td class="star"><div class="ui star rating" data-max-rating="1"></div></td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_3.jpg"><span>Cash Hoang</span></td>
+                    <td>Senior Engineer</td>
+                    <td>+65 97507182</td>
+                    <td>cash@hoiio.com</td>
+                    <td>01 Feb 2016, 11:42 AM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td><div class="ui star rating" data-max-rating="1"></div></td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_4.jpg"><span>Huyen Xu</span></td>
+                    <td>Admin Manager</td>
+                    <td>+65 96445229</td>
+                    <td>xu@hoiio.com</td>
+                    <td>04 Mar 2016, 06:50 PM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td class="star"><div class="ui star rating" data-max-rating="1"></div>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_5.jpg"><span>Uyen Hime</span></td>
+                    <td>UX Designer</td>
+                    <td>+65 97507182</td>
+                    <td>hime@hoiio.com</td>
+                    <td>01 Feb 2016, 11:42 AM</td>
+                </tr>
+           </tbody>
+           <tfoot>
+                
+            </tfoot>
+       </table>
+    </div>                                                       </div> 
+
+                            <div class="title">Dots</div>
+                            <div class="column">    
+    <!-- Dot -->
+    <div class="ui page content segment">
+        <table class="ui very basic compact unstackable table">
+           <thead>
+                <tr>
+                    <th>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </th>
+                    <th></th>
+                    <th>Full Name</th>
+                    <th>Job Title</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Last Accessed</th> 
+                    <th></th>
+                </tr>
+            </thead>
+           <tbody>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td class="dot"><a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a></td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_1.jpg"><span>Steve Van</span></td>
+                    <td>General Manager</td>
+                    <td>+84 905721417</td>
+                    <td>stevean@hoiio.com</td>
+                    <td>03 Mar 2016, 11:47 AM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td class="dot">
+                        <a class="ui empty success circular label" data-position="top center" data-content="Online" data-variation="inverted"></a>
+                    </td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_2.jpg"><span>Tuan Vo</span></td>
+                    <td>Team Lead</td>
+                    <td>+65 91271034</td>
+                    <td>tuan@hoiio.com</td>
+                    <td>26 Feb 2016, 08:18 AM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td class="dot">
+                        <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
+                    </td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_3.jpg"><span>Cash Hoang</span></td>
+                    <td>Senior Engineer</td>
+                    <td>+65 97507182</td>
+                    <td>cash@hoiio.com</td>
+                    <td>01 Feb 2016, 11:42 AM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td class="dot">
+                        <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
+                    </td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_4.jpg"><span>Huyen Xu</span></td>
+                    <td>Admin Manager</td>
+                    <td>+65 96445229</td>
+                    <td>xu@hoiio.com</td>
+                    <td>04 Mar 2016, 06:50 PM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td class="dot">
+                        <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
+                    </td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_5.jpg"><span>Uyen Hime</span></td>
+                    <td>UX Designer</td>
+                    <td>+65 97507182</td>
+                    <td>hime@hoiio.com</td>
+                    <td>01 Feb 2016, 11:42 AM</td>
+                </tr>
+           </tbody>
+           <tfoot>
+                
+            </tfoot>
+       </table>
+    </div>                                                       </div>                             
+                            
+                            <div class="title">Stars & Dots</div>
+                            <div class="column">    
+    <!-- Star & Dot -->
+    <div class="ui page content segment">
+        <table class="ui very basic compact unstackable table">
+           <thead>
+                <tr>
+                    <th>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </th>
+                    <th></th>
+                    <th></th>
+                    <th>Full Name</th>
+                    <th>Job Title</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Last Accessed</th> 
+                    <th></th>
+                </tr>
+            </thead>
+           <tbody>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td class="star"><div class="ui star rating" data-rating="1" data-max-rating="1"></div></td>
+                    <td class="dot"><a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a></td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_1.jpg"><span>Steve Van</span></td>
+                    <td>General Manager</td>
+                    <td>+84 905721417</td>
+                    <td>stevean@hoiio.com</td>
+                    <td>03 Mar 2016, 11:47 AM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td class="star"><div class="ui star rating" data-max-rating="1"></div></td>
+                    <td class="dot">
+                        <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
+                    </td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_2.jpg"><span>Tuan Vo</span></td>
+                    <td>Team Lead</td>
+                    <td>+65 91271034</td>
+                    <td>tuan@hoiio.com</td>
+                    <td>26 Feb 2016, 08:18 AM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td class="star"><div class="ui star rating" data-max-rating="1"></div></td>
+                    <td class="dot">
+                        <a class="ui empty success circular label" data-position="top center" data-content="Online" data-variation="inverted"></a>
+                    </td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_3.jpg"><span>Cash Hoang</span></td>
+                    <td>Senior Engineer</td>
+                    <td>+65 97507182</td>
+                    <td>cash@hoiio.com</td>
+                    <td>01 Feb 2016, 11:42 AM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td><div class="ui star rating" data-max-rating="1"></div></td>
+                    <td class="dot">
+                        <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
+                    </td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_4.jpg"><span>Huyen Xu</span></td>
+                    <td>Admin Manager</td>
+                    <td>+65 96445229</td>
+                    <td>xu@hoiio.com</td>
+                    <td>04 Mar 2016, 06:50 PM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
+                    </td>
+                    <td class="star"><div class="ui star rating" data-max-rating="1"></div>
+                        <td class="dot">
+                        <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
+                    </td>
+                    <td><img class="ui avatar image" src="../img/avatar/ava_5.jpg"><span>Uyen Hime</span></td>
+                    <td>UX Designer</td>
+                    <td>+65 97507182</td>
+                    <td>hime@hoiio.com</td>
+                    <td>01 Feb 2016, 11:42 AM</td>
+                </tr>
+           </tbody>
+           <tfoot>
+                
+            </tfoot>
+       </table>
+    </div>                                                       </div> 
+
+                            <!--<div class="title"></div>
+                            <div class="column">
+                            
+    
+    <div class="ui page content segment">
         <table class="ui very basic compact unstackable table">
             <thead>
                 <tr>
                     <th>
-                        <div class="ui checkbox">
-                            <input type="checkbox" name="all"><label></label>
-                        </div>
+                        <div class="ui checkbox"><input type="checkbox"><label></label></div>
                     </th>
                     <th></th>
                     <th></th>
@@ -794,13 +1226,12 @@
                 </tr>
             </tfoot>
         </table>
-    </div>  
+</div>
     
     
     
-                                    
-                                </div>
-                            </div>
+                              
+                            </div> -->
                         </div>
                     </div>
                 </div>  
@@ -816,9 +1247,7 @@
     <script src="../js/loadData.js"></script> 
     <script src="../js/component.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/core/d3.js"></script>
-    <script src="../js/core/lodash.js"></script>
-    <script src="../js/table.js"></script>
+    
 
 </body>
 </html>

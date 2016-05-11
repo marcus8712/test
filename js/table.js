@@ -15,7 +15,7 @@ d3.csv("/test/data/table.csv", function(error, data) {
     data.forEach(function(d) {
         
         // Checkbox
-        if(d.id == "checkbox" && d.user1 == "yes"){
+        if(d.id == "checkbox" && d.active == "yes"){
             var th = thead.append("th");
             var checkbox = th.append("div").attr("class", "ui checkbox");
                 checkbox.append("input").attr("type", "checkbox");
@@ -32,8 +32,7 @@ d3.csv("/test/data/table.csv", function(error, data) {
         
         
         // Star
-        
-        if(d.id == "star" && (d.user1 == "star" || d.user1 == "unstar")){
+        if(d.id == "star" && d.active == "yes"){
             var th = thead.append("th");
             for(var i=1; i<= numberOfCOlumns; i++){
                 var tr = d3.select("#tableOne tr.row" + i);
@@ -41,7 +40,19 @@ d3.csv("/test/data/table.csv", function(error, data) {
                 var rating = td.append("div")
                                 .attr("class", "ui star rating")
                                 .attr("data-max-rating", "1");
-               
+            }
+        }
+        
+        
+        // Dots
+        if(d.id == "status_dot" && d.active == "yes"){
+            var th = thead.append("th");
+            for(var i=1; i<= numberOfCOlumns; i++){
+                var tr = d3.select("#tableOne tr.row" + i);
+                var td = tr.append("td");
+                var rating = td.append("div")
+                                .attr("class", "ui star rating")
+                                .attr("data-max-rating", "1");
             }
         }
         
