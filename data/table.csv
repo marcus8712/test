@@ -1,5 +1,5 @@
 id,position,row1,row2,row3,row4,row5
-checkbox,1,yes,,,,
+checkbox,1,yes,yes,yes,yes,yes
 star,2,star,unstar,,,
 status_dot,3,normal,success,normal,normal,normal
 status_label,4,"sucess, check, active","warning, controller paus, suspended","error, controller record, disable","sucess, check, active","warning, controller paus, suspended"
