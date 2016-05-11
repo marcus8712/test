@@ -54,6 +54,15 @@ div[data-page="pattern"] .ui.inline.dropdown > .text {
     margin-left: 8px!important;
 }
 
+
+.page.information .ui.popup {
+    font-size: 0.8rem!important;
+    letter-spacing: 0.02rem!important;
+    line-height: 1rem !important;
+    margin-left: -0.7rem;
+}
+
+
 /*--------------
     Components
 ---------------*/
