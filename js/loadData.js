@@ -33,6 +33,8 @@ navbar +=" <div class=\"navbar\">";
 navbar +="     <div class=\"logo\">";
 navbar +="         <img src=\"/test/img/connected.svg\">";
 navbar +="     <\/div>";
+
+
 navbar +="     <div class=\"navbar-content\">";
 navbar +="         <ul class=\"menu leftMenu\">";
 if(page == "intro") navbar +="             <li class=\"item\" data-link=\"intro\"><a class=\"active\">intro</a></li>";
@@ -54,8 +56,9 @@ navbar +="             <li class=\"item\" data-link=\"pattern\"><a href=\"/test/
 navbar +="             <li class=\"item\" data-link=\"sample\"><a href=\"/test/sample\" target=\"_blank\">samples</a></li>";
 navbar +="             <li class=\"item\" data-link=\"download\"><a href=\"/test/download\">download</a></li>";
 navbar +="         <\/ul>";
+
 navbar +="         <ul class=\"menu mobileMenu\">";
-navbar +="           <i class=\"menu icon\">";
+navbar +="           <i class=\"menu icon\" \/>";
 navbar +="         <\/ul>";
 navbar +="     <\/div>";
 navbar +=" <\/div>";
