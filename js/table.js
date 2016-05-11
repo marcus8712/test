@@ -1,18 +1,39 @@
 d3.csv("/test/data/table.csv", function(error, data) {
-    var thead = d3.select("#test").append("thead").append("tr");
-    var tbody = d3.select("#test").append("tbody");
+    var thead = d3.select("#tableOne").append("thead").append("tr");
+    var tbody = d3.select("#tableOne").append("tbody");
     //var tfoot = d3.select("#test").append("tfoot").append("tr");
     
     var numberOfRows = data.length, // we can easily get the number of rows (excluding the title row)
         columns = Object.keys( data[0] ),  // then taking the first row object and getting an array of the keys
-        numberOfCOlumns = columns.length;  // allows us to get the number of columns
+        numberOfCOlumns = columns.length - 2;  // allows us to get the number of columns
 
-    var numberOfRows = data.length
-    for(i=1; i<= numberOfCOlumns - 2 ; i++){
+    for(i=1; i<= numberOfCOlumns; i++){
         tbody.append("tr").attr("class", "row" + i);
     }
     
     data.forEach(function(d) {
+        
+        
+        
+        // Checkbox
+        if(d.id == "checkbox" && d.row1 == "yes"){
+            var th = thead.append("th");
+            var checkbox = th.append("div").attr("class", "ui checkbox");
+                checkbox.append("input").attr("type", "checkbox");
+                checkbox.append("label");
+            
+            var td = tbody.append("tr").append("td");
+            for(i=1; i<= numberOfCOlumns; i++){
+                var tr = d3.select("#tableOne tr " + ".row" + i);
+                var td = tr.append("td");
+                var checkbox = td.append("div").attr("class", "ui checkbox");
+                checkbox.append("input").attr("type", "checkbox");
+                checkbox.append("label");
+            }
+        }
+        
+        
+        // Star
         
         /*
         var th = thead.append("th");
