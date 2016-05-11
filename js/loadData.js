@@ -27,6 +27,9 @@ loading += "    <\/section>";
 $(".hexagon-loading").append(loading);
 
 
+
+
+
 // Navbar
 var navbar ="";
 navbar +=" <div class=\"navbar\">";
@@ -57,25 +60,31 @@ navbar +="             <li class=\"item\" data-link=\"sample\"><a href=\"/test/s
 navbar +="             <li class=\"item\" data-link=\"download\"><a href=\"/test/download\">download</a></li>";
 navbar +="         <\/ul>";
 
-navbar +="         <ul class=\"menu mobileMenu\">";
-navbar +="<div class=\"ui top right dropdown icon button\">";
-navbar +="    <i class=\"hamburger icon\"><\/i>";
-navbar +="    <div class=\"menu\">";
-navbar +="      <div class=\"item\">Intro<\/div>";
-navbar +="      <div class=\"item\">Structure</div>";
-navbar +="      <div class=\"item\">Styles<\/div>";
-navbar +="      <div class=\"item\">Components<\/div>";
-navbar +="      <div class=\"item\">States<\/div>";
-navbar +="      <div class=\"item\">Patterns<\/div>";
-navbar +="      <div class=\"item\">Samples<\/div>";
-navbar +="      <div class=\"item\">Download<\/div>";
-navbar +="    <\/div>";
-navbar +="<\/div>";
-navbar +="         <\/ul>";
 navbar +="     <\/div>";
 navbar +=" <\/div>";
 
-$("#header").append(navbar);
+$('[data-device="desktop"]').append(navbar);
+
+
+// Navbar Mobile
+
+
+var mnavbar ="";
+mnavbar +=" <div class=\"navbar\">";
+mnavbar +="     <div class=\"logo\">";
+mnavbar +="         <img src=\"/test/img/connected.svg\">";
+mnavbar +="     <\/div>";
+
+mnavbar +=" <\/div>";
+
+$('[data-device="mobile"]').append(mnavbar);
+
+
+
+
+
+
+
 
 
 // Page Info
@@ -112,4 +121,4 @@ pageInfo += "   <\/div>";
 pageInfo += "   <img src=\"/test/img/wave.svg\">";
 pageInfo += "<\/div>";
 
-$("#header").append(pageInfo);
+$('[data-device="desktop"]').append(pageInfo);
