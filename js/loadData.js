@@ -51,7 +51,7 @@ navbar +="         <\/ul>";
 navbar +="         <ul class=\"menu rightMenu\">";
 navbar +="             <li class=\"item\" data-link=\"state\"><a href=\"/test/state\">states</a></li>";
 navbar +="             <li class=\"item\" data-link=\"pattern\"><a href=\"/test/pattern\">app patterns</a></li>";
-navbar +="             <li class=\"item\" target=\"_blank\" data-link=\"sample\"><a href=\"/test/sample\">samples</a></li>";
+navbar +="             <li class=\"item\" data-link=\"sample\"><a href=\"/test/sample\" target=\"_blank\">samples</a></li>";
 navbar +="             <li class=\"item\" data-link=\"download\"><a href=\"/test/download\">download</a></li>";
 navbar +="         <\/ul>";
 navbar +="         <ul class=\"menu mobileMenu\">";
