@@ -23,7 +23,7 @@ d3.csv("/test/data/table.csv", function(error, data) {
                 checkbox.append("label");
             
             for(var i=1; i<= numberOfCOlumns; i++){
-                var tr = d3.select("#tableOne tr " + ".row" + i);
+                var tr = d3.select("#tableOne tr.row" + i);
                 var td = tr.append("td");
                 var checkbox = td.append("div").attr("class", "ui checkbox");
                 checkbox.append("input").attr("type", "checkbox");
