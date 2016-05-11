@@ -666,10 +666,10 @@ div[data-device="mobile"]{
 @media only screen and (max-width: 820px) {
     
     
-    body > .ui.fluid.container{
+    /*body > .ui.fluid.container{
         margin-left: auto !important;
         margin-right: auto !important;
-    }
+    }*/
     
     .frameTop,
     .frameBot{
