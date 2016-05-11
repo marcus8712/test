@@ -58,7 +58,14 @@ navbar +="             <li class=\"item\" data-link=\"download\"><a href=\"/test
 navbar +="         <\/ul>";
 
 navbar +="         <ul class=\"menu mobileMenu\">";
-navbar +="           <i class=\"menu icon\" \/>";
+navbar +="<div class=\"ui top right dropdown icon button\">";
+navbar +="    <i class=\"hamburger icon\"><\/i>";
+navbar +="    <div class=\"menu\">";
+navbar +="      <div class=\"item\"><i class=\"edit icon\"><\/i> Edit<\/div>";
+navbar +="      <div class=\"item\"><i class=\"delete icon\"><\/i> Remove</div>";
+navbar +="      <div class=\"item\"><i class=\"hide icon\"><\/i> Hide<\/div>";
+navbar +="    <\/div>";
+navbar +="<\/div>";
 navbar +="         <\/ul>";
 navbar +="     <\/div>";
 navbar +=" <\/div>";

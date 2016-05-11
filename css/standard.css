@@ -687,7 +687,9 @@ div[data-page="intro"] #footer > .container{
     #header > .page-info > .header{
     
         position: relative;
-        z-index: 9999;
+        z-index: 999;
+        font-size: 13px !important;
+        width: 60%;
     }
     
     .ui.header:first-child{
@@ -709,6 +711,24 @@ div[data-page="intro"] #footer > .container{
         position: absolute;
         right: 30px;
         top: 34px;
+        z-index: 9999;
+    }
+    .navbar > .navbar-content > .mobileMenu .button{
+        border: none;
+        opacity: 0.8;
+    }
+    
+    .navbar > .navbar-content > .mobileMenu .button:hover{
+        background: none;
+        opacity: 1;
+    }
+    
+    .navbar > .navbar-content > .mobileMenu .ui.dropdown .menu{
+        right: 0 !important;
+    }
+    
+    #header > .navbar > .navbar-content > .mobileMenu > .icon{
+        
     }
 }
 
@@ -920,8 +940,8 @@ body > .ui.fluid.container{
             border-bottom: none;
             cursor: default;
         }
-        #header > .page-info > .header > a {
-            margin-right: 1rem;
+        #header > .page-info > .header > a + a {
+            margin-left: 1rem;
         }
          
 
