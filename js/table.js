@@ -1,7 +1,6 @@
 d3.csv("/test/data/table.csv", function(error, data) {
     var thead = d3.select("#tableOne").append("thead").append("tr");
     var tbody = d3.select("#tableOne").append("tbody");
-    //var tfoot = d3.select("#test").append("tfoot").append("tr");
     
     var numberOfRows = data.length, // we can easily get the number of rows (excluding the title row)
         columns = Object.keys( data[0] ),  // then taking the first row object and getting an array of the keys
@@ -11,12 +10,12 @@ d3.csv("/test/data/table.csv", function(error, data) {
         tbody.append("tr").attr("class", "row" + i);
     }
     
+    d3.select("#tableOne tfoot tr th").attr("colspan", numberOfCOlumns +2 );
+    
     data.forEach(function(d) {
         
-        
-        
         // Checkbox
-        if(d.id == "checkbox" && d.value1 == "yes"){
+        if(d.id == "checkbox" && d.user1 == "yes"){
             var th = thead.append("th");
             var checkbox = th.append("div").attr("class", "ui checkbox");
                 checkbox.append("input").attr("type", "checkbox");
@@ -31,6 +30,20 @@ d3.csv("/test/data/table.csv", function(error, data) {
             }
         }
         
+        
+        // Star
+        
+        if(d.id == "star" && (d.user1 == "star" || d.user1 == "unstar")){
+            var th = thead.append("th");
+            for(var i=1; i<= numberOfCOlumns; i++){
+                var tr = d3.select("#tableOne tr.row" + i);
+                var td = tr.append("td");
+                var rating = td.append("div")
+                                .attr("class", "ui star rating")
+                                .attr("data-max-rating", "1");
+               
+            }
+        }
         
         // Star
         

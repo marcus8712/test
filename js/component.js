@@ -40,7 +40,9 @@ $(document).ready(function() {
     $('.ui.label').popup();
     
     
-    
+    $('.ui.rating')
+  .rating()
+;
     /*--------------------
         PROGRESS
     ----------------------*/ 
