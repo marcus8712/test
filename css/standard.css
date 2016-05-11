@@ -731,6 +731,7 @@ div[data-device="mobile"]{
     
     div[data-device="mobile"] > .navbar > .logo > img{
         margin-left: 0  !important;
+        width: 30px !important;
     }
     
     
