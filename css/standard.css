@@ -719,6 +719,14 @@ div[data-device="mobile"]{
     
     div[data-device="mobile"] > .navbar > .logo{
         text-align: left !important;
+        letter-spacing: 0 !important;
+        
+    }
+    
+    div[data-device="mobile"] > .navbar > .logo > span{
+        font-weight: 600;
+        font-size: 15px;
+        margin-left: 10px;
     }
     
     div[data-device="mobile"] > .navbar > .logo > img{
