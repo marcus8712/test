@@ -74,8 +74,10 @@ mnavbar +=" <div class=\"navbar\">";
 mnavbar +="     <div class=\"logo\">";
 mnavbar +="         <img src=\"/test/img/connected.svg\">";
 mnavbar +="         <span>Design Standards<\/span>";
+mnavbar +="         <button class=\"ui icon button\" data-transition=\"push\">";
+mnavbar +="           <i class=\"menu icon\"><\/i>";
+mnavbar +="         <\/button>";
 mnavbar +="     <\/div>";
-
 mnavbar +=" <\/div>";
 
 $('[data-device="mobile"]').append(mnavbar);

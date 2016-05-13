@@ -30,18 +30,17 @@ $(document).ready(function() {
     
     // Standard
     $('.ui.dropdown').dropdown();
-    
-    $('.ui.sidebar')
-        .sidebar('setting', 'transition', 'overlay')
-        .sidebar('toggle')
-    ;
-    
+   
     
     $('.ui.label').popup();
     
     $('.ui.rating')
         .rating()
     ;
+   
+    
+
+   
     
     /*--------------------
         PROGRESS
@@ -273,7 +272,24 @@ $(document).ready(function() {
 
     
 });
-
+    $('.right.demo.sidebar').sidebar('hide');
+    
+    $('.navbar .logo')
+    .find('.button')
+      .on('click', function() {
+        var
+          transition = $(this).data('transition')
+        ;
+        $('.right.demo.sidebar')
+          
+          .sidebar('setting', {
+            transition       : transition,
+            mobileTransition : transition
+          })
+        ;
+        $('.right.demo.sidebar').sidebar('toggle');
+      })
+  ;
 
 
 $(document).bind('scroll',function(e){

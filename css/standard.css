@@ -666,10 +666,10 @@ div[data-device="mobile"]{
 @media only screen and (max-width: 820px) {
     
     
-    /*body > .ui.fluid.container{
+    body > .ui.fluid.container{
         margin-left: auto !important;
         margin-right: auto !important;
-    }*/
+    }
     
     .frameTop,
     .frameBot{
@@ -708,33 +708,35 @@ div[data-device="mobile"]{
         margin-top: -4.8rem !important;
     }
      
-    div[data-device="desktop"]{
+    #header[data-device="desktop"]{
         display: none !important;
     }
     
-    div[data-device="mobile"] {
+    #header[data-device="mobile"] {
         display: block !important;
     }
     
     
-    div[data-device="mobile"] > .navbar > .logo{
+    #header[data-device="mobile"] > .navbar > .logo{
         text-align: left !important;
         letter-spacing: 0 !important;
         
     }
     
-    div[data-device="mobile"] > .navbar > .logo > span{
+    #header[data-device="mobile"] > .navbar > .logo > span{
         font-weight: 600;
         font-size: 15px;
         margin-left: 10px;
     }
     
-    div[data-device="mobile"] > .navbar > .logo > img{
+    #header[data-device="mobile"] > .navbar > .logo > img{
         margin-left: 0  !important;
         width: 30px !important;
     }
     
-    
+    body.pushable{
+        background: none !important;
+    }
     
     
     
